@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10553be3-cf38-4b4e-8091-7039d8171c05" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="WebcamMaterial.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebcamMaterial.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+              <folding>
+                <marker date="1542107086984" expanded="true" signature="6:78" ph="..." />
+                <marker date="1542107086984" expanded="true" signature="123:1000" ph="{...}" />
+                <marker date="1542107086984" expanded="true" signature="284:357" ph="{...}" />
+                <marker date="1542107086984" expanded="true" signature="380:455" ph="{...}" />
+                <marker date="1542107086984" expanded="true" signature="475:544" ph="{...}" />
+                <marker date="1542107086984" expanded="true" signature="562:998" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/SteamVR/Scripts/SteamVR_Utils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SteamVR/Extras/SteamVR_GazeTracker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SteamVR/Input/SteamVR_Action.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SteamVR/Input/SteamVR_Behaviour_Pose.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SteamVR/Scripts/SteamVR_TrackedObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WebcamMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SimpleExample_VRInteractableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VRInteractableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VRControllerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/VRInteractableItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WebcamTexture.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WebcamMaterial.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="-1024" />
+    <option name="width" value="1280" />
+    <option name="height" value="1024" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRProject" type="483dac07:UnityExplorerNode$Root" />
+            </path>
+            <path>
+              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRProject" type="483dac07:UnityExplorerNode$Root" />
+              <item name="" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRProject" type="483dac07:UnityExplorerNode$Root" />
+              <item name="" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRProject (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRProject (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRProject (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRProject (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRProject (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="SteamVR" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="VRProject (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="SteamVR" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Input" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10553be3-cf38-4b4e-8091-7039d8171c05" name="Default" comment="" />
+      <created>1542034978951</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542034978951</updated>
+      <workItem from="1542034985201" duration="444000" />
+      <workItem from="1542035757714" duration="3383000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3827000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-1024" width="1280" height="1024" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VRControllerInput.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="39" column="8" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VRInteractableItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/SteamVR/Scripts/SteamVR_Utils.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/SteamVR/Scripts/SteamVR_TrackedObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VRInteractableObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VRInteractableItem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/VRControllerInput.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/SteamVR/Input/SteamVR_Behaviour_Pose.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="99" column="37" lean-forward="true" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
+          <folding>
+            <marker date="1537987043000" expanded="false" signature="87:179" ph="..." />
+            <marker date="1537987043000" expanded="true" signature="199:7134" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="206:502" ph="/// This component simplifies the use of Pose actions. Adding it to a gameobject will auto set that transform's p ... " />
+            <marker date="1537987043000" expanded="true" signature="558:7029" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="2119:2252" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="2344:2496" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="2581:2698" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="2749:3460" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="2810:3450" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="2890:3436" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="3058:3418" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="3470:3578" ph="/// Returns the device index for the device bound to the pose.  ... " />
+            <marker date="1537987043000" expanded="true" signature="3614:3738" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="3781:4078" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="4122:4426" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="4560:4636" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="4785:4868" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="5126:5267" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="5313:5532" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="5789:5960" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="6021:6098" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="6139:7023" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="6275:6512" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="6529:6725" ph="{...}" />
+            <marker date="1537987043000" expanded="true" signature="6778:6913" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/SteamVR/Extras/SteamVR_GazeTracker.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding>
+            <marker date="1537986913000" expanded="false" signature="86:124" ph="..." />
+            <marker date="1537986913000" expanded="true" signature="151:2918" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="206:2753" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="631:728" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="796:895" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="936:2747" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="1074:1525" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="1263:1511" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="1356:1493" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="1560:2736" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="1837:2721" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="2153:2395" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="2459:2703" ph="{...}" />
+            <marker date="1537986913000" expanded="true" signature="2785:2828" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/SteamVR/Input/SteamVR_Action.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <marker date="1537987046000" expanded="false" signature="87:227" ph="..." />
+            <marker date="1537987046000" expanded="true" signature="247:2556" ph="{...}" />
+            <marker date="1537987046000" expanded="true" signature="254:486" ph="/// This is the base level action for SteamVR Input. All SteamVR_Action_In and SteamVR_Action_Out inherit from th ... " />
+            <marker date="1537987046000" expanded="true" signature="546:2554" ph="{...}" />
+            <marker date="1537987046000" expanded="true" signature="1047:1112" ph="{...}" />
+            <marker date="1537987046000" expanded="true" signature="1122:1219" ph="/// Initializes the dictionaries used by this action ... " />
+            <marker date="1537987046000" expanded="true" signature="1263:1543" ph="{...}" />
+            <marker date="1537987046000" expanded="true" signature="1443:1533" ph="{...}" />
+            <marker date="1537987046000" expanded="true" signature="1553:1639" ph="/// Initializes the handle for the action ... " />
+            <marker date="1537987046000" expanded="true" signature="1680:1984" ph="{...}" />
+            <marker date="1537987046000" expanded="true" signature="2077:2137" ph="{...}" />
+            <marker date="1537987046000" expanded="true" signature="2339:2548" ph="{...}" />
+            <marker date="1537987046000" expanded="true" signature="2390:2501" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebcamMaterial.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <marker date="1542107086984" expanded="true" signature="6:78" ph="..." />
+            <marker date="1542107086984" expanded="true" signature="123:1000" ph="{...}" />
+            <marker date="1542107086984" expanded="true" signature="284:357" ph="{...}" />
+            <marker date="1542107086984" expanded="true" signature="380:455" ph="{...}" />
+            <marker date="1542107086984" expanded="true" signature="475:544" ph="{...}" />
+            <marker date="1542107086984" expanded="true" signature="562:998" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
