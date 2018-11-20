@@ -6,6 +6,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Shaders" t="Include" />
           <e p="WebcamMaterial.cs" t="Include" />
         </e>
         <e p="SteamVR" t="Include">
@@ -266,6 +267,6 @@
       </e>
       <e p="VRProject.sln" t="IncludeFlat" />
     </e>
-    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_VRProject.-1327228771.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_VRProject.-1650899156.00" t="ExcludeRecursive" />
   </component>
 </project>
