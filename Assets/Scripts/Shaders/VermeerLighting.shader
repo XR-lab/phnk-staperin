@@ -86,7 +86,6 @@
                 float3 n2 = UnpackNormal(tex2D(_BumpTex2, IN.uv_BumpTex2));
 			    n = float3(n.x * _BumpMultiplier + n2.x * _BumpMultiplier2, n.y * _BumpMultiplier + n2.y * _BumpMultiplier2, n.z);
 			    
-			    
 			    o.Normal = normalize(n);
 			    o.Specular = _Specular * s;
             }
