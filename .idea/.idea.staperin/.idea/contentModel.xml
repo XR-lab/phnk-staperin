@@ -9,9 +9,11 @@
           <e p="testje.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="RayGun.cs" t="Include" />
           <e p="Shaders" t="Include">
-            <e p="CustomLambert.shader" t="Include" />
             <e p="ImageDisplacement.shader" t="Include" />
+            <e p="RayGun.shader" t="Include" />
+            <e p="VermeerLighting.shader" t="Include" />
           </e>
           <e p="ViewportDisplacement.cs" t="Include" />
           <e p="WebcamMaterial.cs" t="Include" />
@@ -283,9 +285,7 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="staperin.sln" t="IncludeFlat" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_staperin.2021101217.00" t="ExcludeRecursive" />
   </component>

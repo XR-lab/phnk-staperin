@@ -12,6 +12,8 @@
 		    _RoughnessMultiplier ("Roughness Multiplier", Range(0.0001,5)) = 1
 		    _Specular ("Specular level", Range(0.0001,5)) = 1
 		    _Contrast ("Contrast level", Range(0.8,1.4)) = 1
+		    _DiffuseVal ("Diffuse val", Range(0.01,3)) = 1
+		    _ShadowColor ("Schadow color", Color) = (1,1,1,1)
         }
         
         SubShader 
@@ -33,6 +35,9 @@
               return c;
             }
             
+            fixed4 _ShadowColor;
+            half _DiffuseVal;
+            
             half4 LightingVermeerSpecular (SurfaceOutput s, half3 lightDir, half3 viewDir, half atten) {
                 half3 h = normalize (lightDir + viewDir);
         
@@ -43,6 +48,9 @@
         
                 half4 c;
                 c.rgb = (s.Albedo * _LightColor0.rgb * diff + _LightColor0.rgb * spec) * atten;
+                //c.rgb += _ShadowColor * (1.0-atten*2) * _DiffuseVal;
+                c.rgb -= _ShadowColor.xyz * max(0.0,(1.0-(diff*atten))) * _DiffuseVal;
+                //c.rgb = s.Albedo;
                 c.a = s.Alpha;
                 return c;
             }
