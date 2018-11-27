@@ -14,6 +14,7 @@
 		    _Contrast ("Contrast level", Range(0.8,1.4)) = 1
 		    _DiffuseVal ("Diffuse val", Range(0.01,3)) = 1
 		    _ShadowColor ("Schadow color", Color) = (1,1,1,1)
+		    _PaintDetail ("Detail", 2D) = "gray" {}
         }
         
         SubShader 
@@ -22,6 +23,7 @@
             
             CGPROGRAM
             #pragma surface surf VermeerSpecular
+            #pragma target 3.0
                         
             half4 LightingVermeer (SurfaceOutput s, half3 lightDir, half atten) {
               half NdotL = max(0, dot (s.Normal, lightDir));
@@ -60,6 +62,7 @@
                 float2 uv_BumpTex;
                 float2 uv_BumpTex2;
                 float2 uv_RoughnessTex;
+                float4 screenPos;
             };
             
             sampler2D _MainTex;
@@ -67,6 +70,7 @@
             sampler2D _BumpTex2;
             sampler2D _RoughnessTex;
             sampler2D _GlossinessTex;
+            sampler2D _PaintDetail;
 		    half _BumpMultiplier;
 		    half _BumpMultiplier2;
 		    half _BumpMultiplier3;
@@ -80,7 +84,11 @@
                 fixed g = tex2D (_GlossinessTex, IN.uv_MainTex).r;
                 fixed s = tex2D (_RoughnessTex, IN.uv_RoughnessTex).r * g * _RoughnessMultiplier;
 
+                float2 screenUV = IN.screenPos.xy / IN.screenPos.w;
+                screenUV *= float2(8,6);
+
                 o.Albedo = c.rgb;
+                o.Albedo *= (tex2D (_PaintDetail, screenUV).rgb / 3 + 0.67);
     
                 float3 n = UnpackNormal(tex2D(_BumpTex, IN.uv_BumpTex));
                 float3 n2 = UnpackNormal(tex2D(_BumpTex2, IN.uv_BumpTex2));

@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cdfb7050-a99d-4c81-80e2-0a11faa372c0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Displacement.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Displacement.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/HoofdTest.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/HoofdTest.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Vermeer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Vermeer.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,61 +18,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ImageDisplacement.shader" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-              <folding>
-                <marker date="1543306130425" expanded="true" signature="116:1857" ph="{...}" />
-                <marker date="1543306130425" expanded="true" signature="131:480" ph="{...}" />
-                <marker date="1543306130425" expanded="true" signature="493:1855" ph="{...}" />
-                <marker date="1543306130425" expanded="true" signature="565:1852" ph="{...}" />
-                <marker date="1543306130425" expanded="true" signature="579:1843" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RayGun.shader" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-              <folding>
-                <marker date="1543315956138" expanded="true" signature="21:1665" ph="{...}" />
-                <marker date="1543315956138" expanded="true" signature="60:301" ph="{...}" />
-                <marker date="1543315956138" expanded="true" signature="338:1632" ph="{...}" />
-                <marker date="1543315956138" expanded="true" signature="419:1617" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VermeerLighting.shader" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VermeerLighting.shader" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="907">
-              <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+            <state relative-caret-position="799">
+              <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
               <folding>
-                <marker date="1543306647721" expanded="true" signature="30:3741" ph="{...}" />
-                <marker date="1543306647721" expanded="true" signature="69:802" ph="{...}" />
-                <marker date="1543306647721" expanded="true" signature="839:3708" ph="{...}" />
-                <marker date="1543306647721" expanded="true" signature="920:3693" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RayGun.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RayGun.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-              <folding>
-                <marker date="1543245450546" expanded="true" signature="6:78" ph="..." />
-                <marker date="1543245450546" expanded="true" signature="135:396" ph="{...}" />
-                <marker date="1543245450546" expanded="true" signature="189:394" ph="{...}" />
+                <marker date="1543327437520" expanded="true" signature="30:4075" ph="{...}" />
+                <marker date="1543327437520" expanded="true" signature="69:848" ph="{...}" />
+                <marker date="1543327437520" expanded="true" signature="885:4042" ph="{...}" />
+                <marker date="1543327437520" expanded="true" signature="966:4027" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -101,9 +60,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/Crack.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/CustomLambert.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RayGun.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader" />
       </list>
     </option>
   </component>
@@ -201,12 +160,12 @@
       <updated>1542700173363</updated>
       <workItem from="1542700181183" duration="22394000" />
       <workItem from="1542898082684" duration="3478000" />
-      <workItem from="1543243337035" duration="9386000" />
+      <workItem from="1543243337035" duration="11427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35258000" />
+    <option name="totallyTimeSpent" value="37299000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -259,11 +218,11 @@
         <state relative-caret-position="1550">
           <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
           <folding>
-            <marker date="1543306130425" expanded="true" signature="116:1857" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="493:1855" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="565:1852" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="579:1843" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="116:1857" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="493:1855" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="565:1852" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="579:1843" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -273,10 +232,10 @@
         <state relative-caret-position="1612">
           <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
           <folding>
-            <marker date="1543306647721" expanded="true" signature="30:3741" ph="{...}" />
-            <marker date="1543306647721" expanded="true" signature="69:802" ph="{...}" />
-            <marker date="1543306647721" expanded="true" signature="839:3708" ph="{...}" />
-            <marker date="1543306647721" expanded="true" signature="920:3693" ph="{...}" />
+            <marker date="1543327437520" expanded="true" signature="30:4075" ph="{...}" />
+            <marker date="1543327437520" expanded="true" signature="69:848" ph="{...}" />
+            <marker date="1543327437520" expanded="true" signature="885:4042" ph="{...}" />
+            <marker date="1543327437520" expanded="true" signature="966:4027" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -287,11 +246,11 @@
         <state relative-caret-position="1080">
           <caret line="60" column="62" selection-start-line="60" selection-start-column="62" selection-end-line="60" selection-end-column="62" />
           <folding>
-            <marker date="1543306130425" expanded="true" signature="116:1857" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="493:1855" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="565:1852" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="579:1843" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="116:1857" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="493:1855" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="565:1852" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="579:1843" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -315,42 +274,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <marker date="1543325565183" expanded="true" signature="21:1816" ph="{...}" />
+            <marker date="1543325565183" expanded="true" signature="60:472" ph="{...}" />
+            <marker date="1543325565183" expanded="true" signature="509:1783" ph="{...}" />
+            <marker date="1543325565183" expanded="true" signature="590:1768" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        <state relative-caret-position="342">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <marker date="1543306130425" expanded="true" signature="116:1857" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="493:1855" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="565:1852" ph="{...}" />
-            <marker date="1543306130425" expanded="true" signature="579:1843" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="116:1857" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="493:1855" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="565:1852" ph="{...}" />
+            <marker date="1543325665090" expanded="true" signature="579:1843" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="907">
-          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+        <state relative-caret-position="799">
+          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
           <folding>
-            <marker date="1543306647721" expanded="true" signature="30:3741" ph="{...}" />
-            <marker date="1543306647721" expanded="true" signature="69:802" ph="{...}" />
-            <marker date="1543306647721" expanded="true" signature="839:3708" ph="{...}" />
-            <marker date="1543306647721" expanded="true" signature="920:3693" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding>
-            <marker date="1543315956138" expanded="true" signature="21:1665" ph="{...}" />
-            <marker date="1543315956138" expanded="true" signature="60:301" ph="{...}" />
-            <marker date="1543315956138" expanded="true" signature="338:1632" ph="{...}" />
-            <marker date="1543315956138" expanded="true" signature="419:1617" ph="{...}" />
+            <marker date="1543327437520" expanded="true" signature="30:4075" ph="{...}" />
+            <marker date="1543327437520" expanded="true" signature="69:848" ph="{...}" />
+            <marker date="1543327437520" expanded="true" signature="885:4042" ph="{...}" />
+            <marker date="1543327437520" expanded="true" signature="966:4027" ph="{...}" />
           </folding>
         </state>
       </provider>

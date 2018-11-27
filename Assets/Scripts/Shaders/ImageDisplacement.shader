@@ -62,7 +62,7 @@ Shader "PHNK/ImageDisplacement"
 			{
 				float2 distuv = i.uv;
 
-				float2 disp = tex2D(_DisplaceTex, distuv * 40).xy;
+				float2 disp = tex2D(_DisplaceTex, distuv * 3).xy;
 				float3 paint = 1 + tex2D(_PaintTex, distuv * 7);
 				disp = ((disp * 2) - 1) * _Magnitude;
 				

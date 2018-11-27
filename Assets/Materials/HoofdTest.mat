@@ -62,12 +62,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _PaintDetail:
+        m_Texture: {fileID: 2800000, guid: 287375ae932934bbca9549095cd820ce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RoughnessTex:
-        m_Texture: {fileID: 2800000, guid: 926397562d21e468ba2c72f894e1e76f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8b49f756a7c964eb5937438b11c88cd2, type: 3}
         m_Scale: {x: 4, y: 4}
         m_Offset: {x: 0, y: 0}
     - _SecondTex:
