@@ -25,46 +25,8 @@
             #pragma surface surf VermeerSpecular
             #pragma target 3.0
                         
-            half4 LightingVermeer (SurfaceOutput s, half3 lightDir, half atten) {
-              half NdotL = max(0, dot (s.Normal, lightDir));
-              NdotL /= 2;
-              //NdotL = 1 - cos(NdotL * (3.1415926 / 2)); // sineInOut
-              //NdotL = -(sqrt(1 - (NdotL /= 1) * NdotL) - 1);
-              //NdotL = (NdotL /= 1) * NdotL * NdotL * NdotL * NdotL;
-              half4 c;
-              c.rgb = s.Albedo * _LightColor0.rgb * (NdotL * atten);
-              c.a = s.Alpha;
-              return c;
-            }
-            
             fixed4 _ShadowColor;
             half _DiffuseVal;
-            
-            half4 LightingVermeerSpecular (SurfaceOutput s, half3 lightDir, half3 viewDir, half atten) {
-                half3 h = normalize (lightDir + viewDir);
-        
-                half diff = max (0, dot (s.Normal, lightDir));
-        
-                float nh = max (0, dot (s.Normal, h));
-                float spec = min(1, pow (nh, 40.0)) * s.Specular;
-        
-                half4 c;
-                c.rgb = (s.Albedo * _LightColor0.rgb * diff + _LightColor0.rgb * spec) * atten;
-                //c.rgb += _ShadowColor * (1.0-atten*2) * _DiffuseVal;
-                c.rgb -= _ShadowColor.xyz * max(0.0,(1.0-(diff*atten))) * _DiffuseVal;
-                //c.rgb = s.Albedo;
-                c.a = s.Alpha;
-                return c;
-            }
-            
-            struct Input {
-                float2 uv_MainTex;
-                float2 uv_BumpTex;
-                float2 uv_BumpTex2;
-                float2 uv_RoughnessTex;
-                float4 screenPos;
-            };
-            
             sampler2D _MainTex;
             sampler2D _BumpTex;
             sampler2D _BumpTex2;
@@ -77,6 +39,29 @@
 		    half _RoughnessMultiplier;
 		    half _Specular;
 		    half _Contrast;
+            
+            half4 LightingVermeerSpecular (SurfaceOutput s, half3 lightDir, half3 viewDir, half atten) {
+                half3 h = normalize (lightDir + viewDir);
+        
+                half diff = max (0, dot (s.Normal, lightDir));
+        
+                float nh = max (0, dot (s.Normal, h));
+                float spec = min(1, pow (nh, 40.0)) * s.Specular;
+        
+                half4 c;
+                c.rgb = (s.Albedo * _LightColor0.rgb * diff + _LightColor0.rgb * spec) * atten;
+                c.rgb -= _ShadowColor.xyz * max(0.0,(1.0-(diff*atten))) * _DiffuseVal;
+                c.a = s.Alpha;
+                return c;
+            }
+            
+            struct Input {
+                float2 uv_MainTex;
+                float2 uv_BumpTex;
+                float2 uv_BumpTex2;
+                float2 uv_RoughnessTex;
+                float4 screenPos;
+            };
             
             void surf (Input IN, inout SurfaceOutput o) {
                 fixed4 c = tex2D (_MainTex, IN.uv_MainTex);

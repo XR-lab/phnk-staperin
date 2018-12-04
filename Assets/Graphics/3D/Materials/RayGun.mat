@@ -38,6 +38,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _HiddenTex:
+        m_Texture: {fileID: 2800000, guid: 4add3e4de07122d48be179bd331345a0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: b3f9367c1212a44b4af1ae54f43215c2, type: 3}
         m_Scale: {x: 1, y: 1}

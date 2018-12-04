@@ -5,19 +5,20 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Graphics" t="Include">
-          <e p="testje.txt" t="Include" />
-        </e>
         <e p="Scripts" t="Include">
-          <e p="RayGun.cs" t="Include" />
+          <e p="PostProcessing" t="Include">
+            <e p="RayGun.cs" t="Include" />
+            <e p="ViewportDisplacement.cs" t="Include" />
+          </e>
           <e p="Shaders" t="Include">
             <e p="ImageDisplacement.shader" t="Include" />
             <e p="RayGun.shader" t="Include" />
             <e p="TriPlanar.shader" t="Include" />
             <e p="VermeerLighting.shader" t="Include" />
           </e>
-          <e p="ViewportDisplacement.cs" t="Include" />
-          <e p="WebcamMaterial.cs" t="Include" />
+          <e p="textures" t="Include">
+            <e p="WebcamMaterial.cs" t="Include" />
+          </e>
         </e>
         <e p="SteamVR" t="Include">
           <e p="Editor" t="Include">

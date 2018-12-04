@@ -3,7 +3,7 @@
         Properties 
         {
             _MainTex ("Texture", 2D) = "white" {}
-            _RayTex ("Texture", 2D) = "white" {}
+            _HiddenTex ("Hidden texture", 2D) = "white" {}
 			_DClipOff ("Dot Product clipoff", Range(0, 1)) = 0.4
 			_MinDistance ("Dot Product clipoff", Range(0, 5)) = 2
 			_MaxDistance ("Dot Product clipoff", Range(0, 50)) = 5
@@ -20,12 +20,12 @@
                         
             struct Input {
                 float2 uv_MainTex;
-                float2 uv_RayTex;
+                float2 uv_HiddenTex;
                 float3 worldPos;
             };
             
             sampler2D _MainTex;
-            sampler2D _RayTex;
+            sampler2D _HiddenTex;
 			float _DClipOff;
 			float _MinDistance;
 			float _MaxDistance;
@@ -34,7 +34,7 @@
             
             void surf (Input IN, inout SurfaceOutputStandard o) {
                 fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
-                fixed4 c2 = tex2D (_RayTex, IN.uv_RayTex);
+                fixed4 c2 = tex2D (_HiddenTex, IN.uv_HiddenTex);
                 
                 float3 rayGunDir = _RayPosition.xyz - IN.worldPos;
                 float distance = length(rayGunDir);
