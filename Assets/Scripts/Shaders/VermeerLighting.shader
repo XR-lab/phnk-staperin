@@ -88,7 +88,7 @@
                 screenUV *= float2(8,6);
 
                 o.Albedo = c.rgb;
-                //o.Albedo *= (tex2D (_PaintDetail, screenUV).rgb / 3 + 0.67);
+                o.Albedo *= (tex2D (_PaintDetail, screenUV).rgb / 3 + 0.67);
 
     
                 float3 n = UnpackNormal(tex2D(_BumpTex, IN.uv_BumpTex));

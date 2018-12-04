@@ -13,6 +13,7 @@
           <e p="Shaders" t="Include">
             <e p="ImageDisplacement.shader" t="Include" />
             <e p="RayGun.shader" t="Include" />
+            <e p="TriPlanar.shader" t="Include" />
             <e p="VermeerLighting.shader" t="Include" />
           </e>
           <e p="ViewportDisplacement.cs" t="Include" />

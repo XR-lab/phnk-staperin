@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdfb7050-a99d-4c81-80e2-0a11faa372c0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Displacement.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Displacement.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/HoofdTest.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/HoofdTest.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Vermeer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Vermeer.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,16 +18,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VermeerLighting.shader" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader">
+      <file leaf-file-name="ImageDisplacement.shader" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+            <state relative-caret-position="745">
+              <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
               <folding>
-                <marker date="1543327437520" expanded="true" signature="30:4075" ph="{...}" />
-                <marker date="1543327437520" expanded="true" signature="69:848" ph="{...}" />
-                <marker date="1543327437520" expanded="true" signature="885:4042" ph="{...}" />
-                <marker date="1543327437520" expanded="true" signature="966:4027" ph="{...}" />
+                <marker date="1543917833902" expanded="true" signature="116:1857" ph="{...}" />
+                <marker date="1543917833902" expanded="true" signature="131:480" ph="{...}" />
+                <marker date="1543917833902" expanded="true" signature="493:1855" ph="{...}" />
+                <marker date="1543917833902" expanded="true" signature="565:1852" ph="{...}" />
+                <marker date="1543917833902" expanded="true" signature="579:1843" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -45,10 +46,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ViewportDisplacement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RayGun.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RayGun.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -61,8 +63,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/CustomLambert.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RayGun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" />
       </list>
     </option>
   </component>
@@ -75,19 +79,16 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="UnityExplorer" proportions="" version="1">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
-      </pane>
+      <pane id="Scratches" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -122,7 +123,45 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Shaders" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,12 +199,15 @@
       <updated>1542700173363</updated>
       <workItem from="1542700181183" duration="22394000" />
       <workItem from="1542898082684" duration="3478000" />
-      <workItem from="1543243337035" duration="11427000" />
+      <workItem from="1543243337035" duration="13904000" />
+      <workItem from="1543580421771" duration="71000" />
+      <workItem from="1543842281786" duration="533000" />
+      <workItem from="1543909100126" duration="2451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37299000" />
+    <option name="totallyTimeSpent" value="42831000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -177,7 +219,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -188,7 +230,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17604166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1453125" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="7" />
       <window_info anchor="right" id="Database" order="3" />
@@ -215,69 +257,48 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1550">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+        <state relative-caret-position="1260">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
-            <marker date="1543325665090" expanded="true" signature="116:1857" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="493:1855" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="565:1852" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="579:1843" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="116:1857" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="493:1855" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="565:1852" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="579:1843" ph="{...}" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1612">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-          <folding>
-            <marker date="1543327437520" expanded="true" signature="30:4075" ph="{...}" />
-            <marker date="1543327437520" expanded="true" signature="69:848" ph="{...}" />
-            <marker date="1543327437520" expanded="true" signature="885:4042" ph="{...}" />
-            <marker date="1543327437520" expanded="true" signature="966:4027" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/CustomLambert.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="60" column="62" selection-start-line="60" selection-start-column="62" selection-end-line="60" selection-end-column="62" />
-          <folding>
-            <marker date="1543325665090" expanded="true" signature="116:1857" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="493:1855" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="565:1852" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="579:1843" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/Bump.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/Multipass.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/Crack.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/CustomLambert.shader" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ViewportDisplacement.cs">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/RayGun.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+        <state relative-caret-position="198">
+          <caret line="13" column="67" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="67" />
           <folding>
-            <marker date="1543245450546" expanded="true" signature="6:78" ph="..." />
+            <marker date="1543245450546" expanded="false" signature="6:78" ph="..." />
             <marker date="1543245450546" expanded="true" signature="135:396" ph="{...}" />
             <marker date="1543245450546" expanded="true" signature="189:394" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+          <folding>
+            <marker date="1543347577170" expanded="true" signature="24:2027" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="45:245" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="264:2025" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="287:2019" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="310:2004" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="738">
+          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
           <folding>
             <marker date="1543325565183" expanded="true" signature="21:1816" ph="{...}" />
             <marker date="1543325565183" expanded="true" signature="60:472" ph="{...}" />
@@ -289,27 +310,180 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="2232">
+          <caret line="72" column="30" lean-forward="true" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
           <folding>
-            <marker date="1543325665090" expanded="true" signature="116:1857" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="493:1855" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="565:1852" ph="{...}" />
-            <marker date="1543325665090" expanded="true" signature="579:1843" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="116:1857" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="493:1855" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="565:1852" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="579:1843" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="45" column="49" lean-forward="true" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+          <folding>
+            <marker date="1543325565183" expanded="true" signature="21:1816" ph="{...}" />
+            <marker date="1543325565183" expanded="true" signature="60:472" ph="{...}" />
+            <marker date="1543325565183" expanded="true" signature="509:1783" ph="{...}" />
+            <marker date="1543325565183" expanded="true" signature="590:1768" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+          <folding>
+            <marker date="1543347577170" expanded="true" signature="24:2027" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="45:245" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="264:2025" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="287:2019" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="310:2004" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <marker date="1543917833902" expanded="true" signature="116:1857" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="493:1855" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="565:1852" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="579:1843" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+          <folding>
+            <marker date="1543347577170" expanded="true" signature="24:2027" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="45:245" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="264:2025" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="287:2019" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="310:2004" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
+        <state relative-caret-position="2790">
           <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1550">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
           <folding>
-            <marker date="1543327437520" expanded="true" signature="30:4075" ph="{...}" />
-            <marker date="1543327437520" expanded="true" signature="69:848" ph="{...}" />
-            <marker date="1543327437520" expanded="true" signature="885:4042" ph="{...}" />
-            <marker date="1543327437520" expanded="true" signature="966:4027" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="116:1857" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="493:1855" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="565:1852" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="579:1843" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1612">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/CustomLambert.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="60" column="62" selection-start-line="60" selection-start-column="62" selection-end-line="60" selection-end-column="62" />
+          <folding>
+            <marker date="1543917833902" expanded="true" signature="116:1857" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="493:1855" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="565:1852" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="579:1843" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/Bump.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/Multipass.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/Crack.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/CustomLambert.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ViewportDisplacement.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="96" column="16" lean-forward="true" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <marker date="1543325565183" expanded="true" signature="21:1816" ph="{...}" />
+            <marker date="1543325565183" expanded="true" signature="60:472" ph="{...}" />
+            <marker date="1543325565183" expanded="true" signature="509:1783" ph="{...}" />
+            <marker date="1543325565183" expanded="true" signature="590:1768" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RayGun.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="67" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="67" />
+          <folding>
+            <marker date="1543245450546" expanded="false" signature="6:78" ph="..." />
+            <marker date="1543245450546" expanded="true" signature="135:396" ph="{...}" />
+            <marker date="1543245450546" expanded="true" signature="189:394" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+          <folding>
+            <marker date="1543347577170" expanded="true" signature="24:2027" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="45:245" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="264:2025" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="287:2019" ph="{...}" />
+            <marker date="1543347577170" expanded="true" signature="310:2004" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+          <folding>
+            <marker date="1543917833902" expanded="true" signature="116:1857" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="493:1855" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="565:1852" ph="{...}" />
+            <marker date="1543917833902" expanded="true" signature="579:1843" ph="{...}" />
           </folding>
         </state>
       </provider>
