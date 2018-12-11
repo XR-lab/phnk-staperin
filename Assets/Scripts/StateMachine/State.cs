@@ -3,7 +3,7 @@
 public abstract class State<T> : MonoBehaviour
 {
     
-    public abstract T StateId { get; }
+    public abstract T Id { get; }
 
     public virtual void Enter()
     {

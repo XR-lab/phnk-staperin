@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdfb7050-a99d-4c81-80e2-0a11faa372c0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Vermeer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Vermeer.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionMachine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,12 +36,12 @@
       <file leaf-file-name="State.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="90">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding>
-                <marker date="1544539158636" expanded="true" signature="66:239" ph="{...}" />
-                <marker date="1544539158636" expanded="true" signature="145:157" ph="{...}" />
-                <marker date="1544539158636" expanded="true" signature="190:202" ph="{...}" />
+                <marker date="1544539529868" expanded="true" signature="66:234" ph="{...}" />
+                <marker date="1544539529868" expanded="true" signature="140:152" ph="{...}" />
+                <marker date="1544539529868" expanded="true" signature="185:197" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -51,13 +50,28 @@
       <file leaf-file-name="InteractionMachine.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractionMachine.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding>
-                <marker date="1544539454912" expanded="true" signature="67:625" ph="{...}" />
-                <marker date="1544539454912" expanded="true" signature="209:354" ph="{...}" />
-                <marker date="1544539454912" expanded="true" signature="391:622" ph="{...}" />
-                <marker date="1544539454912" expanded="true" signature="514:616" ph="{...}" />
+                <marker date="1544540228392" expanded="true" signature="67:795" ph="{...}" />
+                <marker date="1544540228392" expanded="true" signature="209:343" ph="{...}" />
+                <marker date="1544540228392" expanded="true" signature="380:606" ph="{...}" />
+                <marker date="1544540228392" expanded="true" signature="503:600" ph="{...}" />
+                <marker date="1544540228392" expanded="true" signature="659:718" ph="{...}" />
+                <marker date="1544540228392" expanded="true" signature="743:792" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeTravel.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+              <folding>
+                <marker date="1544539534766" expanded="true" signature="50:205" ph="{...}" />
+                <marker date="1544539534766" expanded="true" signature="160:203" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -259,12 +273,12 @@
       <workItem from="1543580421771" duration="71000" />
       <workItem from="1543842281786" duration="533000" />
       <workItem from="1543909100126" duration="7929000" />
-      <workItem from="1544513890934" duration="6265000" />
+      <workItem from="1544513890934" duration="6946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54574000" />
+    <option name="totallyTimeSpent" value="55255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,9 +345,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1544539158636" expanded="true" signature="66:239" ph="{...}" />
-            <marker date="1544539158636" expanded="true" signature="145:157" ph="{...}" />
-            <marker date="1544539158636" expanded="true" signature="190:202" ph="{...}" />
+            <marker date="1544539529868" expanded="true" signature="66:234" ph="{...}" />
+            <marker date="1544539529868" expanded="true" signature="140:152" ph="{...}" />
+            <marker date="1544539529868" expanded="true" signature="185:197" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -679,6 +693,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding>
+            <marker date="1544539529868" expanded="true" signature="66:234" ph="{...}" />
+            <marker date="1544539529868" expanded="true" signature="140:152" ph="{...}" />
+            <marker date="1544539529868" expanded="true" signature="185:197" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <folding>
+            <marker date="1544539534766" expanded="true" signature="50:205" ph="{...}" />
+            <marker date="1544539534766" expanded="true" signature="160:203" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -694,38 +731,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <marker date="1544539158636" expanded="true" signature="66:239" ph="{...}" />
-            <marker date="1544539158636" expanded="true" signature="145:157" ph="{...}" />
-            <marker date="1544539158636" expanded="true" signature="190:202" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <marker date="1544539285343" expanded="true" signature="50:210" ph="{...}" />
-            <marker date="1544539285343" expanded="true" signature="165:208" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractionMachine.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="180">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
-            <marker date="1544539454912" expanded="true" signature="67:625" ph="{...}" />
-            <marker date="1544539454912" expanded="true" signature="209:354" ph="{...}" />
-            <marker date="1544539454912" expanded="true" signature="391:622" ph="{...}" />
-            <marker date="1544539454912" expanded="true" signature="514:616" ph="{...}" />
+            <marker date="1544540228392" expanded="true" signature="67:795" ph="{...}" />
+            <marker date="1544540228392" expanded="true" signature="209:343" ph="{...}" />
+            <marker date="1544540228392" expanded="true" signature="380:606" ph="{...}" />
+            <marker date="1544540228392" expanded="true" signature="503:600" ph="{...}" />
+            <marker date="1544540228392" expanded="true" signature="659:718" ph="{...}" />
+            <marker date="1544540228392" expanded="true" signature="743:792" ph="{...}" />
           </folding>
         </state>
       </provider>
