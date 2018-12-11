@@ -1,55 +1,38 @@
-﻿using UnityEngine;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-public enum StateID { }
-
-public class StateMachine : MonoBehaviour
+public class StateMachine<TStateId>
 {
-    /** We maken een dictionary aan om de states in bij te houden */
-    private Dictionary<StateID, State> states = new Dictionary<StateID, State>();
+    private readonly Dictionary<TStateId, State<TStateId>> _states = new Dictionary<TStateId, State<TStateId>>();
 
-    /** een verwijzing naar de huidige staat waarin we verkeren */
-    private State currentState;
+    private State<TStateId> _currentState;
 
-    void Update()
+    public void Apply()
     {
-        // als we een state hebben: uitvoeren die hap
-        if (currentState != null)
-        {
-            currentState.Reason();
-            currentState.Act();
-        }
+        _currentState?.Apply();
     }
 
     /// <summary>
     /// Method om de state te wijzigen
     /// </summary>
-    public void SetState(StateID stateID)
+    public void SetState(TStateId stateId)
     {
-        /** als we de stateID niet kennen als state: stop deze functie dan */
-        if (!states.ContainsKey(stateID))
+        if (!_states.ContainsKey(stateId))
             return;
 
-        /** als we ons al in een state bevinden: geef de state de mogelijkheid zich op te ruimen */
-        if (currentState != null)
-            currentState.Leave();
+        _currentState?.Leave();
 
-        /** we stellen de nieuwe currentState in */
-        currentState = states[stateID];
+        _currentState = _states[stateId];
 
-        /** we geven de nieuwe state de mogelijkheid om zich zelf in te stellen */
-        currentState.Enter();
+        _currentState.Enter();
     }
 
     /// <summary>
     /// Voeg een state toe aan de state machine
-    /// LET OP! Alle components die de Class State.cs extenden (inheritance) die mogen in de Dictionary
-    /// Daarom mogen AlertState.cs, AlertState.cs en FleeState.cs in de dictionary, aangezien zij State.CS extenden
     /// </summary>
-    /// <param name="stateID">Een integer die komt uit de ENUM StateID (zie StateID in Guard.cs)</param>
+    /// <param name="stateId">Een integer die komt uit de ENUM StateID</param>
     /// <param name="state">Een component die State.cs extend (inheritance)</param>
-    public void AddState(StateID stateID, State state)
+    public void AddState(TStateId stateId, State<TStateId> state)
     {
-        states.Add(stateID, state);
+        _states.Add(stateId, state);
     }
 }

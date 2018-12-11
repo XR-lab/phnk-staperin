@@ -1,21 +1,17 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public abstract class State : MonoBehaviour {
+public abstract class State<T> : MonoBehaviour
+{
+    
+    public abstract T StateId { get; }
 
-	
-	
-	public virtual void Enter ()
-	{
-	}
+    public virtual void Enter()
+    {
+    }
 
-	public virtual void Leave ()
-	{
-	} 
+    public virtual void Leave()
+    {
+    }
 
-	public abstract void Act ();
-
-	public abstract void Reason ();
-
+    public abstract void Apply();
 }
-
