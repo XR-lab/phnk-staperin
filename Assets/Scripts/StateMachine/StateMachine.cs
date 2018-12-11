@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
+public enum StateID { }
+
 public class StateMachine : MonoBehaviour
 {
     /** We maken een dictionary aan om de states in bij te houden */
