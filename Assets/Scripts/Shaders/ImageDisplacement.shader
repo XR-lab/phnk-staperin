@@ -113,6 +113,8 @@ Shader "PHNK/ImageDisplacement"
                 //col.rgb = lerp(col.rgb, crack, crackVisibility); // default render
                 //col.rgb = lerp(col.rgb, sum.rgb, m);
                 
+                
+                
 				return col;
 			}
 			ENDCG
