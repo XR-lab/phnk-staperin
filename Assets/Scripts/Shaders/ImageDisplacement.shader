@@ -80,7 +80,7 @@ Shader "PHNK/ImageDisplacement"
     			
     			float contrast = 1.1;
     			float3 contrastedColour = ((col.rgb - 0.5f) * contrast) + 0.5f;
-				col.rgb = lerp(col.rgb, contrastedColour, paint.r);
+				//col.rgb = lerp(col.rgb, contrastedColour, paint.r);
 				
 				float3 crack = col * (1- crackTex.rgb * _CrackColor);
 								

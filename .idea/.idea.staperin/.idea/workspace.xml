@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdfb7050-a99d-4c81-80e2-0a11faa372c0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/3D/Materials/Displacement.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/3D/Materials/Displacement.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Graphics/3D/Materials/TriPlanar.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/3D/Materials/TriPlanar.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Vermeer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Vermeer.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,17 +18,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ImageDisplacement.shader" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImageDisplacement.shader" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="997">
-              <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+            <state relative-caret-position="1458">
+              <caret line="81" column="79" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="79" />
               <folding>
-                <marker date="1545140851819" expanded="true" signature="116:3456" ph="{...}" />
-                <marker date="1545140851819" expanded="true" signature="131:480" ph="{...}" />
-                <marker date="1545140851819" expanded="true" signature="493:3454" ph="{...}" />
-                <marker date="1545140851819" expanded="true" signature="565:3451" ph="{...}" />
-                <marker date="1545140851819" expanded="true" signature="579:3442" ph="{...}" />
+                <marker date="1545142226168" expanded="true" signature="131:480" ph="{...}" />
+                <marker date="1545142226168" expanded="true" signature="493:3456" ph="{...}" />
+                <marker date="1545142226168" expanded="true" signature="565:3453" ph="{...}" />
+                <marker date="1545142226168" expanded="true" signature="579:3444" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VermeerTriPlanar.shader" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerTriPlanar.shader">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="871">
+              <caret line="111" column="33" lean-forward="true" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+              <folding>
+                <marker date="1545146375411" expanded="true" signature="31:4693" ph="{...}" />
+                <marker date="1545146375411" expanded="true" signature="70:952" ph="{...}" />
+                <marker date="1545146375411" expanded="true" signature="989:4660" ph="{...}" />
+                <marker date="1545146375411" expanded="true" signature="1070:4645" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -36,15 +51,14 @@
       <file leaf-file-name="TriPlanar.shader" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="869">
-              <caret line="62" column="54" lean-forward="true" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
+            <state relative-caret-position="1170">
+              <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
               <folding>
-                <marker date="1545140512392" expanded="true" signature="0:151" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
-                <marker date="1545140512392" expanded="true" signature="177:2410" ph="{...}" />
-                <marker date="1545140512392" expanded="true" signature="198:398" ph="{...}" />
-                <marker date="1545140512392" expanded="true" signature="417:2408" ph="{...}" />
-                <marker date="1545140512392" expanded="true" signature="440:2402" ph="{...}" />
-                <marker date="1545140512392" expanded="true" signature="463:2387" ph="{...}" />
+                <marker date="1545141551241" expanded="true" signature="0:151" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
+                <marker date="1545141551241" expanded="true" signature="198:398" ph="{...}" />
+                <marker date="1545141551241" expanded="true" signature="417:2408" ph="{...}" />
+                <marker date="1545141551241" expanded="true" signature="440:2402" ph="{...}" />
+                <marker date="1545141551241" expanded="true" signature="463:2387" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -58,6 +72,7 @@
       <find>_PaintTex</find>
       <find>_BumpMultiplier2</find>
       <find>_Contrast</find>
+      <find>PaintDetail</find>
     </findStrings>
     <replaceStrings>
       <replace>_HiddenTex</replace>
@@ -67,7 +82,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SteamVR_Input/ActionObjects/SteamVR_Input_ActionSet_buggy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SteamVR/Scripts/SteamVR_Render.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader" root0="FORCE_HIGHLIGHTING" />
@@ -76,7 +91,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Core/Scripts/CustomEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D569CB30-37DD-4660-A175-BF2FB519BD4D/61/074a47c9/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Textures/WebcamMaterial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Items/RayGun.cs" root0="FORCE_HIGHLIGHTING" />
@@ -84,6 +99,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D569CB30-37DD-4660-A175-BF2FB519BD4D/ba/9123ba46/Behaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerTriPlanar.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InteractionStates/InteractionState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InteractionMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D569CB30-37DD-4660-A175-BF2FB519BD4D/1d/49d7ed34/Component.cs" root0="SKIP_HIGHLIGHTING" />
@@ -115,7 +131,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PostProcessing/RayGun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLightingTriPlanar.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerTriPlanar.shader" />
       </list>
     </option>
   </component>
@@ -137,53 +155,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="PostProcessing" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Shaders" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -219,6 +190,19 @@
         <option name="show-hidden-items" value="false" />
       </pane>
       <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,12 +245,13 @@
       <workItem from="1543842281786" duration="533000" />
       <workItem from="1543909100126" duration="7929000" />
       <workItem from="1544513890934" duration="9772000" />
-      <workItem from="1545053786653" duration="10688000" />
+      <workItem from="1545053786653" duration="13499000" />
+      <workItem from="1545144972482" duration="1248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68769000" />
+    <option name="totallyTimeSpent" value="72828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -314,14 +299,50 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="81" column="79" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="79" />
+          <folding>
+            <marker date="1545142226168" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="493:3456" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="565:3453" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="579:3444" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding>
+            <marker date="1545141551241" expanded="true" signature="0:151" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
+            <marker date="1545141551241" expanded="true" signature="198:398" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="417:2408" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="440:2402" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="463:2387" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerTriPlanar.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1998">
+          <caret line="111" column="102" selection-start-line="111" selection-start-column="102" selection-end-line="111" selection-end-column="102" />
+          <folding>
+            <marker date="1545146375411" expanded="true" signature="31:4693" ph="{...}" />
+            <marker date="1545146375411" expanded="true" signature="70:952" ph="{...}" />
+            <marker date="1545146375411" expanded="true" signature="989:4660" ph="{...}" />
+            <marker date="1545146375411" expanded="true" signature="1070:4645" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/States/PaintEffect.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <marker date="1544542234407" expanded="true" signature="71:305" ph="{...}" />
-            <marker date="1544542234407" expanded="true" signature="291:303" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -329,36 +350,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="6" selection-start-column="6" selection-end-column="6" />
-          <folding>
-            <marker date="1544538308762" expanded="true" signature="255:299" ph="{...}" />
-            <marker date="1544538308762" expanded="true" signature="305:376" ph="/// Method om de state te wijzigen ... " />
-            <marker date="1544538308762" expanded="true" signature="419:602" ph="{...}" />
-            <marker date="1544538308762" expanded="true" signature="608:851" ph="/// Voeg een state toe aan de state machine ... " />
-            <marker date="1544538308762" expanded="true" signature="917:966" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1544539529868" expanded="true" signature="140:152" ph="{...}" />
-            <marker date="1544539529868" expanded="true" signature="185:197" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
-            <marker date="1545140851819" expanded="true" signature="116:3456" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="493:3454" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="565:3451" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="579:3442" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="493:3456" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="565:3453" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="579:3444" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -369,12 +375,11 @@
         <state relative-caret-position="828">
           <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
           <folding>
-            <marker date="1545140512392" expanded="true" signature="0:151" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
-            <marker date="1545140512392" expanded="true" signature="177:2410" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="198:398" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="417:2408" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="440:2402" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="463:2387" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="0:151" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
+            <marker date="1545141551241" expanded="true" signature="198:398" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="417:2408" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="440:2402" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="463:2387" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -383,12 +388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
           <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding>
-            <marker date="1545053973078" expanded="true" signature="21:1871" ph="{...}" />
-            <marker date="1545053973078" expanded="true" signature="60:477" ph="{...}" />
-            <marker date="1545053973078" expanded="true" signature="514:1838" ph="{...}" />
-            <marker date="1545053973078" expanded="true" signature="595:1823" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -397,11 +396,10 @@
         <state relative-caret-position="2232">
           <caret line="72" column="30" lean-forward="true" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
           <folding>
-            <marker date="1545140851819" expanded="true" signature="116:3456" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="493:3454" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="565:3451" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="579:3442" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="493:3456" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="565:3453" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="579:3444" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -410,12 +408,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1395">
           <caret line="45" column="49" lean-forward="true" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-          <folding>
-            <marker date="1545053973078" expanded="true" signature="21:1871" ph="{...}" />
-            <marker date="1545053973078" expanded="true" signature="60:477" ph="{...}" />
-            <marker date="1545053973078" expanded="true" signature="514:1838" ph="{...}" />
-            <marker date="1545053973078" expanded="true" signature="595:1823" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -424,12 +416,11 @@
         <state relative-caret-position="1426">
           <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
           <folding>
-            <marker date="1545140512392" expanded="true" signature="0:151" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
-            <marker date="1545140512392" expanded="true" signature="177:2410" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="198:398" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="417:2408" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="440:2402" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="463:2387" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="0:151" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
+            <marker date="1545141551241" expanded="true" signature="198:398" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="417:2408" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="440:2402" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="463:2387" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -439,11 +430,10 @@
         <state relative-caret-position="589">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <marker date="1545140851819" expanded="true" signature="116:3456" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="493:3454" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="565:3451" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="579:3442" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="493:3456" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="565:3453" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="579:3444" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -453,12 +443,11 @@
         <state relative-caret-position="1426">
           <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
           <folding>
-            <marker date="1545140512392" expanded="true" signature="0:151" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
-            <marker date="1545140512392" expanded="true" signature="177:2410" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="198:398" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="417:2408" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="440:2402" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="463:2387" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="0:151" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
+            <marker date="1545141551241" expanded="true" signature="198:398" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="417:2408" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="440:2402" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="463:2387" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -475,11 +464,10 @@
         <state relative-caret-position="1550">
           <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
           <folding>
-            <marker date="1545140851819" expanded="true" signature="116:3456" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="493:3454" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="565:3451" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="579:3442" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="493:3456" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="565:3453" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="579:3444" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -497,11 +485,10 @@
         <state relative-caret-position="1080">
           <caret line="60" column="62" selection-start-line="60" selection-start-column="62" selection-end-line="60" selection-end-column="62" />
           <folding>
-            <marker date="1545140851819" expanded="true" signature="116:3456" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="493:3454" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="565:3451" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="579:3442" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="493:3456" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="565:3453" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="579:3444" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -567,10 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          <folding>
-            <marker date="1544539529868" expanded="true" signature="140:152" ph="{...}" />
-            <marker date="1544539529868" expanded="true" signature="185:197" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -578,13 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
-          <folding>
-            <marker date="1544538308762" expanded="true" signature="255:299" ph="{...}" />
-            <marker date="1544538308762" expanded="true" signature="305:376" ph="/// Method om de state te wijzigen ... " />
-            <marker date="1544538308762" expanded="true" signature="419:602" ph="{...}" />
-            <marker date="1544538308762" expanded="true" signature="608:851" ph="/// Voeg een state toe aan de state machine ... " />
-            <marker date="1544538308762" expanded="true" signature="917:966" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -619,10 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <marker date="1544542234407" expanded="true" signature="71:305" ph="{...}" />
-            <marker date="1544542234407" expanded="true" signature="291:303" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,12 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
           <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-          <folding>
-            <marker date="1545053973078" expanded="true" signature="21:1871" ph="{...}" />
-            <marker date="1545053973078" expanded="true" signature="60:477" ph="{...}" />
-            <marker date="1545053973078" expanded="true" signature="514:1838" ph="{...}" />
-            <marker date="1545053973078" expanded="true" signature="595:1823" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -643,12 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <marker date="1545119639940" expanded="false" signature="6:78" ph="..." />
-            <marker date="1545119639940" expanded="true" signature="135:491" ph="{...}" />
-            <marker date="1545119639940" expanded="true" signature="267:489" ph="{...}" />
-            <marker date="1545119639940" expanded="true" signature="302:342" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -656,25 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <marker date="1543933906144" expanded="true" signature="89:477" ph="{...}" />
-            <marker date="1543933906144" expanded="true" signature="182:275" ph="{...}" />
-            <marker date="1543933906144" expanded="true" signature="337:475" ph="{...}" />
-            <marker date="1543933906144" expanded="true" signature="379:419" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
-          <folding>
-            <marker date="1543934634145" expanded="true" signature="30:3411" ph="{...}" />
-            <marker date="1543934634145" expanded="true" signature="69:848" ph="{...}" />
-            <marker date="1543934634145" expanded="true" signature="885:3378" ph="{...}" />
-            <marker date="1543934634145" expanded="true" signature="966:3363" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -685,31 +626,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="869">
-          <caret line="62" column="54" lean-forward="true" selection-start-line="62" selection-start-column="54" selection-end-line="62" selection-end-column="54" />
-          <folding>
-            <marker date="1545140512392" expanded="true" signature="0:151" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
-            <marker date="1545140512392" expanded="true" signature="177:2410" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="198:398" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="417:2408" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="440:2402" ph="{...}" />
-            <marker date="1545140512392" expanded="true" signature="463:2387" ph="{...}" />
-          </folding>
+        <state relative-caret-position="772">
+          <caret line="43" column="49" selection-end-line="88" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="997">
-          <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+        <state relative-caret-position="1458">
+          <caret line="81" column="79" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="79" />
           <folding>
-            <marker date="1545140851819" expanded="true" signature="116:3456" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="131:480" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="493:3454" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="565:3451" ph="{...}" />
-            <marker date="1545140851819" expanded="true" signature="579:3442" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="131:480" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="493:3456" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="565:3453" ph="{...}" />
+            <marker date="1545142226168" expanded="true" signature="579:3444" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding>
+            <marker date="1545141551241" expanded="true" signature="0:151" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
+            <marker date="1545141551241" expanded="true" signature="198:398" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="417:2408" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="440:2402" ph="{...}" />
+            <marker date="1545141551241" expanded="true" signature="463:2387" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerTriPlanar.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="871">
+          <caret line="111" column="33" lean-forward="true" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
+          <folding>
+            <marker date="1545146375411" expanded="true" signature="31:4693" ph="{...}" />
+            <marker date="1545146375411" expanded="true" signature="70:952" ph="{...}" />
+            <marker date="1545146375411" expanded="true" signature="989:4660" ph="{...}" />
+            <marker date="1545146375411" expanded="true" signature="1070:4645" ph="{...}" />
           </folding>
         </state>
       </provider>
