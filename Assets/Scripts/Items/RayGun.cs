@@ -7,11 +7,7 @@ public class RayGun : MonoBehaviour
 {
     [SerializeField] private Material _targetMaterial;
 
-    public Material TargetMaterial
-    {
-        get { return _targetMaterial; }
-        set { _targetMaterial = value; }
-    }
+    public Material TargetMaterial => _targetMaterial;
 
     void Update()
     {

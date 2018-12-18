@@ -11,8 +11,10 @@
             <e p="InteractionState.cs" t="Include" />
           </e>
           <e p="InteractionStates.cs" t="Include" />
-          <e p="PostProcessing" t="Include">
+          <e p="Items" t="Include">
             <e p="RayGun.cs" t="Include" />
+          </e>
+          <e p="PostProcessing" t="Include">
             <e p="ViewportDisplacement.cs" t="Include" />
           </e>
           <e p="Shaders" t="Include">
@@ -26,6 +28,7 @@
             <e p="StateMachine.cs" t="Include" />
           </e>
           <e p="States" t="Include">
+            <e p="PaintEffect.cs" t="Include" />
             <e p="TimeTravel.cs" t="Include" />
           </e>
           <e p="textures" t="Include">

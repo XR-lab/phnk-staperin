@@ -5,10 +5,10 @@
             _MainTex ("Texture", 2D) = "white" {}
             _HiddenTex ("Hidden texture", 2D) = "white" {}
 			_DClipOff ("Dot Product clipoff", Range(0, 1)) = 0.4
-			_MinDistance ("Dot Product clipoff", Range(0, 5)) = 2
-			_MaxDistance ("Dot Product clipoff", Range(0, 50)) = 5
+			_MinDistance ("Minimum distance", Range(0, 5)) = 2
+			_MaxDistance ("Maximum distance", Range(0, 50)) = 5
             _RayPosition ("Ray Position", Vector) = (0, 0, 0, 0)
-            _RayDirection ("Ray Position", Vector) = (0, 0, 0, 0)
+            _RayDirection ("Ray Direction", Vector) = (0, 0, 0, 0)
         }
         
         SubShader 
@@ -33,8 +33,8 @@
             float3 _RayDirection;
             
             void surf (Input IN, inout SurfaceOutputStandard o) {
-                fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
-                fixed4 c2 = tex2D (_HiddenTex, IN.uv_HiddenTex);
+                fixed4 mainColour = tex2D (_MainTex, IN.uv_MainTex);
+                fixed4 hiddenColour = tex2D (_HiddenTex, IN.uv_HiddenTex);
                 
                 float3 rayGunDir = _RayPosition.xyz - IN.worldPos;
                 float distance = length(rayGunDir);
@@ -45,7 +45,7 @@
                 
                 d *= max(sign(d - _DClipOff), 0);
                 
-                o.Albedo = lerp(c, c2, d);
+                o.Albedo = lerp(mainColour, hiddenColour, d);
                 
             }
             ENDCG

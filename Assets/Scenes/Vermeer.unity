@@ -333,15 +333,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 5332d1ada5b5d42f08cfcef047089bfc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.39843094
+      value: 0.412
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5332d1ada5b5d42f08cfcef047089bfc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.33196688
+      value: -0.339
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5332d1ada5b5d42f08cfcef047089bfc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.9891362
+      value: -0.942
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5332d1ada5b5d42f08cfcef047089bfc, type: 3}
       propertyPath: m_LocalRotation.x
@@ -408,6 +408,7 @@ GameObject:
   - component: {fileID: 598366249}
   - component: {fileID: 598366248}
   - component: {fileID: 598366250}
+  - component: {fileID: 598366251}
   m_Layer: 0
   m_Name: InteractionMachine
   m_TagString: Untagged
@@ -450,6 +451,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06a9741b9e1724b039984a002810458b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &598366251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598366247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9669ca33c04d2ba2e52caff2b4acb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _paintMaterial: {fileID: 2100000, guid: d5f1aa7fcea9b4bfaa7ad9bd8f689612, type: 2}
 --- !u!1 &664476369
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,15 +558,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 5332d1ada5b5d42f08cfcef047089bfc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.733
+      value: 0.768
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5332d1ada5b5d42f08cfcef047089bfc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3351668
+      value: -0.339
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5332d1ada5b5d42f08cfcef047089bfc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.8193544
+      value: -0.745
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5332d1ada5b5d42f08cfcef047089bfc, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1195,8 +1208,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.21
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
