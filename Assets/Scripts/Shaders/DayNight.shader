@@ -2,7 +2,7 @@
 	
     Properties {
 	    _MainTex ("Base (RGB)", 2D) = "white" {}
-        _Intensity ("Color intensity", Float) = "white" {}
+        _Intensity ("Color intensity", Float) = 1
         
 	}
     
@@ -26,7 +26,6 @@
                 float3  = c.rgb * _Intensity;
                 
                 float4 result = c;
-                result.rgb = lerp(c.rgb, bw, _bwBlend);
                 return result;
             }
             ENDCG
