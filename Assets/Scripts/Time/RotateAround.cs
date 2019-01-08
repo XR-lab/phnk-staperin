@@ -3,39 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RotateAround : MonoBehaviour {
-	[SerializeField] private GameObject _axis;
+	private Light _light;
+	private float _time;
+	private float _realTime;
+	private float _step;
 
+	//rotatie = uur * stap(360/24)
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
+	    _light = GetComponent<Light>();
+	    _step = 360 / 24;
+	    _realTime = 18;
+    }
 
-	}
-
-    // Update is called once per frame
     void Update()
     {
-	    if (Input.GetKey(KeyCode.D)) {
-			Move(1);
+
+	    if (Input.GetKeyDown(KeyCode.Space)) {
+			ChangeTime();
 		}
+    }
 
-	    if (Input.GetKey(KeyCode.A)) {
-			Move(-1);
-		}
+	/*private void Move(float angle) {
+		transform.Rotate(0, angle, 0);
+	}*/
 
-	    /*switch (Input.inputString) {
-			case "d":
-				transform.RotateAround(Vector3.zero, Vector3.forward, 1);
-				print("D");
-				break;
-
-			case "a":
-				transform.RotateAround(Vector3.zero, Vector3.forward, -1);
-				break;
-		}*/
+	private void ChangeTime() {
+		_time += _step;
+		RotateObject(_time%360);
+		print(_time%360);
 	}
 
-	private void Move(float angle) {
-		transform.RotateAround(Vector3.zero, Vector3.forward, angle);
+	public void RotateObject(float x) {
+		transform.rotation = Quaternion.Euler(new Vector3(x, 90, 0));
 	}
 }
