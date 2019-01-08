@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdfb7050-a99d-4c81-80e2-0a11faa372c0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.staperin/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Vermeer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Vermeer.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionStates.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionStates/InteractionState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionStates/InteractionState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Textures/WebcamMaterial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Textures/WebcamMaterial.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/JoeJeff/JoeJeff.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/JoeJeff/JoeJeff.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Squishy/Squishy.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Samples/Squishy/Squishy.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SteamVR/Models/vr_floppyHand.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SteamVR/Models/vr_floppyHand.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InteractionMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InteractionMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/States/PaintEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/States/PaintEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,19 +18,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WebcamMaterial.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Textures/WebcamMaterial.cs">
+      <file leaf-file-name="InteractionStates.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractionStates.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="54">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
               <folding>
-                <marker date="1546932173533" expanded="false" signature="6:78" ph="..." />
-                <marker date="1546932173533" expanded="true" signature="123:925" ph="{...}" />
-                <marker date="1546932173533" expanded="true" signature="311:395" ph="{...}" />
-                <marker date="1546932173533" expanded="true" signature="326:389" ph="/* SetupTexture(); ... */" />
-                <marker date="1546932173533" expanded="true" signature="420:632" ph="{...}" />
-                <marker date="1546932173533" expanded="true" signature="659:863" ph="{...}" />
-                <marker date="1546932173533" expanded="true" signature="880:923" ph="{...}" />
+                <marker date="1544541876530" expanded="true" signature="29:65" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimeTravel.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+              <folding>
+                <marker date="1546933403260" expanded="true" signature="50:238" ph="{...}" />
+                <marker date="1546933403260" expanded="true" signature="172:236" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -70,7 +66,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/SteamVR/Scripts/SteamVR_Render.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InteractionStates.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/States/PaintEffect.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/States/PaintEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Core/Scripts/CustomEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" root0="FORCE_HIGHLIGHTING" />
@@ -103,12 +99,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PostProcessing/ViewportDisplacement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerLighting.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractionStates/InteractionState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractionStates.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/States/PaintEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PostProcessing/RayGun.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/TriPlanar.shader" />
@@ -116,6 +107,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/ImageDisplacement.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shaders/VermeerTriPlanar.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Textures/WebcamMaterial.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InteractionMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/States/PaintEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs" />
       </list>
     </option>
   </component>
@@ -204,6 +200,38 @@
               <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Items" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="PostProcessing" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="StateMachine" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="States" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="staperin (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Textures" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
@@ -256,12 +284,12 @@
       <workItem from="1544513890934" duration="9772000" />
       <workItem from="1545053786653" duration="13499000" />
       <workItem from="1545144972482" duration="2580000" />
-      <workItem from="1546931293877" duration="720000" />
+      <workItem from="1546931293877" duration="2317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74880000" />
+    <option name="totallyTimeSpent" value="76477000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,34 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractionMachine.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/SteamVR_Input/ActionObjects/SteamVR_Input_ActionSet_buggy.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -586,38 +586,10 @@
     <entry file="file://$PROJECT_DIR$/Assets/SteamVR/InteractionSystem/Core/Scripts/CustomEvents.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractionStates.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/States/PaintEffect.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shaders/RayGun.shader">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
           <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Items/RayGun.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PostProcessing/ViewportDisplacement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -683,6 +655,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PostProcessing/ViewportDisplacement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <marker date="1543933906144" expanded="true" signature="89:477" ph="{...}" />
+            <marker date="1543933906144" expanded="true" signature="182:275" ph="{...}" />
+            <marker date="1543933906144" expanded="true" signature="337:475" ph="{...}" />
+            <marker date="1543933906144" expanded="true" signature="379:419" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Items/RayGun.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <marker date="1545119639940" expanded="false" signature="6:78" ph="..." />
+            <marker date="1545119639940" expanded="true" signature="135:491" ph="{...}" />
+            <marker date="1545119639940" expanded="true" signature="267:489" ph="{...}" />
+            <marker date="1545119639940" expanded="true" signature="302:342" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Textures/WebcamMaterial.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -695,6 +693,80 @@
             <marker date="1546932173533" expanded="true" signature="420:632" ph="{...}" />
             <marker date="1546932173533" expanded="true" signature="659:863" ph="{...}" />
             <marker date="1546932173533" expanded="true" signature="880:923" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/State.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <marker date="1546933378584" expanded="true" signature="66:246" ph="{...}" />
+            <marker date="1546933378584" expanded="true" signature="140:152" ph="{...}" />
+            <marker date="1546933378584" expanded="true" signature="185:197" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <marker date="1546933360600" expanded="true" signature="70:986" ph="{...}" />
+            <marker date="1546933360600" expanded="true" signature="267:317" ph="{...}" />
+            <marker date="1546933360600" expanded="true" signature="323:394" ph="/// Method om de state te wijzigen ... " />
+            <marker date="1546933360600" expanded="true" signature="437:620" ph="{...}" />
+            <marker date="1546933360600" expanded="true" signature="626:869" ph="/// Voeg een state toe aan de state machine ... " />
+            <marker date="1546933360600" expanded="true" signature="935:984" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractionMachine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding>
+            <marker date="1546933335098" expanded="true" signature="67:808" ph="{...}" />
+            <marker date="1546933335098" expanded="true" signature="209:339" ph="{...}" />
+            <marker date="1546933335098" expanded="true" signature="376:602" ph="{...}" />
+            <marker date="1546933335098" expanded="true" signature="499:596" ph="{...}" />
+            <marker date="1546933335098" expanded="true" signature="655:714" ph="{...}" />
+            <marker date="1546933335098" expanded="true" signature="751:806" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/States/PaintEffect.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <marker date="1546933391461" expanded="true" signature="71:317" ph="{...}" />
+            <marker date="1546933391461" expanded="true" signature="303:315" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InteractionStates.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding>
+            <marker date="1544541876530" expanded="true" signature="29:65" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/States/TimeTravel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding>
+            <marker date="1546933403260" expanded="true" signature="50:238" ph="{...}" />
+            <marker date="1546933403260" expanded="true" signature="172:236" ph="{...}" />
           </folding>
         </state>
       </provider>
