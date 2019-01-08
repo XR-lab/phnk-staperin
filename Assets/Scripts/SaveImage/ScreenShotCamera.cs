@@ -48,7 +48,7 @@ public class ScreenShotCamera : MonoBehaviour
 
     string SnapshotName()
     {
-        return string.Format("{0}/ScreenShots/snap_{1}x{2}_3.png",
+        return string.Format("{0}/ScreenShots/snap_{1}x{2}_{3}.png",
             Application.dataPath,
             _resWidth,
             _resHeight,
