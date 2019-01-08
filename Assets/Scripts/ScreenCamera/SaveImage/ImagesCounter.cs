@@ -26,5 +26,6 @@ public class ImagesCounter : MonoBehaviour {
     {
         ImageCountData data = SaveSystem.LoadData();
         _counter = data.imageCount;
+        //_counter = 0; // add this code to reset the counter
     }
 }
