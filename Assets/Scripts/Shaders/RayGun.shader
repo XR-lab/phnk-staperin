@@ -25,8 +25,9 @@
             
             sampler2D _MainTex;
             sampler2D _HiddenTex;
+			float _InputFlashlight;
 			float _DClipOff;
-			float _MinDistance;
+			float _MinDistance;  
 			float _MaxDistance;
             float3 _RayPosition;
             float3 _RayDirection;
@@ -44,7 +45,7 @@
                 
                 d *= max(sign(d - _DClipOff), 0);
                 
-                o.Albedo = lerp(mainColour, hiddenColour, d);
+                o.Albedo = lerp(mainColour, hiddenColour, d * _InputFlashlight);
                 
             }
             ENDCG

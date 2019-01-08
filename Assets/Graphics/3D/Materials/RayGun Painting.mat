@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RayGun
-  m_Shader: {fileID: 4800000, guid: 2f5c3b4469ac64400b4c25c914105478, type: 3}
+  m_Name: RayGun Painting
+  m_Shader: {fileID: 4800000, guid: 2ab9e76fe1af47a3b46ac5b936f91071, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -86,5 +86,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RayDirection: {r: -0.04086235, g: 0.13557276, b: -0.98992443, a: 0}
-    - _RayPosition: {r: -0.47979125, g: 1.1334419, b: -0.95623744, a: 0}
+    - _RayDirection: {r: -0.027137145, g: 0.00012899935, b: -0.999632, a: 0}
+    - _RayPosition: {r: -0.40855992, g: 1.2270986, b: -0.7671666, a: 0}

@@ -27,6 +27,7 @@
             };
             
             sampler2D _MainTex;
+			float _InputFlashlight;
 			float _DClipOff;
 			float _MinDistance;
 			float _MaxDistance;
@@ -46,7 +47,7 @@
                 d *= max(sign(d - _DClipOff), 0);
                 
                 o.Albedo = mainColour;
-                o.Alpha = lerp(0, 1, d);
+                o.Alpha = _InputFlashlight * lerp(0, 1, d);
             }
             ENDCG
         }
