@@ -5,18 +5,22 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class RayGun : MonoBehaviour
 {
-    [SerializeField] private Material _targetMaterial;
-
-    public Material TargetMaterial => _targetMaterial;
+    [SerializeField] private Material[] _targetMaterial;
+    
+    private static readonly int RayPosition = Shader.PropertyToID("_RayPosition");
+    private static readonly int RayDirection = Shader.PropertyToID("_RayDirection");
 
     void Update()
     {
-        if (!TargetMaterial)
+        if (_targetMaterial.Length == 0)
         {
             return;
         }
 
-        TargetMaterial.SetVector("_RayPosition", transform.position);
-        TargetMaterial.SetVector("_RayDirection", transform.forward);
+        foreach (var t in _targetMaterial)
+        {
+            t.SetVector(RayPosition, transform.position);
+            t.SetVector(RayDirection, transform.forward);
+        }
     }
 }

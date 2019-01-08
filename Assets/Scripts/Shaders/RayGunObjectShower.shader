@@ -1,9 +1,8 @@
-﻿Shader "PHNK/RayGun" {
+﻿Shader "PHNK/RayGunObjectShower" {
         
         Properties 
         {
             _MainTex ("Texture", 2D) = "white" {}
-            _HiddenTex ("Hidden texture", 2D) = "white" {}
 			_DClipOff ("Dot Product clipoff", Range(0, 1)) = 0.4
 			_MinDistance ("Minimum distance", Range(0, 5)) = 2
 			_MaxDistance ("Maximum distance", Range(0, 50)) = 5
@@ -13,18 +12,21 @@
         
         SubShader 
         {
-            Tags {  "RenderType" = "Opaque" }
+            Tags {  "RenderType" = "Transparent" 
+                    "Queue" = "Transparent"
+            }
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
+
             CGPROGRAM
-            #pragma surface surf Standard
+            #pragma surface surf Standard alpha:fade
                         
             struct Input {
                 float2 uv_MainTex;
-                float2 uv_HiddenTex;
                 float3 worldPos;
             };
             
             sampler2D _MainTex;
-            sampler2D _HiddenTex;
 			float _DClipOff;
 			float _MinDistance;
 			float _MaxDistance;
@@ -33,7 +35,6 @@
             
             void surf (Input IN, inout SurfaceOutputStandard o) {
                 fixed4 mainColour = tex2D (_MainTex, IN.uv_MainTex);
-                fixed4 hiddenColour = tex2D (_HiddenTex, IN.uv_HiddenTex);
                 
                 float3 rayGunDir = _RayPosition.xyz - IN.worldPos;
                 float distance = length(rayGunDir);
@@ -44,8 +45,8 @@
                 
                 d *= max(sign(d - _DClipOff), 0);
                 
-                o.Albedo = lerp(mainColour, hiddenColour, d);
-                
+                o.Albedo = mainColour;
+                o.Alpha = lerp(0, 1, d);
             }
             ENDCG
         }
