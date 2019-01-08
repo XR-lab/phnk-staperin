@@ -6,7 +6,7 @@
 		_MagnificationHeightmap("Magnification Heightmap", 2D) = "white" {}
 	}
 
-	SubShader
+		SubShader
 	{
 		Tags{ "Queue" = "Transparent" "PreviewType" = "Plane" }
 		LOD 100
@@ -14,12 +14,12 @@
 		GrabPass{ "_GrabTexture" }
 
 		Pass
-		{
-			ZTest On
-			ZWrite Off
-			Blend One Zero
-			Lighting Off
-			Fog{ Mode Off }
+			{
+				ZTest On
+				ZWrite Off
+				Blend One Zero
+				Lighting Off
+				Fog{ Mode Off }
 
 			CGPROGRAM
 			#pragma vertex vert
@@ -30,16 +30,20 @@
 			struct appdata
 			{
 				float4 vertex : POSITION;
+				float2 uv : TEXCOORD0;
 			};
 
 			struct v2f
 			{
 				//our UV coordinate on the GrabTexture
 				float4 uv : TEXCOORD0;
+
+				float2 uv_object : TEXCOORD1;
 				//our vertex position after projection
 				float4 vertex : SV_POSITION;
 			};
 
+			sampler2D _MagnificationHeightmap;
 			sampler2D _GrabTexture;
 			half _Magnification;
 
@@ -55,11 +59,17 @@
 				uv_diff /= _Magnification;
 				//save result
 				o.uv = uv_center + uv_diff;
+
+				o.uv_object = v.uv;
 				return o;
 			}
 
 			fixed4 frag(v2f i) : COLOR
 			{
+				float3 disp = tex2D(_MagnificationHeightmap, i.uv_object).rgb;
+				i.uv.y *= 1 - disp.r;
+				i.uv.x *= 1 - disp.b;
+
 				return tex2Dproj(_GrabTexture, UNITY_PROJ_COORD(i.uv));
 			}
 			ENDCG
