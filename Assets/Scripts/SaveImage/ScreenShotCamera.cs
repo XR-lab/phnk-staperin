@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class ScreenShotCamera : MonoBehaviour
 {
-
+    private ImagesCounter _counter;
     private Camera _screenCapCam;
 
     private int _resWidth = 256;
@@ -14,6 +14,7 @@ public class ScreenShotCamera : MonoBehaviour
     void Awake()
     {
         _screenCapCam = GetComponent<Camera>();
+        _counter = FindObjectOfType<ImagesCounter>();
 
         if (_screenCapCam.targetTexture == null)
         {
@@ -41,17 +42,16 @@ public class ScreenShotCamera : MonoBehaviour
             byte[] bytes = snapshot.EncodeToPNG();
             string filename = SnapshotName();
             System.IO.File.WriteAllBytes(filename, bytes);
+            _counter.Counter++;
             Debug.Log("Pic taken");
             _screenCapCam.gameObject.SetActive(false);
         }
     }
 
-    string SnapshotName()
+    private string SnapshotName()
     {
-        return string.Format("{0}/ScreenShots/snap_{1}x{2}_{3}.png",
+        return string.Format("{0}/ScreenShots/snap_{1}.png",
             Application.dataPath,
-            _resWidth,
-            _resHeight,
-            System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
+            _counter.Counter);
     }
 }
