@@ -19,3 +19,5 @@ Unity VR project voor de HTC Vive
 #### Development instructies
 
 * clone deze repository naar je  computer
+* als workflow voor Git gebruiken wij GitFlow
+* we hanteren de standaard C# code conventions zoals hier aangegeven: https://github.com/macollegegamedevelopment/codeconventions/blob/master/README.md
