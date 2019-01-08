@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: RayGun
   m_Shader: {fileID: 4800000, guid: 2f5c3b4469ac64400b4c25c914105478, type: 3}
   m_ShaderKeywords: 

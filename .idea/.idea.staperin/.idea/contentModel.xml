@@ -7,9 +7,6 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="InteractionMachine.cs" t="Include" />
-          <e p="InteractionStates" t="Include">
-            <e p="InteractionState.cs" t="Include" />
-          </e>
           <e p="InteractionStates.cs" t="Include" />
           <e p="Items" t="Include">
             <e p="RayGun.cs" t="Include" />
