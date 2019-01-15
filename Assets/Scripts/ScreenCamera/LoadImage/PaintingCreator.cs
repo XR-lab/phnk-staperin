@@ -7,7 +7,7 @@ public class PaintingCreator : MonoBehaviour
     [SerializeField]
     private GameObject _paintingPref;
     [SerializeField]
-    private List<Transform> _positions;
+    private Transform _position;
     private ImageLoader _imgLoader;
 
     // Start is called before the first frame update
@@ -29,8 +29,8 @@ public class PaintingCreator : MonoBehaviour
             {
                 tempY *= -1;
             }
-            temp.transform.position = new Vector3(_positions[0].position.x + tempX * 2, _positions[0].position.y + tempY * 2, _positions[0].position.z);
-            temp.transform.rotation = _positions[0].rotation;
+            temp.transform.position = new Vector3(_position.position.x + tempX * 2, _position.position.y + tempY * 2, _position.position.z);
+            temp.transform.rotation = _position.rotation;
             temp.transform.Find("Picture").GetComponent<Renderer>().material.mainTexture = images[i];
         }
     }
