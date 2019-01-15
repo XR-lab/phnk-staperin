@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class RotateAround : MonoBehaviour {
 	private Light _light;
+
 	private float _time;
 	private float _realTime;
 	private float _step;
@@ -17,9 +18,9 @@ public class RotateAround : MonoBehaviour {
 	private Transform _copy;
 
 	Vector3 p0 = new Vector3(0, 0, 0);
-	Vector3 p1 = new Vector3(0.1f, 2, 0);
-	Vector3 p2 = new Vector3(0.2f, 0, 0);
-	Vector3 p3 = new Vector3(1f, -5, 0);
+	Vector3 p1 = new Vector3(1f, 2, 0);
+	Vector3 p2 = new Vector3(2f, 2, 0);
+	Vector3 p3 = new Vector3(3f, 0, 0);
 
 	void Start() {
 	    _light = GetComponent<Light>();
@@ -39,7 +40,7 @@ public class RotateAround : MonoBehaviour {
 		    Destroy(_copy.gameObject);
 	    }
 
-	    var p = BezierCurve.BezierPathCalculation(p0, p1, p2, p3, range);
+	    var p = BezierCurve.BezierPathCalculation(p0, p1, p2, p3, Mathf.Min(range*2, 1));
 	    _copy = Instantiate(cube.transform, p, Quaternion.identity);
 
 	    _light.intensity = _copy.transform.position.y;
