@@ -4,9 +4,6 @@
         _MainTex ("Base (RGB)", 2D) = "white" {}
         _GradientTex ("Lighting Color Gradient", 2D) = "white"{}
         _GradientPos ("Position In Gradient", Range(0,1)) = 0.5
-        _RIntensity ("Red Color Intensity", Range(0.1, 1.0)) = 1.0
-        _GIntensity ("Green Color Intensity", Range(0.1, 1.0)) = 1.0
-        _BIntensity ("Blue Color Intensity", Range(0.1, 1.0)) = 1.0
     }
     
     SubShader {
@@ -21,10 +18,6 @@
             
             uniform sampler2D _MainTex;
             uniform sampler2D _GradientTex;
-            
-            float _RIntensity;
-            float _GIntensity;
-            float _BIntensity;
             
             float _GradientPos;
 
@@ -55,10 +48,6 @@
                 float2 uv = float2(_GradientPos,0);
                 float4 c = tex2D(_MainTex, i.uv);
                 float4 g = tex2D(_GradientTex, uv);
-                
-                c.r *= _RIntensity;
-                c.g *= _GIntensity;
-                c.b *= _BIntensity;
                 
                 float4 result = c * g;
                 return result;
