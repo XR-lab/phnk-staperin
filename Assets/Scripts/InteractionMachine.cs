@@ -9,8 +9,8 @@ public class InteractionMachine : MonoBehaviour
         InitializeStates();
 
         // testing:
-        SetState(InteractionStates.TimeTravel);
-        Apply(1.0f);
+        //SetState(InteractionStates.TimeTravel);
+        //Apply(1.0f);
     }
 
     private void InitializeStates()
