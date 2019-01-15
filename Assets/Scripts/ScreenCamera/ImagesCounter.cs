@@ -6,6 +6,11 @@ public class ImagesCounter : MonoBehaviour {
 
     private int _counter = 0;
 
+    void Start()
+    {
+        LoadCounter();
+    }
+
     public int Counter
     {
         get {
