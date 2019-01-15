@@ -402,7 +402,7 @@ Material:
     m_Floats:
     - _BIntensity: 1
     - _GIntensity: 1
-    - _GradientPos: 0.5
+    - _GradientPos: 0
     - _RIntensity: 1
     m_Colors: []
 --- !u!1001 &443976368
@@ -1339,7 +1339,7 @@ MonoBehaviour:
   _rIntensity: 1
   _gIntensity: 1
   _bIntensity: 1
-  _colorGradient: 0.12
+  _colorGradient: 0.7
   _material: {fileID: 2100000, guid: af9412ef76a4e49c9afb91a69ac31c86, type: 2}
 --- !u!1 &2019576164
 GameObject:
