@@ -50,7 +50,7 @@ public class RotateAround : MonoBehaviour {
 		_time += _step;
 		RotateObject(range * 360);
 
-		Debug.Log(BezierCurve.BezierPathCalculation(p0, p1, p2, p3, range));
+		//Debug.Log(BezierCurve.BezierPathCalculation(p0, p1, p2, p3, range));
 	}
 
 	public void RotateObject(float x) {

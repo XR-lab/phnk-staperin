@@ -1,22 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 [ExecuteInEditMode]
 public class ColourGrading : MonoBehaviour {
-    [Range(0.01f, 1)] public float _rIntensity;
-    [Range(0.01f, 1)] public float _gIntensity;
-    [Range(0.01f, 1)] public float _bIntensity;
-    [Range(0, 1)] public float _colorGradient = 0.5f;
+	private RotateAround rot;
+    [Range(0.01f, 1)] public float _rIntensity = 1;
+    [Range(0.01f, 1)] public float _gIntensity = 1;
+    [Range(0.01f, 1)] public float _bIntensity = 1;
+    [Range(0, 1)] public float _colorGradient = 0f;
 
 
 
     [SerializeField] private Material _material;
 
 
-    private void Awake(){
-
+    private void Start() {
+	    rot = GameObject.Find("Area Light").GetComponent<RotateAround>();
     }
+
+	void Update() {
+		_colorGradient = rot.range;
+	}
 
     void OnRenderImage(RenderTexture source, RenderTexture destination){
         if (_material == null){
