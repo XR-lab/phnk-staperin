@@ -4,4 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ColinSave.unity
+    guid: 6246731ab58a35d48b9bdecf78c1b7f8
+  - enabled: 1
+    path: Assets/Scenes/Gallary.unity
+    guid: 1d274fca3a5d5eb4f9f02a92628c21b5
+  m_configObjects: {}
