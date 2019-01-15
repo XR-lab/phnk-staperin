@@ -4,13 +4,16 @@ using UnityEngine;
 
 [ExecuteInEditMode]
 public class ColourGrading : MonoBehaviour {
-    [Range(0.01f, 1)] public float _intensity;
+    [Range(0.01f, 1)] public float _rIntensity;
+    [Range(0.01f, 1)] public float _gIntensity;
+    [Range(0.01f, 1)] public float _bIntensity;
 
-    private Material _material;
+
+    [SerializeField] private Material _material;
 
 
     private void Awake(){
-        _material = new Material(Shader.Find("PHNK/DayNight"));
+
     }
 
     void OnRenderImage(RenderTexture source, RenderTexture destination){
@@ -18,12 +21,10 @@ public class ColourGrading : MonoBehaviour {
             return;
         }
 
-        if (_intensity == 0){
-            Graphics.Blit(source, destination, _material);
-            return;
-        }
 
-        _material.SetFloat("_Intensity", _intensity);
+        _material.SetFloat("_RIntensity", _rIntensity);
+        _material.SetFloat("_GIntensity", _gIntensity);
+        _material.SetFloat("_BIntensity", _bIntensity);
         Graphics.Blit(source, destination, _material);
     }
 }
