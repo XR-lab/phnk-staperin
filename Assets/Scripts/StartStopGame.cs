@@ -12,10 +12,4 @@ public class StartStopGame : MonoBehaviour
         _counter.LoadCounter();
         Debug.Log(_counter.Counter);
     }
-
-    private void OnApplicationQuit()
-    {
-        _counter.SaveCounter();
-        Debug.Log(_counter.Counter);
-    }
 }

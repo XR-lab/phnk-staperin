@@ -26,6 +26,11 @@ public class ImagesCounter : MonoBehaviour {
     {
         ImageCountData data = SaveSystem.LoadData();
         _counter = data.imageCount;
-        //_counter = 0; // add this code to reset the counter
+    }
+
+    public void ResetCounter() //keep in mind if you do this function remove every image in the folder ScreenShots
+    {
+        _counter = 0;
+        SaveCounter();
     }
 }
