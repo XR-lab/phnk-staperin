@@ -6,9 +6,9 @@ public class StateMachine<TStateId>
 
     private State<TStateId> _currentState;
 
-    public void Apply()
+    public void Apply(float amount)
     {
-        _currentState?.Apply();
+        _currentState?.Apply(amount);
     }
 
     /// <summary>
