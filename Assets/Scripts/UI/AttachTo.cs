@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Animations;
 
 public class AttachTo : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class AttachTo : MonoBehaviour
 
 	private void Awake()
 	{
-		transform.parent = target;
-		GetComponent<RectTransform>().position = transform.parent.position;
+		transform.SetParent(target);
+		transform.position = transform.parent.position;
 	}
 }
