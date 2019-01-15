@@ -364,6 +364,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &407588644
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PHNK/DayNight
+  m_Shader: {fileID: 4800000, guid: 2d40c72258b3c4a43a5ca197db007d66, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _ClolorGradient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ColorGradient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GradientTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BIntensity: 1
+    - _GIntensity: 1
+    - _GradientPos: 0.5
+    - _RIntensity: 1
+    m_Colors: []
 --- !u!1001 &443976368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -437,28 +478,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 8abc4925fdfa34e3f831a21e64674179, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5332d1ada5b5d42f08cfcef047089bfc, type: 3}
---- !u!1 &507620487 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: 5332d1ada5b5d42f08cfcef047089bfc,
-    type: 3}
-  m_PrefabInstance: {fileID: 779805083}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &507620491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507620487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f360a76285624e4f8c7127091fd9111, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rIntensity: 1
-  _gIntensity: 1
-  _bIntensity: 1
-  _material: {fileID: 1745611790}
 --- !u!1 &598366247
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,6 +849,29 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300002, guid: ef885e855f69c3e47a7cde3afe307de9, type: 3}
+--- !u!1 &883499127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 125964, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1348317050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &883499129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883499127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f360a76285624e4f8c7127091fd9111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rIntensity: 1
+  _gIntensity: 1
+  _bIntensity: 1
+  _colorGradient: 0
+  _material: {fileID: 407588644}
 --- !u!1001 &902902013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1197,6 +1239,7 @@ GameObject:
   - component: {fileID: 1629311750}
   - component: {fileID: 1629311749}
   - component: {fileID: 1629311752}
+  - component: {fileID: 1629311753}
   m_Layer: 0
   m_Name: Schilderij camera
   m_TagString: Untagged
@@ -1281,34 +1324,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _effectMaterial: {fileID: 2100000, guid: d5f1aa7fcea9b4bfaa7ad9bd8f689612, type: 2}
---- !u!21 &1745611790
-Material:
-  serializedVersion: 6
+--- !u!114 &1629311753
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PHNK/DayNight
-  m_Shader: {fileID: 4800000, guid: 2d40c72258b3c4a43a5ca197db007d66, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _BIntensity: 1
-    - _GIntensity: 1
-    - _RIntensity: 1
-    m_Colors: []
+  m_GameObject: {fileID: 1629311748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f360a76285624e4f8c7127091fd9111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rIntensity: 1
+  _gIntensity: 1
+  _bIntensity: 1
+  _colorGradient: 0.12
+  _material: {fileID: 2100000, guid: af9412ef76a4e49c9afb91a69ac31c86, type: 2}
 --- !u!1 &2019576164
 GameObject:
   m_ObjectHideFlags: 0
