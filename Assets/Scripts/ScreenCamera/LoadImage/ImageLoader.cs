@@ -14,33 +14,15 @@ public class ImageLoader : MonoBehaviour
     void Awake()
     {
         _counter = FindObjectOfType<ImagesCounter>();
-        Debug.Log("Test 1 Counter: " + _counter);
         _imageBuffer = new List<Texture2D>();
         _path = Application.dataPath + "/ScreenShots/";
         _filename = "snap_";
         _fileType = ".png";
-        //StartCoroutine(LoadImages());
     }
-
-    /*private IEnumerator LoadImages()
-    {
-        for (int i = 0; i < _counter.Counter; i++)
-        {
-            string fullFilename = _path + _filename + i + _fileType;
-            WWW www = new WWW(fullFilename);
-            yield return www;
-            Texture2D texTmp = new Texture2D(1024, 1024, TextureFormat.DXT5, false);
-            www.LoadImageIntoTexture(texTmp);
-            _imageBuffer.Add(texTmp);
-            //_prefab.GetComponent<Renderer>().material.mainTexture = texTmp;
-        }
-    }*/
 
     public List<Texture2D> LoadImages()
     {
         _counter.LoadCounter();
-        Debug.Log("counter: " + _counter);
-        Debug.Log("Amount: " + _counter.Counter);
         for (int i = 0; i < _counter.Counter; i++)
         {
             string fullFilename = _path + _filename + i + _fileType;

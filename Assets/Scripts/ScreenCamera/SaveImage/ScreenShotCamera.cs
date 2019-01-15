@@ -44,7 +44,6 @@ public class ScreenShotCamera : MonoBehaviour
             System.IO.File.WriteAllBytes(filename, bytes);
             _counter.Counter++;
             _counter.SaveCounter();
-            Debug.Log("Pic taken");
             _screenCapCam.gameObject.SetActive(false);
         }
     }

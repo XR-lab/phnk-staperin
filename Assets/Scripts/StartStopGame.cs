@@ -10,6 +10,5 @@ public class StartStopGame : MonoBehaviour
     {
         _counter = FindObjectOfType<ImagesCounter>();
         _counter.LoadCounter();
-        Debug.Log(_counter.Counter);
     }
 }
