@@ -7,7 +7,7 @@ public class PaintEffect : State<InteractionStates>
     public override InteractionStates Id => InteractionStates.PaintEffect;
     public Material TargetMaterial => _paintMaterial;
 
-    public override void Apply()
+    public override void Apply(float amount)
     {
     }
 }

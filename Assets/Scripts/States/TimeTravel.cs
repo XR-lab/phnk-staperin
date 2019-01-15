@@ -2,8 +2,8 @@
 {
     public override InteractionStates Id => InteractionStates.TimeTravel;
 
-    public override void Apply()
+    public override void Apply(float amount)
     {
-        print("Apply called");
+        print("Apply called with amount" + amount);
     }
 }

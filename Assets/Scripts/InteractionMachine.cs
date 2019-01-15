@@ -7,10 +7,10 @@ public class InteractionMachine : MonoBehaviour
     private void Start()
     {
         InitializeStates();
-        
+
         // testing:
         SetState(InteractionStates.TimeTravel);
-        Apply();
+        Apply(1.0f);
     }
 
     private void InitializeStates()
@@ -27,9 +27,8 @@ public class InteractionMachine : MonoBehaviour
         _interactionMachine.SetState(stateId);
     }
 
-    public void Apply()
+    public void Apply(float amount)
     {
-        _interactionMachine.Apply();
+        _interactionMachine.Apply(amount);
     }
-
 }

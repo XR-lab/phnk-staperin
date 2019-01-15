@@ -13,5 +13,5 @@ public abstract class State<T> : MonoBehaviour
     {
     }
 
-    public abstract void Apply();
+    public abstract void Apply(float amount);
 }
