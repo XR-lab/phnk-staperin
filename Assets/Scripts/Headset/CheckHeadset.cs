@@ -17,6 +17,6 @@ public class CheckHeadset : MonoBehaviour
     void Update()
     {
         //SteamVR_Input_Sources m_inputSourceDevice = SteamVR_Input_Sources.Any;
-        Debug.Log("Testing: " + SteamVR_Input.GetState("HeadSetOn", SteamVR_Input_Sources.Head,false));
+        //Debug.Log("Testing: " + SteamVR_Input.GetState("HeadSetOn", SteamVR_Input_Sources.Head,false));
     }
 }

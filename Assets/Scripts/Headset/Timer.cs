@@ -47,10 +47,10 @@ public class Timer : MonoBehaviour
 
     private IEnumerator CountDown()
     {
-        while (_currentDownTime > 0)
+        while (CurrentCountdownTime > 0)
         {
             yield return new WaitForSeconds(1);
-            _currentDownTime--;
+            CurrentCountdownTime--;
         }
     }
 }
