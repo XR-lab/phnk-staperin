@@ -2,8 +2,8 @@
     
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
-        _GradientTex ("Lighting Color Gradient", 2D) = "white"{}
-        _GradientPos ("Position In Gradient", Range(0,1)) = 0.5
+        _SecondTex ("Lighting Color Gradient", 2D) = "white"{}
+        _SamplePos ("Position In Gradient", Range(0,1)) = 0.5
     }
     
     SubShader {
@@ -17,9 +17,9 @@
             #include "UnityCG.cginc"
             
             uniform sampler2D _MainTex;
-            uniform sampler2D _GradientTex;
+            uniform sampler2D _SecondTex;
             
-            float _GradientPos;
+            float _SamplePos;
 
             struct appdata
             {
@@ -45,9 +45,9 @@
             }
             
             float4 frag(v2f i) : COLOR {
-                float2 uv = float2(_GradientPos,0);
+                float2 uv = float2(_SamplePos,0);
                 float4 c = tex2D(_MainTex, i.uv);
-                float4 g = tex2D(_GradientTex, uv);
+                float4 g = tex2D(_SecondTex, uv);
                 
                 float4 result = c * g;
                 return result;

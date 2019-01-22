@@ -10,12 +10,22 @@ public class RotateAround : MonoBehaviour
 	private float _time;
 	private float _realTime;
 	private float _step;
-	private float _lastRange;
+    [SerializeField]
+    private float _range;
 
-	public float Range { get; set; }
+	public float Range
+    {
+        get
+        {
+            return _range;
+        }
+        set
+        {
+            _range = value;
+            UpdateTime();
+        }
+    }
 
-	[SerializeField]
-	private GameObject cube;
 	private Transform _copy;
 
 	private Vector3 _startPos = new Vector3(0, 0, 0);
@@ -26,28 +36,19 @@ public class RotateAround : MonoBehaviour
 	void Start()
 	{
 		_light = GetComponent<Light>();
-		_lastRange = Range;
 	}
 
-	void Update()
-	{
-		if (Range == _lastRange)
-		{
-			return;
-		}
-		ChangeTime();
-		_lastRange = Range;
-		
-		var bezierPos = BezierCurve.BezierPathCalculation(_startPos, _anchorOne, _anchorTwo, _endPos, Mathf.Min(Range * 2, 1));
+    private void UpdateTime()
+    {
+        _time += _step;
+        RotateObject(Range * 360);
 
-		_light.intensity = bezierPos.y;
-	}
+        var _bezierPos = BezierCurve.BezierPathCalculation(_startPos, _anchorOne, _anchorTwo, _endPos, Mathf.Min(Range * 2, 1));
 
-	private void ChangeTime()
-	{
-		_time += _step;
-		RotateObject(Range * 360);
-	}
+        _light.intensity = _bezierPos.y;
+
+
+    }
 
 	public void RotateObject(float x)
 	{

@@ -1,27 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR;
 
 [ExecuteInEditMode]
 public class ColourGrading : MonoBehaviour {
-	public float Range { get; set; }
-    [Range(0, 1)] public float _colorGradient = 0f;
-
-
+    [Range(0, 1)] public float ColorGradient = 0.5f;
 
     [SerializeField] private Material _material;
 
-	void Update() {
-		_colorGradient = Range;
-	}
+
+    private void Awake(){
+
+    }
 
     void OnRenderImage(RenderTexture source, RenderTexture destination){
         if (_material == null){
             return;
         }
-
-	    _material.SetFloat("_GradientPos", _colorGradient);
+        _material.SetFloat("_SamplePos", ColorGradient);
 
         Graphics.Blit(source, destination, _material);
     }

@@ -3,16 +3,16 @@
 public class DayNightCycle : State<InteractionStates>
 {
     public override InteractionStates Id => InteractionStates.TimeTravel;
-	private RotateAround rot;
-	private ColourGrading cg;
+	private RotateAround _rotateAround;
+	private ColourGrading _colorGrading;
 
 	public override void Enter() {
-		RotateAround rot = GameObject.Find("Area Light").GetComponent<RotateAround>();
-		ColourGrading cg = GameObject.Find("Schilderij camera").GetComponent<ColourGrading>();
+        _rotateAround = GameObject.Find("Area Light").GetComponent<RotateAround>();
+        _colorGrading = GameObject.Find("Schilderij camera").GetComponent<ColourGrading>();
 	}
 
 	public override void Apply(float amount) {
-		rot.Range = amount;
-		cg.Range = amount;
+        _rotateAround.Range = amount;
+        _colorGrading.ColorGradient = amount;
 	}
 }
