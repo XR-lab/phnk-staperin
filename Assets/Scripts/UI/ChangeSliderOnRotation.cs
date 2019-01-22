@@ -18,13 +18,15 @@ public class ChangeSliderOnRotation : MonoBehaviour
 
 	private void Start()
 	{
-		rotationChecker.rotationEvent += OnRotation;
+		rotationChecker.RotationEvent += OnRotation;
 	}
 
 	private void OnRotation(Quaternion rotation)
 	{
+		Debug.Log(rotation.z);
+
 		if (rotationAxis == EQuaternion.X)
-			_slider.value = rotation.eulerAngles.x/360;
+			_slider.value = rotation.z;
 
 
 		if (rotationAxis == EQuaternion.Y)

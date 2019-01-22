@@ -12,7 +12,7 @@ public class LockRotation : MonoBehaviour
 
 	private void Start()
 	{
-		rotationChecker.rotationEvent += OnRotation;
+		rotationChecker.RotationEvent += OnRotation;
 		OnRotation(new Quaternion());
 	}
 

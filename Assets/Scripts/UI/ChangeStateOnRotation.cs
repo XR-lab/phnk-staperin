@@ -13,7 +13,7 @@ public class ChangeStateOnRotation : MonoBehaviour
 
 	private void Start()
 	{
-		rotationChecker.rotationEvent += OnRotation;
+		rotationChecker.RotationEvent += OnRotation;
 	}
 
 	private void OnRotation(Quaternion rotation)

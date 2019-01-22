@@ -10,7 +10,7 @@ public class RotationChecker : MonoBehaviour
 	public Transform target;
 
 	public delegate void RotationHandler(Quaternion rotation);
-	public event RotationHandler rotationEvent;
+	public event RotationHandler RotationEvent;
 
 	public UnityEvent onRotation;
 
@@ -26,7 +26,7 @@ public class RotationChecker : MonoBehaviour
 	{
 		if (target.transform.rotation != _rotationPrevious)
 		{
-			rotationEvent?.Invoke(target.transform.rotation);
+			RotationEvent?.Invoke(target.transform.rotation);
 			onRotation?.Invoke();
 		}
 
