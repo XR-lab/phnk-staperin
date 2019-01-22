@@ -7,22 +7,40 @@ ModelImporter:
     100002: obj_Glass
     100004: obj_Glass_broken
     100006: //RootNode
+    100008: Frame_Window_obj
+    100010: Window_obj_Glass
+    100012: Window_obj_Glass_broken
     400000: Frame_obj
     400002: obj_Glass
     400004: obj_Glass_broken
     400006: //RootNode
+    400008: Frame_Window_obj
+    400010: Window_obj_Glass
+    400012: Window_obj_Glass_broken
     2100000: Frame_objMat
     2100002: obj_GlassMat
     2100004: obj_Glass_brokenMat
+    2100006: Frame_Window_objMat
+    2100008: Window_obj_GlassMat
+    2100010: Window_obj_Glass_brokenMat
     2300000: Frame_obj
     2300002: obj_Glass
     2300004: obj_Glass_broken
+    2300006: Frame_Window_obj
+    2300008: Window_obj_Glass
+    2300010: Window_obj_Glass_broken
     3300000: Frame_obj
     3300002: obj_Glass
     3300004: obj_Glass_broken
+    3300006: Frame_Window_obj
+    3300008: Window_obj_Glass
+    3300010: Window_obj_Glass_broken
     4300000: Frame_obj
     4300002: obj_Glass
     4300004: obj_Glass_broken
+    4300006: Frame_Window_obj
+    4300008: Window_obj_Glass
+    4300010: Window_obj_Glass_broken
   externalObjects: {}
   materials:
     importMaterials: 1
