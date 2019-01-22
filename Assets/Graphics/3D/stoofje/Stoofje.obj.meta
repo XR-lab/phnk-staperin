@@ -5,12 +5,18 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Stoofje_Tex:pPlane1
+    100004: Stoofje1:pPlane1
     400000: //RootNode
     400002: Stoofje_Tex:pPlane1
+    400004: Stoofje1:pPlane1
     2100000: Stoofje_Tex_pPlane1Mat
+    2100002: Stoofje1_pPlane1Mat
     2300000: Stoofje_Tex:pPlane1
+    2300002: Stoofje1:pPlane1
     3300000: Stoofje_Tex:pPlane1
+    3300002: Stoofje1:pPlane1
     4300000: Stoofje_Tex:pPlane1
+    4300002: Stoofje1:pPlane1
   externalObjects: {}
   materials:
     importMaterials: 1
