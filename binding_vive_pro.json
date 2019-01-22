@@ -1,0 +1,23 @@
+{
+  "alias_info": {},
+  "bindings": {
+    "/actions/default": {
+      "sources": [
+        {
+          "inputs": {
+            "click": {
+              "output": "/actions/default/in/[YOUR ACTION NAME HERE]"
+            }
+          },
+          "mode": "button",
+          "path": "/user/head/proximity"
+        }
+      ]
+    }
+  },
+  "controller_type": "vive_pro",
+  "description": "",
+  "name": "Default configuration for vive pro",
+  "options": {},
+  "simulated_actions": []
+}
