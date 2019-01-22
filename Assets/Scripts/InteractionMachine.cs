@@ -3,6 +3,7 @@
 public class InteractionMachine : MonoBehaviour
 {
     private readonly StateMachine<InteractionStates> _interactionMachine = new StateMachine<InteractionStates>();
+    private float _time = 0;
 
     private void Start()
     {
@@ -10,7 +11,15 @@ public class InteractionMachine : MonoBehaviour
 
         // testing:
         SetState(InteractionStates.TimeTravel);
-        Apply(1.0f);
+
+    }
+
+    private void Update()
+    {
+        _time += 0.001f;
+        Apply(_time);
+        if (_time > 1)
+            _time = 0;
     }
 
     private void InitializeStates()

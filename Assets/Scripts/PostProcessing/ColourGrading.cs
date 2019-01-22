@@ -19,6 +19,8 @@ public class ColourGrading : MonoBehaviour {
         }
         _material.SetFloat("_SamplePos", ColorGradient);
 
+        Debug.Log(ColorGradient);
+
         Graphics.Blit(source, destination, _material);
     }
 }

@@ -26,7 +26,7 @@ public class RotateAround : MonoBehaviour
         }
     }
 
-	private Transform _copy;
+    private Transform _copy;
 
 	private Vector3 _startPos = new Vector3(0, 0, 0);
 	private Vector3 _anchorOne = new Vector3(1f, 2, 0);

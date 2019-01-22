@@ -76,7 +76,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SecondTex:
-        m_Texture: {fileID: 2800000, guid: ae7a8f625f69c46178b1e9a3485f15c2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0668cf35f640341328b5f32f370bffbc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -96,7 +96,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RIntensity: 1
-    - _SamplePos: 0.48
+    - _SamplePos: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
