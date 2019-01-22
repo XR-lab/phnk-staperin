@@ -6,7 +6,7 @@ public class ChangeSliderOnRotation : MonoBehaviour
 {
 	public RotationChecker rotationChecker;
 
-	public enum EQuaternion { X, Y, Z, W };
+	public enum EQuaternion { X, Y, Z };
 	public EQuaternion rotationAxis = EQuaternion.X;
 
 	private Slider _slider;
@@ -23,17 +23,13 @@ public class ChangeSliderOnRotation : MonoBehaviour
 
 	private void OnRotation(Quaternion rotation)
 	{
-		Debug.Log(rotation.z);
-
 		if (rotationAxis == EQuaternion.X)
-			_slider.value = rotation.z;
-
+			_slider.value = rotation.x;
 
 		if (rotationAxis == EQuaternion.Y)
-			_slider.value = Mathf.InverseLerp(0, 360, rotation.eulerAngles.y);
+			_slider.value = rotation.y;
+
 		if (rotationAxis == EQuaternion.Z)
-			_slider.value = Mathf.InverseLerp(0, 360, rotation.eulerAngles.z);
-		//if (rotationAxis == EQuaternion.W)
-			//_slider.value = Mathf.InverseLerp(-0.7f, 0.7f, rotation.eulerAngles.w);
+			_slider.value = rotation.z;
 	}
 }

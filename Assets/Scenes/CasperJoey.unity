@@ -181,29 +181,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2848539922011032999, guid: 9d171c2e4c41d2443a3ecb6a1950f29b,
         type: 3}
-      propertyPath: thisRotation
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2848539922011032999, guid: 9d171c2e4c41d2443a3ecb6a1950f29b,
-        type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 715631882}
-    - target: {fileID: 2848539924031238562, guid: 9d171c2e4c41d2443a3ecb6a1950f29b,
+    - target: {fileID: 3615550446048153083, guid: 9d171c2e4c41d2443a3ecb6a1950f29b,
         type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 2
+      propertyPath: key
+      value: 338
       objectReference: {fileID: 0}
-    - target: {fileID: 2848539924031238562, guid: 9d171c2e4c41d2443a3ecb6a1950f29b,
+    - target: {fileID: 6678936270342500058, guid: 9d171c2e4c41d2443a3ecb6a1950f29b,
         type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 2
+      propertyPath: m_Name
+      value: TestUI
       objectReference: {fileID: 0}
-    - target: {fileID: 2848539923223381584, guid: 9d171c2e4c41d2443a3ecb6a1950f29b,
+    - target: {fileID: 6919983184283571210, guid: 9d171c2e4c41d2443a3ecb6a1950f29b,
         type: 3}
-      propertyPath: m_MinValue
-      value: -1
-      objectReference: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d171c2e4c41d2443a3ecb6a1950f29b, type: 3}
 --- !u!4 &675868561 stripped

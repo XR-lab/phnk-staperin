@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LockRotation : MonoBehaviour
 {
@@ -18,14 +16,12 @@ public class LockRotation : MonoBehaviour
 
 	private void OnRotation(Quaternion rotation)
 	{
-		Vector3 newRotation = new Vector3();
-
-		if (lockX)
-			newRotation.Set(0, transform.eulerAngles.y, transform.eulerAngles.z);
-		if (lockY)
-			newRotation.Set(transform.eulerAngles.x, 0, transform.eulerAngles.z);
-		if (lockZ)
-			newRotation.Set(transform.eulerAngles.x, transform.eulerAngles.y, 0);
+		Vector3 newRotation = new Vector3
+		{
+			x = (lockX) ? 0 : transform.eulerAngles.x,
+			y = (lockY) ? 0 : transform.eulerAngles.y,
+			z = (lockZ) ? 0 : transform.eulerAngles.z
+		};
 
 		transform.eulerAngles = newRotation;
 	}

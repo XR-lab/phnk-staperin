@@ -7,6 +7,9 @@ namespace CM.UI
 	{
 		public CM_UI_Screen startScreen;
 
+		public delegate void InitializeScreensHandler(Component[] uiScreens);
+		public event InitializeScreensHandler InitializeScreensEvent;
+
 		[Header("Fader Properties")]
 		public Image fader;
 		public float fadeInDuration = 1f;
@@ -31,27 +34,32 @@ namespace CM.UI
 		private void Start()
 		{
 			_currentScreen = startScreen;
+			_currentScreen.gameObject.SetActive(true);
 			_currentScreen.Open();
-			InitializeScreens();
+			//InitializeScreens();
 
 			if (fader)
 				fader.gameObject.SetActive(true);
 
 			FadeIn();
+
+			InitializeScreensEvent?.Invoke(_screens);
 		}
 
-		public virtual void SwitchScreens(CM_UI_Screen screen)
+		public void SwitchScreens(CM_UI_Screen screen)
 		{
 			if (screen)
 			{
+				screen.gameObject.SetActive(true);
 				_currentScreen.Close();
 
+				_currentScreen.gameObject.SetActive(false);
 				_currentScreen = screen;
 				_currentScreen.Open();
 			}
 		}
 
-		public virtual void TurnOffCurrentScreen()
+		public void TurnOffCurrentScreen()
 		{
 			_currentScreen.Close();
 		}
@@ -78,6 +86,11 @@ namespace CM.UI
 			{
 				screen.gameObject.SetActive(true);
 			}
+		}
+
+		public Component[] GetScreens()
+		{
+			return _screens;
 		}
 	}
 }

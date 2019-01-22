@@ -4,9 +4,12 @@ using NaughtyAttributes;
 
 public class RotationChecker : MonoBehaviour
 {
-	public bool thisRotation = false;
+	[Dropdown("_rotationTypes")]
+	public string rotationType;	
 
-	[HideIf("thisRotation")]
+	private string[] _rotationTypes = new string[] { "This", "Parent", "Transform" };
+
+	[ShowIf("RotationTypeIsTransform")]
 	public Transform target;
 
 	public delegate void RotationHandler(Quaternion rotation);
@@ -18,8 +21,11 @@ public class RotationChecker : MonoBehaviour
 
 	private void Start()
 	{
-		if (thisRotation)
+		if (RotationTypeIsThis())
 			target = transform;
+
+		if (RotationTypeIsParent())
+			target = transform.parent;
 	}
 
 	private void Update()
@@ -30,9 +36,30 @@ public class RotationChecker : MonoBehaviour
 			onRotation?.Invoke();
 		}
 
-		//_interactionMachine.SetState(InteractionStates.TimeTravel);
-		//_interactionMachine.Apply(_slider.value);
-
 		_rotationPrevious = target.transform.rotation;
+	}
+
+	private bool RotationTypeIsThis()
+	{
+		if (rotationType == "This")
+			return true;
+
+		return false;
+	}
+
+	private bool RotationTypeIsParent()
+	{
+		if (rotationType == "Parent")
+			return true;
+
+		return false;
+	}
+
+	private bool RotationTypeIsTransform()
+	{
+		if (rotationType == "Transform")
+			return true;
+
+		return false;
 	}
 }

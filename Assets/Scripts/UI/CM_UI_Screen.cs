@@ -16,12 +16,12 @@ namespace CM.UI
 			_animator = GetComponent<Animator>();
 		}
 
-		public virtual void Close()
+		public void Close()
 		{
 			HandleAnimator("hide");
 		}
 
-		public virtual void Open()
+		public void Open()
 		{
 			openEvent.Invoke();
 

@@ -19,6 +19,6 @@ public class ChangeStateOnRotation : MonoBehaviour
 	private void OnRotation(Quaternion rotation)
 	{
 		_interactionMachine.SetState(InteractionStates.TimeTravel);
-		_interactionMachine.Apply(rotation.eulerAngles.x / 360);
+		_interactionMachine.Apply(Mathf.InverseLerp(-1, 1, rotation.z));
 	}
 }
