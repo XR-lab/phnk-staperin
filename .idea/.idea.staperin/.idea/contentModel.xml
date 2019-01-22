@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
@@ -35,6 +34,7 @@
         </e>
         <e p="SteamVR" t="Include">
           <e p="Editor" t="Include">
+            <e p="SteamVR_Editor.asmdef" t="Include" />
             <e p="SteamVR_Editor.cs" t="Include" />
             <e p="SteamVR_Preferences.cs" t="Include" />
             <e p="SteamVR_RenderModelEditor.cs" t="Include" />
@@ -45,7 +45,9 @@
             <e p="SteamVR_UpdateModeEditor.cs" t="Include" />
           </e>
           <e p="Extras" t="Include">
+            <e p="SteamVR_ForceSteamVRMode.cs" t="Include" />
             <e p="SteamVR_GazeTracker.cs" t="Include" />
+            <e p="SteamVR_LaserPointer.cs" t="Include" />
             <e p="SteamVR_TestThrow.cs" t="Include" />
             <e p="SteamVR_TestTrackedCamera.cs" t="Include" />
           </e>
@@ -63,16 +65,18 @@
               <e p="SteamVR_Input_Action_Vector2_PropertyEditor.cs" t="Include" />
               <e p="SteamVR_Input_Action_Vector3_PropertyEditor.cs" t="Include" />
               <e p="SteamVR_Input_Action_Vibration_PropertyEditor.cs" t="Include" />
+              <e p="SteamVR_Input_ActionManifest_Manager.cs" t="Include" />
               <e p="SteamVR_Input_ActionSetPropertyEditor.cs" t="Include" />
+              <e p="SteamVR_Input_Editor.asmdef" t="Include" />
               <e p="SteamVR_Input_EditorWindow.cs" t="Include" />
               <e p="SteamVR_Input_Generator.cs" t="Include" />
               <e p="SteamVR_Input_LiveWindow.cs" t="Include" />
               <e p="SteamVR_Input_PostProcessBuild.cs" t="Include" />
+              <e p="SteamVR_Skeleton_PoserEditor.cs" t="Include" />
             </e>
             <e p="SteamVR_Action.cs" t="Include" />
             <e p="SteamVR_Action_Boolean.cs" t="Include" />
             <e p="SteamVR_Action_In.cs" t="Include" />
-            <e p="SteamVR_Action_List.cs" t="Include" />
             <e p="SteamVR_Action_Out.cs" t="Include" />
             <e p="SteamVR_Action_Pose.cs" t="Include" />
             <e p="SteamVR_Action_Single.cs" t="Include" />
@@ -82,6 +86,7 @@
             <e p="SteamVR_Action_Vibration.cs" t="Include" />
             <e p="SteamVR_ActionDirections.cs" t="Include" />
             <e p="SteamVR_ActionSet.cs" t="Include" />
+            <e p="SteamVR_ActionSet_Manager.cs" t="Include" />
             <e p="SteamVR_ActivateActionSetOnLoad.cs" t="Include" />
             <e p="SteamVR_Behaviour_Boolean.cs" t="Include" />
             <e p="SteamVR_Behaviour_Pose.cs" t="Include" />
@@ -96,10 +101,13 @@
             <e p="SteamVR_Input_ActionFile.cs" t="Include" />
             <e p="SteamVR_Input_ActionScopes.cs" t="Include" />
             <e p="SteamVR_Input_ActionSetUsages.cs" t="Include" />
+            <e p="SteamVR_Input_BindingFile.cs" t="Include" />
             <e p="SteamVR_Input_Generator_Names.cs" t="Include" />
             <e p="SteamVR_Input_References.cs" t="Include" />
             <e p="SteamVR_Input_Source.cs" t="Include" />
             <e p="SteamVR_Input_Sources.cs" t="Include" />
+            <e p="SteamVR_Skeleton_Pose.cs" t="Include" />
+            <e p="SteamVR_Skeleton_Poser.cs" t="Include" />
             <e p="SteamVR_UpdateModes.cs" t="Include" />
           </e>
           <e p="InteractionSystem" t="Include">
@@ -206,6 +214,7 @@
               <e p="JoeJeff" t="Include">
                 <e p="JoeJeff.cs" t="Include" />
                 <e p="JoeJeffController.cs" t="Include" />
+                <e p="JoeJeffGestures.cs" t="Include" />
                 <e p="ProceduralHats.cs" t="Include" />
               </e>
               <e p="Scripts" t="Include">
@@ -281,25 +290,34 @@
             <e p="SteamVR_TrackedObject.cs" t="Include" />
             <e p="SteamVR_Utils.cs" t="Include" />
           </e>
+          <e p="SteamVR.asmdef" t="Include" />
+          <e p="WindowsHelper" t="Include">
+            <e p="SteamVR_Windows_Editor_Helper.cs" t="Include" />
+            <e p="SteamVR_Windows_EditorHelper.asmdef" t="Include" />
+          </e>
         </e>
         <e p="SteamVR_Input" t="Include">
-          <e p="ActionObjects" t="Include">
+          <e p="ActionSetClasses" t="Include">
             <e p="SteamVR_Input_ActionSet_buggy.cs" t="Include" />
-            <e p="SteamVR_Input_ActionSet_buggy_In.cs" t="Include" />
             <e p="SteamVR_Input_ActionSet_default.cs" t="Include" />
-            <e p="SteamVR_Input_ActionSet_default_In.cs" t="Include" />
-            <e p="SteamVR_Input_ActionSet_default_Out.cs" t="Include" />
+            <e p="SteamVR_Input_ActionSet_mixedreality.cs" t="Include" />
             <e p="SteamVR_Input_ActionSet_platformer.cs" t="Include" />
-            <e p="SteamVR_Input_ActionSet_platformer_In.cs" t="Include" />
           </e>
+          <e p="SteamVR_Actions.asmdef" t="Include" />
           <e p="SteamVR_Input_Actions.cs" t="Include" />
           <e p="SteamVR_Input_ActionSets.cs" t="Include" />
+          <e p="SteamVR_Input_Initialization.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="staperin.sln" t="IncludeFlat" />
+      <e p="SteamVR.csproj" t="IncludeRecursive" />
+      <e p="SteamVR_Actions.csproj" t="IncludeRecursive" />
+      <e p="SteamVR_Editor.csproj" t="IncludeRecursive" />
+      <e p="SteamVR_Input_Editor.csproj" t="IncludeRecursive" />
+      <e p="SteamVR_Windows_EditorHelper.csproj" t="IncludeRecursive" />
       <e p="Temp" t="ExcludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
       </e>
