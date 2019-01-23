@@ -11,17 +11,16 @@ public class LockRotation : MonoBehaviour
 	private void Start()
 	{
 		rotationChecker.RotationEvent += OnRotation;
-		OnRotation(new Quaternion());
+		OnRotation(new Vector3());
 	}
 
-	private void OnRotation(Quaternion rotation)
+	private void OnRotation(Vector3 rotation)
 	{
-		Vector3 newRotation = new Vector3
-		{
-			x = (lockX) ? 0 : transform.eulerAngles.x,
-			y = (lockY) ? 0 : transform.eulerAngles.y,
-			z = (lockZ) ? 0 : transform.eulerAngles.z
-		};
+        Vector3 newRotation = rotation;
+
+        /*newRotation.x = lockX ? -transform.eulerAngles.x : 0;
+        newRotation.y = lockY ? -transform.eulerAngles.y : 0;
+        newRotation.z = lockZ ? -transform.eulerAngles.z : 0;*/
 
 		transform.eulerAngles = newRotation;
 	}

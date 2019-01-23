@@ -7,7 +7,7 @@ public class ChangeSliderOnRotation : MonoBehaviour
 	public RotationChecker rotationChecker;
 
 	public enum EQuaternion { X, Y, Z };
-	public EQuaternion rotationAxis = EQuaternion.X;
+	public EQuaternion rotationAxis = EQuaternion.Z;
 
 	private Slider _slider;
 
@@ -21,15 +21,17 @@ public class ChangeSliderOnRotation : MonoBehaviour
 		rotationChecker.RotationEvent += OnRotation;
 	}
 
-	private void OnRotation(Quaternion rotation)
+	private void OnRotation(Vector3 rotation)
 	{
+        
 		if (rotationAxis == EQuaternion.X)
 			_slider.value = rotation.x;
 
 		if (rotationAxis == EQuaternion.Y)
 			_slider.value = rotation.y;
 
-		if (rotationAxis == EQuaternion.Z)
-			_slider.value = rotation.z;
-	}
+        if (rotationAxis == EQuaternion.Z)
+            _slider.value = ((360 - rotation.z) / 360 + 0.5f)%1*2-1;
+
+    }
 }

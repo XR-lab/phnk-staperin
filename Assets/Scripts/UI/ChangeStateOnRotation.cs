@@ -16,7 +16,7 @@ public class ChangeStateOnRotation : MonoBehaviour
 		rotationChecker.RotationEvent += OnRotation;
 	}
 
-	private void OnRotation(Quaternion rotation)
+	private void OnRotation(Vector3 rotation)
 	{
 		_interactionMachine.SetState(InteractionStates.TimeTravel);
 		_interactionMachine.Apply(Mathf.InverseLerp(-1, 1, rotation.z));

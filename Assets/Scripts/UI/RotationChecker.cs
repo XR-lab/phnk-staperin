@@ -12,7 +12,7 @@ public class RotationChecker : MonoBehaviour
 	[ShowIf("RotationTypeIsTransform")]
 	public Transform target;
 
-	public delegate void RotationHandler(Quaternion rotation);
+	public delegate void RotationHandler(Vector3 rotation);
 	public event RotationHandler RotationEvent;
 
 	public UnityEvent onRotation;
@@ -32,7 +32,7 @@ public class RotationChecker : MonoBehaviour
 	{
 		if (target.transform.rotation != _rotationPrevious)
 		{
-			RotationEvent?.Invoke(target.transform.rotation);
+			RotationEvent?.Invoke(target.transform.localEulerAngles);
 			onRotation?.Invoke();
 		}
 

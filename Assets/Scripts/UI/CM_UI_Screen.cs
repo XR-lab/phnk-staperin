@@ -8,7 +8,7 @@ namespace CM.UI
 	public class CM_UI_Screen : MonoBehaviour
 	{
 		[SerializeField] private UnityEvent openEvent;
-
+        
 		private Animator _animator;
 
 		private void Start()

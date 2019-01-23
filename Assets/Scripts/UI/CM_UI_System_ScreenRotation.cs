@@ -25,16 +25,22 @@ namespace CM.UI
 			_screens = screens;
 		}
 
-		public void NextScreen()
+		public CM_UI_Screen NextScreen()
 		{
 			_screenIndex = (_screenIndex < _screens.Length-1) ? ++_screenIndex : 0;
-			_uiSystem.SwitchScreens(_screens[_screenIndex].GetComponent<CM_UI_Screen>());
+            return setScreen(_screenIndex);
 		}
 
-		public void PreviousScreen()
+        public CM_UI_Screen setScreen(int screenIndex) {
+            var currentScreen = _screens[screenIndex].GetComponent<CM_UI_Screen>();
+            _uiSystem.SwitchScreens(currentScreen);
+            return currentScreen;
+        }
+
+		public CM_UI_Screen PreviousScreen()
 		{
 			_screenIndex = (_screenIndex > 0) ? --_screenIndex : _screens.Length-1;
-			_uiSystem.SwitchScreens(_screens[_screenIndex].GetComponent<CM_UI_Screen>());
-		}
+            return setScreen(_screenIndex);
+        }
 	}
 }

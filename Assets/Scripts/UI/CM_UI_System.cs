@@ -17,6 +17,7 @@ namespace CM.UI
 
 		private Component[] _screens;
 
+
 		private CM_UI_Screen _currentScreen;
 		public CM_UI_Screen CurrentScreen
 		{
