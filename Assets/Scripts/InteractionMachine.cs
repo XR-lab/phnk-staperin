@@ -7,10 +7,6 @@ public class InteractionMachine : MonoBehaviour
     private void Start()
     {
         InitializeStates();
-
-        // testing:
-        //SetState(InteractionStates.TimeTravel);
-        //Apply(1.0f);
     }
 
     private void InitializeStates()
@@ -24,6 +20,7 @@ public class InteractionMachine : MonoBehaviour
 
     public void SetState(InteractionStates stateId)
     {
+        Debug.Log("changing to" + stateId);
         _interactionMachine.SetState(stateId);
     }
 

@@ -203,6 +203,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1719305089}
   - component: {fileID: 1719305088}
+  - component: {fileID: 1719305091}
+  - component: {fileID: 1719305090}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -262,6 +264,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1719305090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719305087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a9741b9e1724b039984a002810458b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1719305091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719305087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb6dc4789155f42ffb8da47993b6ddf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1747224896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -875,18 +901,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &1263917010471188684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9035847415954700392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb6dc4789155f42ffb8da47993b6ddf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1345976341120365751
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,18 +977,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1866702215116628135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4106128909485614393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06a9741b9e1724b039984a002810458b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &1910454843708446647
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1423,31 +1425,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &2848539922736166088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2848539922736166130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06a9741b9e1724b039984a002810458b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2848539922736166089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2848539922736166130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b0a430afb34a949b1ebb8b6b1e7634, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationChecker: {fileID: 2848539923570900795}
 --- !u!114 &2848539922736166092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1518,18 +1495,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2848539922736166094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2848539922736166130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb6dc4789155f42ffb8da47993b6ddf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2848539922736166095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1555,9 +1520,6 @@ GameObject:
   - component: {fileID: 2848539922736166093}
   - component: {fileID: 2848539922736166092}
   - component: {fileID: 2848539922736166095}
-  - component: {fileID: 2848539922736166089}
-  - component: {fileID: 2848539922736166094}
-  - component: {fileID: 2848539922736166088}
   m_Layer: 5
   m_Name: DayNightSlider
   m_TagString: Untagged
@@ -1736,6 +1698,7 @@ GameObject:
   - component: {fileID: 2848539923570900793}
   - component: {fileID: 2848539923570900795}
   - component: {fileID: 2848539923570900798}
+  - component: {fileID: 2848539923570900800}
   m_Layer: 0
   m_Name: ArmSystem
   m_TagString: Untagged
@@ -1743,6 +1706,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2848539923570900800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2848539923570900799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b0a430afb34a949b1ebb8b6b1e7634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationChecker: {fileID: 2848539923570900795}
+  _interactionMachine: {fileID: 1719305091}
 --- !u!114 &2848539923808955748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1982,19 +1959,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3563688942222977996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9035847415954700392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b0a430afb34a949b1ebb8b6b1e7634, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationChecker: {fileID: 2848539923570900795}
 --- !u!114 &3615550447709732711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2010,6 +1974,7 @@ MonoBehaviour:
   trackpadAction:
     actionPath: /actions/default/in/Teleport
     needsReinit: 0
+  _interactionMachine: {fileID: 1719305091}
 --- !u!1 &4106128909485614393
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,9 +1986,6 @@ GameObject:
   - component: {fileID: 7804360754478605595}
   - component: {fileID: 4690232013896840590}
   - component: {fileID: 6081960516954699173}
-  - component: {fileID: 5549757242237714615}
-  - component: {fileID: 6417607129042462565}
-  - component: {fileID: 1866702215116628135}
   m_Layer: 5
   m_Name: DayNightSlider
   m_TagString: Untagged
@@ -2183,19 +2145,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &5549757242237714615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4106128909485614393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73b0a430afb34a949b1ebb8b6b1e7634, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationChecker: {fileID: 2848539923570900795}
 --- !u!224 &5643040746116618157
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2286,18 +2235,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationChecker: {fileID: 2848539923570900795}
   rotationAxis: 2
---- !u!114 &6417607129042462565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4106128909485614393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb6dc4789155f42ffb8da47993b6ddf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &6423243919459649446
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2350,7 +2287,7 @@ GameObject:
   - component: {fileID: 636980685067523879}
   - component: {fileID: 4349074447534322717}
   m_Layer: 5
-  m_Name: HiddenLayer
+  m_Name: HiddenLayerUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2409,18 +2346,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7385310911051047487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9035847415954700392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06a9741b9e1724b039984a002810458b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &7752869639983014903
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2499,9 +2424,6 @@ GameObject:
   - component: {fileID: 955618629646075673}
   - component: {fileID: 1173818459520509600}
   - component: {fileID: 2303696232299126}
-  - component: {fileID: 3563688942222977996}
-  - component: {fileID: 1263917010471188684}
-  - component: {fileID: 7385310911051047487}
   m_Layer: 5
   m_Name: DayNightSlider
   m_TagString: Untagged

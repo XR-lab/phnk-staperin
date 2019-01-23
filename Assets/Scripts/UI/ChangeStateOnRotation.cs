@@ -4,12 +4,7 @@ public class ChangeStateOnRotation : MonoBehaviour
 {
 	public RotationChecker rotationChecker;
 
-	private InteractionMachine _interactionMachine;
-
-	private void Awake()
-	{
-		_interactionMachine = GetComponent<InteractionMachine>();
-	}
+    [SerializeField] private InteractionMachine _interactionMachine;
 
 	private void Start()
 	{
@@ -18,7 +13,6 @@ public class ChangeStateOnRotation : MonoBehaviour
 
 	private void OnRotation(Vector3 rotation)
 	{
-		_interactionMachine.SetState(InteractionStates.TimeTravel);
-		_interactionMachine.Apply(Mathf.InverseLerp(-1, 1, rotation.z));
+		_interactionMachine.Apply(((360 - rotation.z) / 360 + 0.5f) % 1);
 	}
 }
