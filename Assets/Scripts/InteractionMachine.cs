@@ -3,6 +3,7 @@
 public class InteractionMachine : MonoBehaviour
 {
     private readonly StateMachine<InteractionStates> _interactionMachine = new StateMachine<InteractionStates>();
+    private float _time = 0;
 
     private void Start()
     {

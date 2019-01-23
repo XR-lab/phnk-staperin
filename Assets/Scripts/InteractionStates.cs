@@ -2,5 +2,5 @@
 {
     DayNight,
     HiddenLayer,
-    Magnifier,
+    Magnifier
 }
