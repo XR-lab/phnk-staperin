@@ -28,8 +28,6 @@ public class ResizeTest : MonoBehaviour
             {
                 return;
             }
-            Debug.Log("hit: " + _hit.collider);
-
         }
     }
 
@@ -58,7 +56,6 @@ public class ResizeTest : MonoBehaviour
             {
                 return;
             }
-            Debug.Log("Mode: grow");
 
             ChangeSize(0.1f);
         }
@@ -69,7 +66,6 @@ public class ResizeTest : MonoBehaviour
             {
                 return;
             }
-            Debug.Log("Mode: shrink");
 
             ChangeSize(-0.1f);
         }
@@ -86,10 +82,6 @@ public class ResizeTest : MonoBehaviour
         Vector3 _currentSize = (_target.transform.localScale);
         Vector3 _newSize = _currentSize += _change;
 
-        Debug.Log("target: " + _target);
-        Debug.Log("current size: " + _currentSize);
-        Debug.Log("new size: "+ _newSize);
-
         if (_newSize.z <= _minSize.z)
         {
             return;
@@ -101,6 +93,5 @@ public class ResizeTest : MonoBehaviour
         }
 
         _target.transform.localScale = _newSize;
-        Debug.Log(_currentSize);
     }
 }
