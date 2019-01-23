@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 598366248}
   - component: {fileID: 598366251}
   - component: {fileID: 598366250}
+  - component: {fileID: 598366253}
   - component: {fileID: 598366252}
   m_Layer: 0
   m_Name: InteractionMachine
@@ -340,6 +341,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986f397d87778aa41834eab42312199e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &598366253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598366247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9e861e720eeb0b409b1edba993ed3f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetMaterial: {fileID: 2100000, guid: 09062e223e8ad05499dd27c8016d7daa, type: 2}
 --- !u!1001 &661623878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1932,7 +1946,7 @@ PrefabInstance:
     - target: {fileID: 6796903010870486704, guid: f0a024d653c91ae40a338b9a71c03089,
         type: 3}
       propertyPath: m_Name
-      value: ArmSystem
+      value: BraceletUI
       objectReference: {fileID: 0}
     - target: {fileID: 6796903010870486710, guid: f0a024d653c91ae40a338b9a71c03089,
         type: 3}
@@ -1999,6 +2013,66 @@ PrefabInstance:
       propertyPath: _interactionMachine
       value: 
       objectReference: {fileID: 598366248}
+    - target: {fileID: 7606937224814657327, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429758779360700137, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 09062e223e8ad05499dd27c8016d7daa, type: 2}
+    - target: {fileID: 903487503588684627, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 903487503588684627, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509768220572944120, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509768220572944120, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509768220572944120, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 562835273221019304, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 562835273221019304, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702220851648605449, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702220851648605449, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8702220851648605449, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0a024d653c91ae40a338b9a71c03089, type: 3}
 --- !u!4 &1576449688 stripped
