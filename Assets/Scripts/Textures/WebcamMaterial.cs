@@ -12,9 +12,9 @@ public class WebcamMaterial : MonoBehaviour
 
     void Start()
     {
-        //SetupTexture();
-        //SetAspectRatio();
-        //Play();
+        SetupTexture();
+        SetAspectRatio();
+        Play();
     }
 
     void SetupTexture()

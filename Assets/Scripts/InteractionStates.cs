@@ -1,6 +1,6 @@
 ﻿public enum InteractionStates
 {
-    TimeTravel,
-    PaintEffect,
-	DayNightCycle
+    DayNight,
+    HiddenLayer,
+    Magnifier
 }
