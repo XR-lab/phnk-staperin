@@ -5,8 +5,6 @@
 		_MainTex("Texture", 2D) = "white" {}
 		_HiddenTex("Hidden texture", 2D) = "white" {}
 		_DClipOff("Dot Product clipoff", Range(0, 1)) = 0.4
-		_MinDistance("Minimum distance", Range(0, 5)) = 2
-		_MaxDistance("Maximum distance", Range(0, 50)) = 5
 		_RayPosition("Ray Position", Vector) = (0, 0, 0, 0)
 		_RayDirection("Ray Direction", Vector) = (0, 0, 0, 0)
 		_SmoothFalloff("Smoothing", Range(0, 1)) = 0.2
@@ -26,8 +24,6 @@
 			sampler2D _MainTex;
 			sampler2D _HiddenTex;
 			float _DClipOff;
-			float _MinDistance;
-			float _MaxDistance;
 			float _SmoothFalloff;
 			float3 _RayPosition;
 			float3 _RayDirection;
@@ -47,9 +43,7 @@
 				rayGunDir = normalize(rayGunDir);
 				float d = dot(rayGunDir, _RayDirection) * -1;
 				float dot = d;
-				float distMultiplier = max(distance - _MinDistance, 0) / (_MaxDistance - _MinDistance);
-				d -= distMultiplier;
-
+				
 				d = 1 - ((1 - dot) / (1 - _DClipOff*_SmoothFalloff));
 				
 				d = easein(0, 1, max(d, 0));
