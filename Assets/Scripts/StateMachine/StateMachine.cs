@@ -19,11 +19,16 @@ public class StateMachine<TStateId>
         if (!_states.ContainsKey(stateId))
             return;
 
-        _currentState?.Leave();
+        if (_currentState != null) {
+            _currentState.Leave();
+            _currentState.enabled = false;
+        }
 
         _currentState = _states[stateId];
 
         _currentState.Enter();
+
+        _currentState.enabled = true;
     }
 
     /// <summary>
@@ -34,5 +39,7 @@ public class StateMachine<TStateId>
     public void AddState(TStateId stateId, State<TStateId> state)
     {
         _states.Add(stateId, state);
+        state.enabled = false;
+        state.Init();
     }
 }

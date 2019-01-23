@@ -13,5 +13,9 @@ public abstract class State<T> : MonoBehaviour
     {
     }
 
+    public virtual void Init()
+    {
+    }
+
     public abstract void Apply(float amount);
 }
