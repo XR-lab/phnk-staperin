@@ -2072,7 +2072,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.11
+      value: 0.81
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2102,6 +2102,15 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 11451472, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013709408034, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!1 &1348317051 stripped
@@ -2118,6 +2127,26 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348317051}
   m_Enabled: 1
+--- !u!1 &1386412979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: d0af5f161b95eb649970418733318258,
+    type: 3}
+  m_PrefabInstance: {fileID: 1231700598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1386412983
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386412979}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: d0af5f161b95eb649970418733318258, type: 3}
 --- !u!1 &1600819863
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,6 +2264,7 @@ GameObject:
   - component: {fileID: 1629311750}
   - component: {fileID: 1629311749}
   - component: {fileID: 1629311752}
+  - component: {fileID: 1629311753}
   m_Layer: 0
   m_Name: Schilderij camera
   m_TagString: Untagged
@@ -2319,6 +2349,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _effectMaterial: {fileID: 2100000, guid: d5f1aa7fcea9b4bfaa7ad9bd8f689612, type: 2}
+--- !u!114 &1629311753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629311748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b51d4940fedea749b5dcb160c1640a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1680015328
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,7 +2390,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ab2995770cdb27d4c930f519788ee895, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.495
+  m_Volume: 0.01
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2561,7 +2603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2745229799307313213}
   m_Layer: 0
-  m_Name: Raam unfinished 2
+  m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2628,7 +2670,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100010, guid: 96dffaa510a7314419e5c0c3d67988ca, type: 3}
+  - {fileID: 2100000, guid: 93534fb2305750541b3e929414b54018, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2718,7 +2760,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100008, guid: 96dffaa510a7314419e5c0c3d67988ca, type: 3}
+  - {fileID: 2100000, guid: 93534fb2305750541b3e929414b54018, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2837,7 +2879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5280304338926092778}
   m_Layer: 0
-  m_Name: Raam unfinished 2 (1)
+  m_Name: Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
