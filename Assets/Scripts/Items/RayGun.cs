@@ -19,4 +19,16 @@ public class RayGun : MonoBehaviour
         TargetMaterial.SetVector("_RayPosition", transform.position);
         TargetMaterial.SetVector("_RayDirection", transform.forward);
     }
+
+    void OnDisable()
+    {
+        TargetMaterial.SetFloat("_HiddenLayerEnabled", 0f);
+    }
+
+    void OnEnable()
+    {
+        TargetMaterial.SetFloat("_HiddenLayerEnabled", 1f);
+    }
+
+    
 }

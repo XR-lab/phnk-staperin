@@ -18,6 +18,7 @@
 		    _PaintDetail ("Detail", 2D) = "gray" {}
 		    _Tiling ("Tiling", Range(0.0001,5)) = 1
 
+			_HiddenLayerEnabled("Is the hidden layer enabled", Float) = 1
 			_HiddenTex("Hidden texture", 2D) = "white" {}
 			_DClipOff("Dot Product clipoff", Range(0, 1)) = 0.4
 			_RayPosition("Ray Position", Vector) = (0, 0, 0, 0)
@@ -50,6 +51,7 @@
 		    half _Specular;
 		    half _Contrast;
 
+			half _HiddenLayerEnabled;
 			sampler2D _HiddenTex;
 			float _DClipOff;
 			float _SmoothFalloff;
@@ -136,6 +138,7 @@
 				d = 1 - ((1 - dot) / (1 - _DClipOff * _SmoothFalloff));
 
 				d = easein(0, 1, max(d, 0));
+				d *= _HiddenLayerEnabled;
 				o.Albedo = lerp(o.Albedo, hiddenColour, d);
             }
             ENDCG
