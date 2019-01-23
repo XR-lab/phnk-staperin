@@ -97,7 +97,7 @@ Material:
     - _Parallax: 0.02
     - _RoughnessMultiplier: 5
     - _SmoothnessTextureChannel: 0
-    - _Specular: 0.0001
+    - _Specular: 0.79
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Tiling: 2.74
