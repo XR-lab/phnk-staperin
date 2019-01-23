@@ -1,5 +1,6 @@
 ﻿public enum InteractionStates
 {
     TimeTravel,
-    PaintEffect
+    PaintEffect,
+    Resize
 }
