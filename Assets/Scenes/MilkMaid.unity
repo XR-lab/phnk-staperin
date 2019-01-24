@@ -385,10 +385,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b43999b841252489c996eeab7753a538, type: 2}
+    - target: {fileID: 2300000, guid: d3d11c3f1af7c7f42a4510ef6f2d5fb0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: d3d11c3f1af7c7f42a4510ef6f2d5fb0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eeaed9c38bbc16246bf5dcebf0398690, type: 2}
+    - target: {fileID: 2300002, guid: d3d11c3f1af7c7f42a4510ef6f2d5fb0, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3d11c3f1af7c7f42a4510ef6f2d5fb0, type: 3}
 --- !u!1 &598366247
@@ -3193,7 +3201,7 @@ MeshRenderer:
   m_GameObject: {fileID: 2745229799306828823}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -3230,7 +3238,7 @@ MeshRenderer:
   m_GameObject: {fileID: 2745229799306828819}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -3283,7 +3291,7 @@ MeshRenderer:
   m_GameObject: {fileID: 5280304338926001606}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -3320,7 +3328,7 @@ MeshRenderer:
   m_GameObject: {fileID: 5280304338926001604}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1

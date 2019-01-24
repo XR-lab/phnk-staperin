@@ -18,6 +18,8 @@
 		    _PaintDetail ("Detail", 2D) = "gray" {}
 		    _Tiling ("Tiling", Range(0.0001,5)) = 1
 
+			_ShadowIntensity("Shadow Intensity", Range(1,2)) = 2
+
 			_HiddenLayerEnabled("Is the hidden layer enabled", Float) = 1
 			_HiddenTex("Hidden texture", 2D) = "white" {}
 			_DClipOff("Dot Product clipoff", Range(0, 1)) = 0.4
@@ -51,6 +53,8 @@
 		    half _Specular;
 		    half _Contrast;
 
+			float _ShadowIntensity;
+
 			half _HiddenLayerEnabled;
 			sampler2D _HiddenTex;
 			float _DClipOff;
@@ -69,7 +73,7 @@
                 half4 c;
                 c.rgb = (s.Albedo * _LightColor0.rgb * diff + _LightColor0.rgb * spec) * atten;
                 c.rgb -= _ShadowColor.xyz * max(0.0,(1.0-(diff*atten))) * _DiffuseVal;
-				c.rgb *= atten;
+				c.rgb *= atten/_ShadowIntensity + (1-1/_ShadowIntensity);
                 c.a = s.Alpha;
                 return c;
             }
