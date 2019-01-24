@@ -127,7 +127,7 @@
                 o.Albedo = lerp(o.Albedo, contrastedColour, wN);
                 
                 float3 n = UnpackNormal(tex2D(_BumpTex, IN.uv_BumpTex));
-                float3 n3 = UnpackNormal(wN);
+				float3 n3 = wN;// UnpackNormal(wN);
                 n = (n + n3) / 2;
                 float3 n2 = UnpackNormal(tex2D(_BumpTex2, IN.uv_BumpTex2));
 			    n = float3(n.x * _BumpMultiplier + n2.x * _BumpMultiplier2, n.y * _BumpMultiplier + n2.y * _BumpMultiplier2, n.z);
