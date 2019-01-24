@@ -4,7 +4,7 @@ using UnityEngine;
 
 [ExecuteInEditMode]
 public class ColourGrading : MonoBehaviour {
-    [Range(0, 1)] public float ColorGradient = 0.5f;
+    [Range(0, 1)] public float ColorGradient = 0.25f;
 
     [SerializeField] private Material _material;
 
@@ -19,7 +19,6 @@ public class ColourGrading : MonoBehaviour {
         }
         _material.SetFloat("_SamplePos", ColorGradient);
 
-        Debug.Log(ColorGradient);
 
         Graphics.Blit(source, destination, _material);
     }

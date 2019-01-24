@@ -3,7 +3,8 @@
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
         _SecondTex ("Lighting Color Gradient", 2D) = "white"{}
-        _SamplePos ("Position In Gradient", Range(0,1)) = 0.5
+		_LightTex("The amount of light", 2D) = "white"{}
+        _SamplePos ("Position In Gradient", Range(0,1)) = 0.25
     }
     
     SubShader {
@@ -18,6 +19,7 @@
             
             uniform sampler2D _MainTex;
             uniform sampler2D _SecondTex;
+            uniform sampler2D _LightTex;
             
             float _SamplePos;
 
@@ -48,8 +50,9 @@
                 float2 uv = float2(_SamplePos,0);
                 float4 c = tex2D(_MainTex, i.uv);
                 float4 g = tex2D(_SecondTex, uv);
+				float intensity = tex2D(_LightTex, uv);
                 
-                float4 result = c * g;
+                float4 result = c * g * intensity;
                 return result;
             }
             
