@@ -13,6 +13,8 @@ public class ChangeStateOnRotation : MonoBehaviour
 
 	private void OnRotation(Vector3 rotation)
 	{
-		_interactionMachine.Apply(((360 - rotation.z) / 360 + 0.5f) % 1);
+        var amount = ((360 - rotation.z) / 360 + 0.5f) % 1;
+        
+        _interactionMachine.Apply(amount);
 	}
 }
