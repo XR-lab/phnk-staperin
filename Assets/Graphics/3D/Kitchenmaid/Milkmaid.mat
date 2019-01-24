@@ -85,7 +85,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpMultiplier: 0.19
-    - _BumpMultiplier2: 0.21
+    - _BumpMultiplier2: 0.4
     - _BumpScale: 1
     - _Contrast: 0.998
     - _Cutoff: 0.5
@@ -102,12 +102,13 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RoughnessMultiplier: 5
+    - _ShadowIntensity: 2
     - _SmoothFalloff: 0.2
     - _SmoothnessTextureChannel: 0
-    - _Specular: 0.0001
+    - _Specular: 1.38
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Tiling: 2.74
+    - _Tiling: 2.96
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:

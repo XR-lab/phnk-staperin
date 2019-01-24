@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: melkkan_shader
-  m_Shader: {fileID: 4800000, guid: 1da6830ee2294131b84f574425e292c5, type: 3}
+  m_Shader: {fileID: 4800000, guid: 96ab1ed186cc7714b9b4ecb41450999f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -55,6 +55,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 8889017f7d6e141849f7ad4489c1c9fa, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _HiddenTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 0c286078ac0954c6cb297ddfa1e1bf4f, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -89,17 +93,21 @@ Material:
     - _BumpScale: 1
     - _Contrast: 0.998
     - _Cutoff: 0.5
+    - _DClipOff: 0.4
     - _DetailNormalMapScale: 1
     - _DiffuseVal: 0.06
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _HiddenLayerEnabled: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RoughnessMultiplier: 5
+    - _ShadowIntensity: 2
+    - _SmoothFalloff: 0.2
     - _SmoothnessTextureChannel: 0
     - _Specular: 0.0001
     - _SpecularHighlights: 1
@@ -110,4 +118,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RayDirection: {r: 0, g: 0, b: 0, a: 0}
+    - _RayPosition: {r: 0, g: 0, b: 0, a: 0}
     - _ShadowColor: {r: 0.21698102, g: 0.21698102, b: 0.21698102, a: 1}

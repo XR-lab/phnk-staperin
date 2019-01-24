@@ -86,6 +86,8 @@
                 float4 screenPos;
 				float2 uv_HiddenTex;
                 float3 worldPos;
+				float3 worldNormal;
+				INTERNAL_DATA
             };
 
 			float easein(float start, float end, float value)
@@ -105,29 +107,33 @@
                 screenUV *= float2(8,6);
 
                 o.Albedo = c.rgb;
-                
-			    half3 blend = abs(o.Normal);
-                
+
+				float3 worldNormal = WorldNormalVector(IN, o.Normal);
+			    half3 blend = abs(worldNormal);
+                				
                 blend /= dot(blend,1.0);
                 
                 fixed4 cx = tex2D(_PaintTex, IN.worldPos.yz / _Tiling);
                 fixed4 cy = tex2D(_PaintTex, IN.worldPos.xz / _Tiling);
                 fixed4 cz = tex2D(_PaintTex, IN.worldPos.xy / _Tiling);
+
+				fixed4 wN = cx * blend.x + cy * blend.y + cz * blend.z;
+
                 
 				float contrast = 1.2;
                 float3 contrastedColour = ((o.Albedo - 0.5f) * contrast) + 0.5f;
                 contrastedColour *= contrastedColour;
                 
-                o.Albedo = lerp(o.Albedo, contrastedColour, cz);
+                o.Albedo = lerp(o.Albedo, contrastedColour, wN);
                 
                 float3 n = UnpackNormal(tex2D(_BumpTex, IN.uv_BumpTex));
-                float3 n3 = UnpackNormal(cz);
+                float3 n3 = UnpackNormal(wN);
                 n = (n + n3) / 2;
                 float3 n2 = UnpackNormal(tex2D(_BumpTex2, IN.uv_BumpTex2));
 			    n = float3(n.x * _BumpMultiplier + n2.x * _BumpMultiplier2, n.y * _BumpMultiplier + n2.y * _BumpMultiplier2, n.z);
 			    
 			    o.Normal = normalize(n);
-			    o.Specular = _Specular * s * cz;
+			    o.Specular = _Specular * s * wN;
 
 
 
