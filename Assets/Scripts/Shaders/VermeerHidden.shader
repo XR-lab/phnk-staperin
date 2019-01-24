@@ -69,6 +69,7 @@
                 half4 c;
                 c.rgb = (s.Albedo * _LightColor0.rgb * diff + _LightColor0.rgb * spec) * atten;
                 c.rgb -= _ShadowColor.xyz * max(0.0,(1.0-(diff*atten))) * _DiffuseVal;
+				c.rgb *= atten;
                 c.a = s.Alpha;
                 return c;
             }

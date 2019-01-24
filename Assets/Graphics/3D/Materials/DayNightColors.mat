@@ -55,6 +55,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: ae7a8f625f69c46178b1e9a3485f15c2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _LightTex:
+        m_Texture: {fileID: 2800000, guid: f17eed4bc389e364d9b743c397fae733, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -96,7 +100,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RIntensity: 1
-    - _SamplePos: 0.5
+    - _SamplePos: 0.46464443
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
