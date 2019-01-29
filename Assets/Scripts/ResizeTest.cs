@@ -5,10 +5,8 @@ using UnityEngine;
 public class ResizeTest : MonoBehaviour
 {
     private GameObject _target;
-    private string[] _unScalable = new string[]
-    {
-        "keuken_en_vloer"
-    };
+
+    [SerializeField] private string[] _unScalable;
 
     private Vector3 _forward;
     private Vector3 _minSize = new Vector3(0.1f, 0.1f, 0.1f);
