@@ -5,6 +5,10 @@ using UnityEngine;
 public class ResizeTest : MonoBehaviour
 {
     private GameObject _target;
+    private string[] _unScalable = new string[]
+    {
+        "keuken_en_vloer"
+    };
 
     private Vector3 _forward;
     private Vector3 _minSize = new Vector3(0.1f, 0.1f, 0.1f);
@@ -46,7 +50,7 @@ public class ResizeTest : MonoBehaviour
                 {
                     return;
                 }
-                SetTarget(GameObject.Find(_hit.collider.name));
+                CheckTarget(GameObject.Find(_hit.collider.name));
             }
         }
 
@@ -69,6 +73,24 @@ public class ResizeTest : MonoBehaviour
 
             ChangeSize(-0.1f);
         }
+    }
+
+    void CheckTarget(GameObject _newTarget)
+    {
+        if (_newTarget.transform.parent != null)
+        {
+
+            for (int i = 0; i < _unScalable.Length; i++)
+            {
+                if (_newTarget.transform.parent.name == _unScalable[i].ToString())
+                {
+                    return;
+                }
+            }
+            _newTarget = GameObject.Find(_newTarget.transform.parent.name);
+        }
+
+        SetTarget(_newTarget);
     }
 
     void SetTarget(GameObject _newTarget)
