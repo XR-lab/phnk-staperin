@@ -85,7 +85,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpMultiplier: 0.19
-    - _BumpMultiplier2: 0.4
+    - _BumpMultiplier2: 0.13
     - _BumpScale: 1
     - _Contrast: 0.998
     - _Cutoff: 0.5
