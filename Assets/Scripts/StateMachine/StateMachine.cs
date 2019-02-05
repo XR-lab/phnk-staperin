@@ -6,9 +6,29 @@ public class StateMachine<TStateId>
 
     private State<TStateId> _currentState;
 
+    /// <summary>
+    /// Update the current state with a specific amount
+    /// </summary>
+    /// <param name="amount"></param>
     public void Apply(float amount)
     {
         _currentState?.Apply(amount);
+    }
+
+    /// <summary>
+    /// Start applying new values to the current state
+    /// </summary>
+    public void StartApply()
+    {
+        _currentState?.StartApply();
+    }
+
+    /// <summary>
+    /// End applying values to the current state
+    /// </summary>
+    public void EndApply()
+    {
+        _currentState?.EndApply();
     }
 
     /// <summary>
