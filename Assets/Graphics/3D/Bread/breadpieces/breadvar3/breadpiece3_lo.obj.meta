@@ -5,12 +5,17 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: breadpiece3_lo:Mesh
+    100004: breadpiece3_lo_Mesh
     400000: //RootNode
     400002: breadpiece3_lo:Mesh
+    400004: breadpiece3_lo_Mesh
     2100000: breadpiece3_lo_MeshMat
     2300000: breadpiece3_lo:Mesh
+    2300002: breadpiece3_lo_Mesh
     3300000: breadpiece3_lo:Mesh
+    3300002: breadpiece3_lo_Mesh
     4300000: breadpiece3_lo:Mesh
+    4300002: breadpiece3_lo_Mesh
   externalObjects: {}
   materials:
     importMaterials: 1
