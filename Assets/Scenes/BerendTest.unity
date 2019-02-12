@@ -198,7 +198,7 @@ GameObject:
   - component: {fileID: 285993734}
   - component: {fileID: 285993733}
   - component: {fileID: 285993732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RayLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285993731}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.834, y: 0.848, z: -0.674}
+  m_LocalPosition: {x: -0.1, y: 1.721, z: -0.23}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 664476370}
@@ -435,6 +435,18 @@ PrefabInstance:
     - target: {fileID: 100002, guid: d3d11c3f1af7c7f42a4510ef6f2d5fb0, type: 3}
       propertyPath: m_Name
       value: keuken_en_vloer
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: d3d11c3f1af7c7f42a4510ef6f2d5fb0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d3d11c3f1af7c7f42a4510ef6f2d5fb0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: d3d11c3f1af7c7f42a4510ef6f2d5fb0, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d3d11c3f1af7c7f42a4510ef6f2d5fb0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -575,6 +587,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stooje_Final
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 1f5a92500b59cac44ab16ce3c89152a2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1f5a92500b59cac44ab16ce3c89152a2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1f5a92500b59cac44ab16ce3c89152a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -673,7 +693,7 @@ GameObject:
   - component: {fileID: 664476373}
   - component: {fileID: 664476372}
   - component: {fileID: 664476371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1026,7 +1046,7 @@ GameObject:
   - component: {fileID: 904096311}
   - component: {fileID: 905062519}
   - component: {fileID: 902902015}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tafel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2137,11 +2157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272f2782cd8904b9fbafa14be2e2f813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _unScalable:
-  - keuken_en_vloer
-  - Webcam
-  - RayLight
-  - tafel
 --- !u!65 &1223214639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2208,7 +2223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223214637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1165, y: -0.03, z: -2.485}
+  m_LocalPosition: {x: 0.065, y: -0.03, z: -2.462}
   m_LocalScale: {x: 0.041420512, y: 0.04269242, z: 0.061180506}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2288,7 +2303,7 @@ GameObject:
   - component: {fileID: 1600819866}
   - component: {fileID: 1600819865}
   - component: {fileID: 1600819864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Webcam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
