@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Valve.VR;
 
 public class ChangeStateOnRotation : MonoBehaviour
 {
@@ -6,12 +7,29 @@ public class ChangeStateOnRotation : MonoBehaviour
 
     [SerializeField] private InteractionMachine _interactionMachine;
 
-	private void Start()
+    // todo: updaten deze regel
+    public SteamVR_Action_Boolean grabGripAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabGrip");
+
+    private void Start()
 	{
 		rotationChecker.RotationEvent += OnRotation;
-	}
 
-	private void OnRotation(Vector3 rotation)
+        grabGripAction.AddOnChangeListener(OnGrip, SteamVR_Input_Sources.LeftHand);
+
+
+    }
+
+    private void OnGrip(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool isDown)
+    {
+        Debug.Log("Grip is: " + isDown);
+
+        if (isDown)
+        {
+
+        }
+    }
+
+    private void OnRotation(Vector3 rotation)
 	{
         var amount = ((360 - rotation.z) / 360 + 0.5f) % 1;
         
