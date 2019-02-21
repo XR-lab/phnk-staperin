@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using Valve.VR;
 
 [RequireComponent(typeof(Slider))]
 public class ChangeSliderOnRotation : MonoBehaviour
@@ -9,14 +10,19 @@ public class ChangeSliderOnRotation : MonoBehaviour
 	public enum EQuaternion { X, Y, Z };
 	public EQuaternion rotationAxis = EQuaternion.Z;
 
-	private Slider _slider;
+    
+
+    private Slider _slider;
 
 	private void Awake()
 	{
 		_slider = GetComponent<Slider>();
-	}
 
-	private void Start()
+    }
+
+    
+
+    private void Start()
 	{
 		rotationChecker.RotationEvent += OnRotation;
 	}
