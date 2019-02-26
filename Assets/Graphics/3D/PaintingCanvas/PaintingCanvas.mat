@@ -87,7 +87,7 @@ Material:
     - _BumpMultiplier: 0.04
     - _BumpMultiplier2: 1
     - _BumpScale: 1
-    - _Contrast: 1.166
+    - _Contrast: 0.8
     - _Cutoff: 0.5
     - _DClipOff: 0.925
     - _DetailNormalMapScale: 1
@@ -102,7 +102,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RoughnessMultiplier: 1.9
-    - _ShadowIntensity: 1.311
+    - _ShadowIntensity: 1
     - _SmoothFalloff: 0.879
     - _SmoothnessTextureChannel: 0
     - _Specular: 0.0001
