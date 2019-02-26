@@ -5,29 +5,39 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class RayGun : MonoBehaviour
 {
-    [SerializeField] private Material _targetMaterial;
+    [SerializeField] private List<Material> _targetMaterials;
 
-    public Material TargetMaterial => _targetMaterial;
+    public List<Material> TargetMaterials => _targetMaterials;
 
     void Update()
     {
-        if (!TargetMaterial)
+        if (TargetMaterials.Count == 0)
         {
             return;
         }
 
-        TargetMaterial.SetVector("_RayPosition", transform.position);
-        TargetMaterial.SetVector("_RayDirection", transform.forward);
+        foreach (var targetMaterial in TargetMaterials)
+        {
+            targetMaterial.SetVector("_RayPosition", transform.position);
+            targetMaterial.SetVector("_RayDirection", transform.forward);
+        }
+        
     }
 
     void OnDisable()
     {
-        TargetMaterial.SetFloat("_HiddenLayerEnabled", 0f);
+        foreach (var targetMaterial in TargetMaterials)
+        {
+            targetMaterial.SetFloat("_HiddenLayerEnabled", 0f);
+        }
     }
 
     void OnEnable()
     {
-        TargetMaterial.SetFloat("_HiddenLayerEnabled", 1f);
+        foreach (var targetMaterial in TargetMaterials)
+        {
+            targetMaterial.SetFloat("_HiddenLayerEnabled", 1f);
+        }
     }
 
     
