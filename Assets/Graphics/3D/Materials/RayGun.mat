@@ -108,7 +108,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RoughnessMultiplier: 1.9
-    - _ShadowIntensity: 1.244
+    - _ShadowIntensity: 1.311
     - _SmoothFalloff: 0.879
     - _SmoothnessTextureChannel: 0
     - _Specular: 0.0001
