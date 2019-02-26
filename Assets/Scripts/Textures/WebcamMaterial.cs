@@ -4,12 +4,33 @@ using UnityEngine;
 
 public class WebcamMaterial : MonoBehaviour
 {
-
-    public int Width { get; set; } = 1280;
-    public int Height { get; set; } = 720;
+        
     public int FPS { get; set; } = 30;
     public bool RespectAspectRatio { get; set; } = false;
+    public int SelectedCameraIndex {
+        get { return _selectedCameraIndex; }
+        set { _selectedCameraIndex = value;  }
+    }
+    public int Width {
+        get { return _width; }
+        set { _width = value; }
+    }
+    public int Height
+    {
+        get { return _height; }
+        set { _height = value; }
+    }
+
     private WebCamTexture _webcamTexture;
+
+    [SerializeField]
+    private int _selectedCameraIndex;
+
+    [SerializeField]
+    private int _width = 1280;
+
+    [SerializeField]
+    private int _height = 720;
 
     void Start()
     {
@@ -22,7 +43,7 @@ public class WebcamMaterial : MonoBehaviour
 
     void SetupTexture()
     {
-        _webcamTexture = new WebCamTexture(WebCamTexture.devices[0].name, Width, Height, FPS);
+        _webcamTexture = new WebCamTexture(WebCamTexture.devices[SelectedCameraIndex].name, Width, Height, FPS);
         var renderer = GetComponent<Renderer>();
         renderer.material.mainTexture = _webcamTexture;
     }
