@@ -54,7 +54,12 @@ public class Scaler : State<InteractionStates>
     void CastRay()
     {
         RaycastHit _hit;
-        Ray _ray = new Ray(_rayCaster.transform.position, _forward);
+
+        Vector3 forward = transform.TransformDirection(Vector3.forward);
+        
+        Debug.DrawRay(_rayCaster.transform.position, _rayCaster.transform.forward * 10, Color.green);
+
+        Ray _ray = new Ray(_rayCaster.transform.position, transform.forward);
 
         if (Physics.Raycast(_ray, out _hit, -_layerMask))
         {
@@ -84,21 +89,9 @@ public class Scaler : State<InteractionStates>
         _target = _newTarget;
     }
 
-    void ChangeSize(float _growth)
+    void ChangeSize(float _newSize)
     {
-        Vector3 _change = new Vector3(_growth, _growth, _growth);
-        Vector3 _currentSize = (_target.transform.localScale);
-        Vector3 _newSize = _currentSize += _change;
-
-        if (_newSize.z <= _minSize)
-        {
-            return;
-        }
-
-        if (_newSize.z >= _maxSize)
-        {
-            return;
-        }
-        _target.transform.localScale = _newSize;
+        
+        _target.transform.localScale = new Vector3(_newSize, _newSize, _newSize);
     }
 }
