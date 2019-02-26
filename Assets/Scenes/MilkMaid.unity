@@ -387,6 +387,26 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 48b782645d6b7d84693cd675c606f7c0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4d70fe6451a1a24b96a00e2c891d6bd, type: 3}
+--- !u!1 &200151059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: a717a14910f892a449f94325c3d98ee1,
+    type: 3}
+  m_PrefabInstance: {fileID: 233595824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &200151060
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200151059}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a717a14910f892a449f94325c3d98ee1, type: 3}
 --- !u!1001 &233595824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -926,7 +946,6 @@ GameObject:
   - component: {fileID: 461315494}
   - component: {fileID: 461315493}
   - component: {fileID: 461315492}
-  - component: {fileID: 461315491}
   - component: {fileID: 461315490}
   - component: {fileID: 461315489}
   - component: {fileID: 461315488}
@@ -1052,19 +1071,6 @@ MonoBehaviour:
   handFollowTransformRotation: 1
   highlightOnHover: 1
   hideHighlight: []
---- !u!65 &461315491
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461315486}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &461315492
 MeshRenderer:
   m_ObjectHideFlags: 0
