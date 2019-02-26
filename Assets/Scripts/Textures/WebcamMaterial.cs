@@ -8,12 +8,15 @@ public class WebcamMaterial : MonoBehaviour
     public int Width { get; set; } = 1280;
     public int Height { get; set; } = 720;
     public int FPS { get; set; } = 30;
+    public bool RespectAspectRatio { get; set; } = false;
     private WebCamTexture _webcamTexture;
 
     void Start()
     {
         SetupTexture();
-        SetAspectRatio();
+        if (RespectAspectRatio) {
+            SetAspectRatio();
+        }
         Play();
     }
 
