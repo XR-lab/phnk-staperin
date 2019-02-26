@@ -3758,6 +3758,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Frame_fixed
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 65ec9e20381577c448dafeba46fd34e8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 65ec9e20381577c448dafeba46fd34e8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 65ec9e20381577c448dafeba46fd34e8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 65ec9e20381577c448dafeba46fd34e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.01999998
