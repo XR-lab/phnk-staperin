@@ -4555,6 +4555,11 @@ PrefabInstance:
       propertyPath: _interactionMachine
       value: 
       objectReference: {fileID: 598366248}
+    - target: {fileID: 6796903010870486735, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: grabGripAction.actionPath
+      value: /actions/default/in/GrabPinch
+      objectReference: {fileID: 0}
     - target: {fileID: 5473697949915539176, guid: f0a024d653c91ae40a338b9a71c03089,
         type: 3}
       propertyPath: _interactionMachine
@@ -6168,6 +6173,40 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2116502557}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2118937190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6796903010870486704, guid: f0a024d653c91ae40a338b9a71c03089,
+    type: 3}
+  m_PrefabInstance: {fileID: 1475419983}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2118937191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118937190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67f277eb718d6aa448c8657742757ac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationChecker: {fileID: 2118937192}
+  grabGripAction:
+    actionPath: /actions/default/in/GrabPinch
+    needsReinit: 0
+--- !u!114 &2118937192 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6796903010870486708, guid: f0a024d653c91ae40a338b9a71c03089,
+    type: 3}
+  m_PrefabInstance: {fileID: 1475419983}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118937190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da2b60d3f6253041a4092f084f5c108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2134432890
 PrefabInstance:
   m_ObjectHideFlags: 0

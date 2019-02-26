@@ -7,14 +7,15 @@ public class ChangeStateOnRotation : MonoBehaviour
 
     [SerializeField] private InteractionMachine _interactionMachine;
 
-    // todo: updaten deze regel
-    public SteamVR_Action_Boolean grabGripAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabGrip");
+    public SteamVR_Action_Boolean grabGripAction;
+
+
 
     private void Start()
 	{
 		rotationChecker.RotationEvent += OnRotation;
 
-        grabGripAction.AddOnChangeListener(OnGrip, SteamVR_Input_Sources.LeftHand);
+        //grabGripAction.AddOnChangeListener(OnGrip, SteamVR_Input_Sources.LeftHand);
 
 
     }
@@ -23,10 +24,6 @@ public class ChangeStateOnRotation : MonoBehaviour
     {
         Debug.Log("Grip is: " + isDown);
 
-        if (isDown)
-        {
-
-        }
     }
 
     private void OnRotation(Vector3 rotation)

@@ -19,6 +19,8 @@ public class RotationChecker : MonoBehaviour
 
 	private Quaternion _rotationPrevious;
 
+    public bool IsApplying { get; set; } = false;
+
 	private void Start()
 	{
 		if (RotationTypeIsThis())
@@ -30,6 +32,9 @@ public class RotationChecker : MonoBehaviour
 
 	private void Update()
 	{
+        if (!IsApplying) {
+            return;
+        }
 		if (target.transform.rotation != _rotationPrevious)
 		{
 			RotationEvent?.Invoke(target.transform.localEulerAngles);
