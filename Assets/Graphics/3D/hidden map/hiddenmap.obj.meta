@@ -1,17 +1,16 @@
 fileFormatVersion: 2
-guid: e74e957b5f6a83a4f9d9abd15f7eb936
+guid: 713ba002eb940ad45b5cf463856c4270
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Torus003
-    400000: //RootNode
-    400002: Torus003
-    2100000: dx11Shader1SG
-    2100002: Torus003Mat
-    2300000: Torus003
-    3300000: Torus003
-    4300000: Torus003
+    100000: hiddenmap
+    100002: //RootNode
+    400000: hiddenmap
+    400002: //RootNode
+    2100000: hiddenmapMat
+    2300000: hiddenmap
+    3300000: hiddenmap
+    4300000: hiddenmap
   externalObjects: {}
   materials:
     importMaterials: 1
