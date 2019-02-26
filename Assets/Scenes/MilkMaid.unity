@@ -1676,6 +1676,7 @@ GameObject:
   - component: {fileID: 598366251}
   - component: {fileID: 598366250}
   - component: {fileID: 598366253}
+  - component: {fileID: 598366256}
   - component: {fileID: 598366252}
   - component: {fileID: 598366254}
   - component: {fileID: 598366255}
@@ -1792,6 +1793,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _key: 100
   target: {fileID: 938808715}
+--- !u!114 &598366256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598366247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b70538c01796cf4da197bd97625f370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rayCaster: {fileID: 1608962834}
 --- !u!1001 &661623878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4635,6 +4649,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7236830076360131158, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: rotationChecker
+      value: 
+      objectReference: {fileID: 2118937192}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0a024d653c91ae40a338b9a71c03089, type: 3}
 --- !u!1001 &1490571991

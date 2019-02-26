@@ -10,7 +10,8 @@ public class ChangeInteractionState : MonoBehaviour
     private Dictionary<string, InteractionStates> _interactionStates = new Dictionary<string, InteractionStates>(){
         { "DayNightUI", InteractionStates.DayNight},
         { "HiddenLayerUI", InteractionStates.HiddenLayer},
-        { "MagnifierUI", InteractionStates.Magnifier}
+        { "MagnifierUI", InteractionStates.Magnifier},
+        { "ScalerUI", InteractionStates.Scaler}
     };
 
     public SteamVR_Action_Boolean trackpadAction;

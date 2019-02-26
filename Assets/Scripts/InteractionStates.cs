@@ -2,5 +2,6 @@
 {
     DayNight,
     HiddenLayer,
-    Magnifier
+    Magnifier,
+    Scaler
 }
