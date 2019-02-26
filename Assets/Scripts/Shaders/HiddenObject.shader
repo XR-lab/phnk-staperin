@@ -4,10 +4,6 @@
 	{
 		_MainTex("Texture", 2D) = "white" {}
 		_DClipOff("Dot Product clipoff", Range(0, 1)) = 0.4
-
-		_MinDistance("Minimum distance", Range(0, 5)) = 2
-		_MaxDistance("Maximum distance", Range(0, 50)) = 5
-
 		_RayPosition("Ray Position", Vector) = (0, 0, 0, 0)
 		_RayDirection("Ray Direction", Vector) = (0, 0, 0, 0)
 		_SmoothFalloff("Smoothing", Range(0,1)) = 0.2
@@ -32,8 +28,6 @@
 			sampler2D _MainTex;
 			float _InputFlashlight;
 			float _DClipOff;
-			float _MinDistance;
-			float _MaxDistance;
 			float3 _RayPosition;
 			float3 _RayDirection;
 			float _SmoothFalloff;
