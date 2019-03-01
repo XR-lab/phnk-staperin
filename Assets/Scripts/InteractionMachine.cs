@@ -25,6 +25,16 @@ public class InteractionMachine : MonoBehaviour
         _interactionMachine.SetState(stateId);
     }
 
+    public void StartApply()
+    {
+        _interactionMachine.StartApply();
+    }
+
+    public void EndApply()
+    {
+        _interactionMachine.EndApply();
+    }
+
     public void Apply(float amount)
     {
         _interactionMachine.Apply(amount);
