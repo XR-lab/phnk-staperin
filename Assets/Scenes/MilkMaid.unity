@@ -1811,6 +1811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rayCaster: {fileID: 1608962834}
   _highlightMaterial: {fileID: 2100000, guid: 2503cda050cb08e43a03c7522b4e56a1, type: 2}
+  _pointer: {fileID: 672937949}
 --- !u!1001 &661623878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1908,6 +1909,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d3017f58d2a44734a81f634071be56d9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f5a92500b59cac44ab16ce3c89152a2, type: 3}
+--- !u!23 &672937949 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1155908914118159432, guid: f0a024d653c91ae40a338b9a71c03089,
+    type: 3}
+  m_PrefabInstance: {fileID: 1475419983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &715703525
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,11 +4641,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422261745}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5478815, y: 1.3925705, z: 0.5221963}
-  m_Center: {x: -0.66304094, y: 0.19628525, z: -0.069125414}
+  m_Size: {x: 0.4841838, y: 1.4985635, z: 0.44026768}
+  m_Center: {x: -0.6622684, y: 0.8091618, z: -0.11008972}
 --- !u!1001 &1475419983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4905,6 +4912,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739394462808982237, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739394462808982237, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739394462808982237, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462304869197596, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495462304869197596, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0a024d653c91ae40a338b9a71c03089, type: 3}

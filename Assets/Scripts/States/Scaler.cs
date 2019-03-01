@@ -11,6 +11,9 @@ public class Scaler : State<InteractionStates>
 
     [SerializeField] private Material _highlightMaterial;
 
+    [SerializeField]
+    private Renderer _pointer;
+
     private Vector3 _forward;
 
     private float _minSize = 0.1f;
@@ -33,29 +36,43 @@ public class Scaler : State<InteractionStates>
         _layerMask = ~LayerMask.GetMask("Unscalable");
         _forward = _rayCaster.transform.TransformDirection(Vector3.forward);
         isHighlighting = true;
+        EnablePointer();
     }
 
     public override void Leave()
     {
         UnFocusTarget(_currentTarget);
         isHighlighting = false;
+        DisablePointer();
     }
 
     public override void StartApply()
     {
         isHighlighting = false;
         Debug.Log("startApply");
+        DisablePointer();
     }
 
     public override void EndApply()
     {
         isHighlighting = true;
         Debug.Log("endApply");
+        EnablePointer();
     }
 
     void Update()
     {
         Highlight();        
+    }
+
+    private void EnablePointer()
+    {
+        _pointer.enabled = true;
+    }
+
+    private void DisablePointer()
+    {
+        _pointer.enabled = false;
     }
 
     private void Highlight() {
