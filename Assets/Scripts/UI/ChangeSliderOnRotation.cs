@@ -17,7 +17,6 @@ public class ChangeSliderOnRotation : MonoBehaviour
 	private void Awake()
 	{
 		_slider = GetComponent<Slider>();
-
     }
 
     

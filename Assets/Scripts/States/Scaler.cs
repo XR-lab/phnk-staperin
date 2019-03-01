@@ -27,12 +27,19 @@ public class Scaler : State<InteractionStates>
         _forward = _rayCaster.transform.TransformDirection(Vector3.forward);
     }
 
+    public override void Leave()
+    {
+        // todo: afvangen als we naar de volgende state gaan
+    }
+
+    public override void StartApply()
+    {
+        // todo: zorgen dat de target wordt gehanteerd
+    }
+
     public void Update()
     {
-        if (Input.GetKey(KeyCode.Space)) //alleen als je trigger ingedrukt houdt
-        {
-            CastRay();
-        }
+        
     }
 
     public override void Apply(float amount)
