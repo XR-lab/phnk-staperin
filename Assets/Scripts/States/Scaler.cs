@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Scaler : State<InteractionStates>
 {
-    private GameObject _target;
-
+    public override InteractionStates Id => InteractionStates.Scaler;
+        
     [SerializeField]
     private GameObject _rayCaster;
+
+    [SerializeField] private Material _highlightMaterial;
 
     private Vector3 _forward;
 
@@ -18,87 +20,141 @@ public class Scaler : State<InteractionStates>
     private float _amount = 0f;
 
     private int _layerMask;
+    private GameObject _currentTarget;
+    private Dictionary<Transform, Material> _originalMaterials = new Dictionary<Transform, Material>();
 
-    public override InteractionStates Id => InteractionStates.Scaler;
+    private Dictionary<GameObject, Vector3> _localScales = new Dictionary<GameObject, Vector3>();
+
+    private bool isHighlighting = true;
+
 
     public override void Enter()
     {
         _layerMask = ~LayerMask.GetMask("Unscalable");
         _forward = _rayCaster.transform.TransformDirection(Vector3.forward);
+        isHighlighting = true;
     }
 
     public override void Leave()
     {
-        // todo: afvangen als we naar de volgende state gaan
+        UnFocusTarget(_currentTarget);
+        isHighlighting = false;
     }
 
     public override void StartApply()
     {
-        // todo: zorgen dat de target wordt gehanteerd
+        isHighlighting = false;
+        Debug.Log("startApply");
     }
 
-    public void Update()
+    public override void EndApply()
     {
+        isHighlighting = true;
+        Debug.Log("endApply");
+    }
+
+    void Update()
+    {
+        Highlight();        
+    }
+
+    private void Highlight() {
+        if (!isHighlighting) {
+            return;
+        }
+        Debug.DrawRay(_rayCaster.transform.position, _rayCaster.transform.forward * 10, Color.green);
+
+        Vector3 start = _rayCaster.transform.position;
+        Vector3 direction = _rayCaster.transform.forward;
+        RaycastHit hit;
+        if (Physics.Raycast(start, direction, out hit))
+        {
+            SetTarget(hit.transform.gameObject);
+        }
+        else
+        {
+            SetTarget(null);
+        }
+    }
+
+    private void SetTarget(GameObject newTarget)
+    {
+        if (newTarget == _currentTarget)
+        {
+            return;
+        }
+
+        UnFocusTarget(_currentTarget);
+        _currentTarget = newTarget;
+        StoreLocalScale(_currentTarget);
+        FocusTarget(_currentTarget);
+    }
+
+    private void StoreLocalScale(GameObject target)
+    {
+        if (target == null || _localScales.ContainsKey(target))
+        {
+            return;
+        }
+
+        _localScales.Add(target, target.transform.localScale);
+    }
+
+    private void UnFocusTarget(GameObject target)
+    {
+        if (target == null)
+        {
+            return;
+        }
+
+        
+        foreach (Transform child in target.transform)
+        {
+            Renderer renderer = child.GetComponent<Renderer>();
+            if (renderer == null)
+            {
+                continue;
+            }
+            
+            renderer.material = _originalMaterials[child];
+        }
+    }
+
+    private void FocusTarget(GameObject target)
+    {
+        if (target == null)
+        {
+            return;
+        }
+
+
+        foreach (Transform child in target.transform)
+        {
+            Renderer renderer = child.GetComponent<Renderer>();
+            if (renderer == null)
+            {
+                continue;
+            }
+            _originalMaterials[child] = renderer.material;
+            renderer.material = _highlightMaterial;
+        }
         
     }
 
     public override void Apply(float amount)
     {
-        Debug.Log("applying scale");
-        
-        if (_target == null)
+        if (_currentTarget == null || isHighlighting)
         {
             return;
         }
-
-        Debug.Log(_target.name);
-
-        _value = (_minSize + (_maxSize - _minSize) * _amount);
-
-        ChangeSize(_value);
+        Vector3 originalScale = _localScales[_currentTarget];
+        float percentage = (_minSize + (_maxSize - _minSize) * amount);
+        Vector3 newScale = originalScale * percentage;
+        SetScale(newScale);
     }
 
-    void CastRay()
+    void SetScale(Vector3 newScale)
     {
-        RaycastHit _hit;
-
-        Vector3 forward = transform.TransformDirection(Vector3.forward);
-        
-        Debug.DrawRay(_rayCaster.transform.position, _rayCaster.transform.forward * 10, Color.green);
-
-        Ray _ray = new Ray(_rayCaster.transform.position, transform.forward);
-
-        if (Physics.Raycast(_ray, out _hit, -_layerMask))
-        {
-            Debug.Log(_hit.collider.name);
-            if (_hit.collider == null)
-            {
-                return;
-            }
-            CheckTarget(GameObject.Find(_hit.collider.name));
-        }
-
-        
-    }
-
-    void CheckTarget(GameObject _newTarget)
-    {
-        if (_newTarget.transform.parent != null)
-        {
-            _newTarget = GameObject.Find(_newTarget.transform.parent.name);
-        }
-
-        SetTarget(_newTarget);
-    }
-
-    void SetTarget(GameObject _newTarget)
-    {
-        _target = _newTarget;
-    }
-
-    void ChangeSize(float _newSize)
-    {
-        
-        _target.transform.localScale = new Vector3(_newSize, _newSize, _newSize);
+        _currentTarget.transform.localScale = newScale;
     }
 }
