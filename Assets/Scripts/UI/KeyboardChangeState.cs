@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class KeyboardChangeState : MonoBehaviour
 {
-	private InteractionMachine _interactionMachine;
-
-	void Start(){
-		_interactionMachine = gameObject.GetComponent<InteractionMachine>();
-	}
+	private readonly StateMachine<InteractionStates> _interactionMachine = new StateMachine<InteractionStates>();
 
     void Update(){
 		bool _keyOne = Input.GetKeyDown(KeyCode.Alpha1);
