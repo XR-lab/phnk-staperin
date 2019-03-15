@@ -6,6 +6,7 @@ using Valve.VR;
 
 public class ChangeInteractionState : MonoBehaviour
 {
+    public Debugger debugger;
 	private CM_UI_System_ScreenRotation _uiSystemScreenRotation;
     private Dictionary<string, InteractionStates> _interactionStates = new Dictionary<string, InteractionStates>(){
         { "DayNightUI", InteractionStates.DayNight},
@@ -29,6 +30,7 @@ public class ChangeInteractionState : MonoBehaviour
     private void OnTrackPadDownOrUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool isDown)
     {
         if (isDown) {
+            debugger.ChangeDebugText("I'm here!!!!");
             var currentScreen = _uiSystemScreenRotation.NextScreen();
             var currentState = _interactionStates[currentScreen.name];
             _interactionMachine.SetState(currentState);
