@@ -21,10 +21,10 @@ public class ReadData : MonoBehaviour {
 	}
 
 	public int GetSeconds() {
-		return _data.Seconds;
+		return _data.GameTime;
 	}
 
 	public int GetTransferTime() {
-		return _data.TransferTime;
+		return _data.SwitchTime;
 	}
 }
