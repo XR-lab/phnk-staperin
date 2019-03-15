@@ -29,6 +29,7 @@ public class ChangeInteractionState : MonoBehaviour
 
     private void OnTrackPadDownOrUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool isDown)
     {
+        debugger.ChangeDebugText("I'm here first!!!!");
         if (isDown) {
             debugger.ChangeDebugText("I'm here!!!!");
             var currentScreen = _uiSystemScreenRotation.NextScreen();
