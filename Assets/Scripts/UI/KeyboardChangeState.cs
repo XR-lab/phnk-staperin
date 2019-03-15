@@ -5,7 +5,8 @@ using CM.UI;
 
 public class KeyboardChangeState : MonoBehaviour
 {
-	private readonly StateMachine<InteractionStates> _interactionMachine = new StateMachine<InteractionStates>();
+	//private readonly StateMachine<InteractionStates> _interactionMachine = new StateMachine<InteractionStates>();
+	[SerializeField] private InteractionMachine _interactionMachine;
 	private CM_UI_System_ScreenRotation _uiSystemScreenRotation;
 	private Dictionary<string, InteractionStates> _interactionStates = new Dictionary<string, InteractionStates>(){
 		{ "DayNightUI", InteractionStates.DayNight},
@@ -13,6 +14,10 @@ public class KeyboardChangeState : MonoBehaviour
 		{ "MagnifierUI", InteractionStates.Magnifier},
 		{ "ScalerUI", InteractionStates.Scaler}
 	};
+
+	void Awake(){
+		_uiSystemScreenRotation = GetComponent<CM_UI_System_ScreenRotation>();
+	}
 
     void Update(){
 		bool _keyOne = Input.GetKeyDown(KeyCode.Alpha1);
@@ -27,8 +32,8 @@ public class KeyboardChangeState : MonoBehaviour
 		if(_keyTwo){
 			//_interactionMachine.SetState(InteractionStates.HiddenLayer);
 			PreviousState();
-		}
-		/*if(_keyThree){
+		}/*
+		if(_keyThree){
 			_interactionMachine.SetState(InteractionStates.Magnifier);
 		}
 		if(_keyFour){
@@ -36,15 +41,17 @@ public class KeyboardChangeState : MonoBehaviour
 		}*/
     }
 
-	void NextState(){
+	private void NextState(){
 		var currentScreen = _uiSystemScreenRotation.NextScreen();
 		var currentState = _interactionStates[currentScreen.name];
 		_interactionMachine.SetState(currentState);
+		print("Switched to: " + currentState);
 	}
 
-	void PreviousState(){
+	private void PreviousState(){
 		var previousScreen = _uiSystemScreenRotation.PreviousScreen();
 		var previousState = _interactionStates[previousScreen.name];
+		print("switching to: " + previousState);
 		_interactionMachine.SetState(previousState);
 	}
 }
