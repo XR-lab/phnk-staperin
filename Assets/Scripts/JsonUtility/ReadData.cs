@@ -10,13 +10,13 @@ public class ReadData : MonoBehaviour {
 	private void Start() {
 		_timer = this.gameObject;
 		_save = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "\\Saves\\save.json";
-		LoadJson();
+		LoadJson(_save, _data);
 	}
 
-	public void LoadJson() {
+	public void LoadJson(string location, Data data) {
 		using (StreamReader r = new StreamReader(_save)) {
 			string json = r.ReadToEnd();
-			_data = JsonConvert.DeserializeObject<Data>(json);
+			data = JsonConvert.DeserializeObject<Data>(json);
 		}
 	}
 
