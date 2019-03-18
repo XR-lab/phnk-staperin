@@ -7,9 +7,6 @@ public class Scaler : State<InteractionStates>
     public override InteractionStates Id => InteractionStates.Scaler;
 
     [SerializeField]
-    private Debugger debugger;
-
-    [SerializeField]
     private GameObject _rayCaster;
 
     [SerializeField] private Material _highlightMaterial;
@@ -36,7 +33,6 @@ public class Scaler : State<InteractionStates>
 
     public override void Enter()
     {
-        debugger.ChangeDebugText("Scaler enter works");
         _layerMask = ~LayerMask.GetMask("Unscalable");
         _forward = _rayCaster.transform.TransformDirection(Vector3.forward);
         isHighlighting = true;
@@ -45,7 +41,6 @@ public class Scaler : State<InteractionStates>
 
     public override void Leave()
     {
-        debugger.AddDebugText("Scaler leave works");
         UnFocusTarget(_currentTarget);
         isHighlighting = false;
         DisablePointer();
@@ -53,7 +48,6 @@ public class Scaler : State<InteractionStates>
 
     public override void StartApply()
     {
-        debugger.AddDebugText("Scaler startapply works");
         isHighlighting = false;
         Debug.Log("startApply");
         DisablePointer();
@@ -61,7 +55,6 @@ public class Scaler : State<InteractionStates>
 
     public override void EndApply()
     {
-        debugger.AddDebugText("Scaler endapply works");
         isHighlighting = true;
         Debug.Log("endApply");
         EnablePointer();
