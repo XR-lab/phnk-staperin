@@ -1742,6 +1742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c34ddd8e710800541b6010d4c81e6f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugger: {fileID: 1567798778}
   _rotateAround: {fileID: 21493252}
   _colorGrading: {fileID: 1348317058}
   _colorGradingCam2: {fileID: 938808717}
@@ -1809,6 +1810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b70538c01796cf4da197bd97625f370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugger: {fileID: 1567798778}
   _rayCaster: {fileID: 1608962834}
   _highlightMaterial: {fileID: 2100000, guid: 2503cda050cb08e43a03c7522b4e56a1, type: 2}
   _pointer: {fileID: 672937949}

@@ -21,6 +21,7 @@ public class ChangeInteractionState : MonoBehaviour
 
     private void Awake()
 	{
+        debugger = FindObjectOfType<Debugger>();
 		_uiSystemScreenRotation = GetComponent<CM_UI_System_ScreenRotation>();
         
         trackpadAction.AddOnChangeListener(OnTrackPadDownOrUp, SteamVR_Input_Sources.LeftHand);
@@ -29,9 +30,9 @@ public class ChangeInteractionState : MonoBehaviour
 
     private void OnTrackPadDownOrUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool isDown)
     {
-        debugger.ChangeDebugText("I'm here first!!!!");
+        debugger.AddDebugText("I'm here first!!!!");
         if (isDown) {
-            debugger.ChangeDebugText("I'm here!!!!");
+            debugger.AddDebugText("I'm here!!!!");
             var currentScreen = _uiSystemScreenRotation.NextScreen();
             var currentState = _interactionStates[currentScreen.name];
             _interactionMachine.SetState(currentState);

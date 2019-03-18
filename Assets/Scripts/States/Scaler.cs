@@ -45,7 +45,7 @@ public class Scaler : State<InteractionStates>
 
     public override void Leave()
     {
-        debugger.ChangeDebugText("Scaler leave works");
+        debugger.AddDebugText("Scaler leave works");
         UnFocusTarget(_currentTarget);
         isHighlighting = false;
         DisablePointer();
@@ -53,7 +53,7 @@ public class Scaler : State<InteractionStates>
 
     public override void StartApply()
     {
-        debugger.ChangeDebugText("Scaler startapply works");
+        debugger.AddDebugText("Scaler startapply works");
         isHighlighting = false;
         Debug.Log("startApply");
         DisablePointer();
@@ -61,7 +61,7 @@ public class Scaler : State<InteractionStates>
 
     public override void EndApply()
     {
-        debugger.ChangeDebugText("Scaler endapply works");
+        debugger.AddDebugText("Scaler endapply works");
         isHighlighting = true;
         Debug.Log("endApply");
         EnablePointer();

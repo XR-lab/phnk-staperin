@@ -19,6 +19,11 @@ public class Debugger : MonoBehaviour
         _debugText.text = newText;
     }
 
+    public void AddDebugText(string newText)
+    {
+        _debugText.text += newText;
+    }
+
     /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
