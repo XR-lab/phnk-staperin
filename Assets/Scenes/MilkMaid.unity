@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be2f01406a4fb3a449c53bc97866ee85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _debugger: {fileID: 1567798778}
   _range: 0
   _maxAngle: 200
   _minAngle: -20
@@ -1742,7 +1743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c34ddd8e710800541b6010d4c81e6f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugger: {fileID: 1567798778}
   _rotateAround: {fileID: 21493252}
   _colorGrading: {fileID: 1348317058}
   _colorGradingCam2: {fileID: 938808717}
@@ -1810,7 +1810,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b70538c01796cf4da197bd97625f370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugger: {fileID: 1567798778}
   _rayCaster: {fileID: 1608962834}
   _highlightMaterial: {fileID: 2100000, guid: 2503cda050cb08e43a03c7522b4e56a1, type: 2}
   _pointer: {fileID: 672937949}
@@ -4890,6 +4889,11 @@ PrefabInstance:
       propertyPath: _interactionMachine
       value: 
       objectReference: {fileID: 598366248}
+    - target: {fileID: 5473697949915539176, guid: f0a024d653c91ae40a338b9a71c03089,
+        type: 3}
+      propertyPath: debugger
+      value: 
+      objectReference: {fileID: 1567798778}
     - target: {fileID: 7606937224814657327, guid: f0a024d653c91ae40a338b9a71c03089,
         type: 3}
       propertyPath: m_Value
