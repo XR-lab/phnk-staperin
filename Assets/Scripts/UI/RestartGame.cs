@@ -10,9 +10,6 @@ public class RestartGame : MonoBehaviour
         if (restart)
         {
             SceneUtils.Reset();
-        }
-       
-       
+        } 
     }
-
 }
