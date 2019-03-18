@@ -32,7 +32,7 @@ public class RotateAround : MonoBehaviour
     {
         var width = _maxAngle - _minAngle;
         transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, _minAngle + Range * width));
-        _debugger.ChangeDebugText("New Value: " + width);
+        _debugger.ChangeDebugText("New Value: " + _minAngle + Range * width);
     }
 
 }

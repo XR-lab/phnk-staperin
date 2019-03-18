@@ -4,6 +4,7 @@ using Valve.VR;
 // todo: rename
 public class ChangeStateOnRotation : MonoBehaviour
 {
+    public Debugger debugger;
 	public RotationChecker rotationChecker;
 
     [SerializeField] private InteractionMachine _interactionMachine;
@@ -14,6 +15,7 @@ public class ChangeStateOnRotation : MonoBehaviour
 
     private void Start()
 	{
+        debugger = FindObjectOfType<Debugger>();
 		rotationChecker.RotationEvent += OnRotation;
 
         grabGripAction.AddOnChangeListener(OnGrip, SteamVR_Input_Sources.LeftHand);
@@ -23,7 +25,7 @@ public class ChangeStateOnRotation : MonoBehaviour
 
     private void OnGrip(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool isDown)
     {
-
+        debugger.ChangeDebugText("Gripping");
         if (isDown)
         {
             _interactionMachine.StartApply();
