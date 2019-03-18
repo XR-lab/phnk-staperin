@@ -10,7 +10,7 @@ public class WriteData : MonoBehaviour {
 	private GameObject timer;
 
 	private void Start() {
-		_saveFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "/Saves/";
+		_saveFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "\\Saves\\";
 		_save = _saveFolder + "save.json";
 		timer = gameObject;
 		Init();

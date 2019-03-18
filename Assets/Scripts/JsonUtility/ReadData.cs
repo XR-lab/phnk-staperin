@@ -8,7 +8,7 @@ public class ReadData : MonoBehaviour {
 	private Data _data;
 
 	private void Start() {
-		_timer = this.gameObject;
+		_timer = gameObject;
 		_save = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "\\Saves\\save.json";
 		LoadJson(_save, _data);
 	}
