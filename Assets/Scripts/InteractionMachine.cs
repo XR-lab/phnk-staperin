@@ -17,6 +17,8 @@ public class InteractionMachine : MonoBehaviour
         {
             _interactionMachine.AddState(stateComponent.Id, stateComponent);
         }
+        var initialStateId = allStates[0].Id;
+        _interactionMachine.SetState(initialStateId);
     }
 
     public void SetState(InteractionStates stateId)

@@ -13,12 +13,8 @@ namespace CM.UI
 		private void Awake()
 		{
 			_uiSystem = GetComponent<CM_UI_System>();
-		}
-
-		private void Start()
-		{
-			_uiSystem.InitializeScreensEvent += OnInitializeScreens;
-		}
+            _uiSystem.InitializeScreensEvent += OnInitializeScreens;
+        }
 
 		private void OnInitializeScreens(Component[] screens)
 		{
