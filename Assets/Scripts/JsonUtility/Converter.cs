@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Converter : MonoBehaviour {
 	private Data _dt;
@@ -8,6 +6,7 @@ public class Converter : MonoBehaviour {
 	private void Start() {
 		_dt = new Data();
 		_jsonData = JsonUtility.ToJson(_dt);
+		Debug.Log(GetData() + "start");
 	}
 
 	public string GetData() {

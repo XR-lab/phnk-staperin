@@ -1,9 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-[System.Serializable]
+﻿[System.Serializable]
 public class Data {
-	public int GameTime;
-	public int SwitchTime;
+	public float GameTime;
+	public float SwitchTime;
 }

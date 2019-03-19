@@ -9,7 +9,7 @@ public class ReadData : MonoBehaviour {
 
 	private void Start() {
 		_timer = gameObject;
-		_save = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "\\Saves\\save.json";
+		_save = Application.dataPath + @"\zet_tijd\tijd.json";
 		LoadJson(_save, _data);
 	}
 
@@ -20,11 +20,11 @@ public class ReadData : MonoBehaviour {
 		}
 	}
 
-	public int GetGameTime() {
+	public float GetGameTime() {
 		return _data.GameTime;
 	}
 
-	public int GetSwitchTime() {
+	public float GetSwitchTime() {
 		return _data.SwitchTime;
 	}
 }

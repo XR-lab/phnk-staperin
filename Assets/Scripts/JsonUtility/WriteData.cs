@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class WriteData : MonoBehaviour {
@@ -10,15 +9,30 @@ public class WriteData : MonoBehaviour {
 	private GameObject timer;
 
 	private void Start() {
-		_saveFolder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "\\Saves\\";
-		_save = _saveFolder + "save.json";
+		_saveFolder = Application.dataPath + @"\zet_tijd\";
+		_save = _saveFolder + "tijd.json";
 		timer = gameObject;
 		Init();
+		WaitForFileData();
 
-		if (new FileInfo(_save).Length == 0) {
-			File.WriteAllText(_save, timer.GetComponent<Converter>().GetData());
+	}
 
+	async Task<bool> WaitForFileData() {
+		bool succeeded = false;
+		while (!succeeded) {
+			bool outcome;
+
+			if (new FileInfo(_save).Length == 0) {
+				File.WriteAllText(_save, timer.GetComponent<Converter>().GetData());
+				outcome = false;
+			} else {
+				outcome = true;
+			}
+
+			succeeded = outcome;
+			await Task.Delay(1000);
 		}
+		return succeeded;
 	}
 
 	private void Init() {
