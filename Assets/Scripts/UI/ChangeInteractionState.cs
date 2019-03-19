@@ -31,13 +31,13 @@ public class ChangeInteractionState : MonoBehaviour
 
     private void OnTrackPadDownOrUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool isDown)
     {
-        debugger.ChangeDebugText("I'm here first!!!!");
+        debugger.ChangeDebugText("I'm here first!!!! ");
         if (isDown) {
-            debugger.AddDebugText("I'm here!!!!");
+            debugger.AddDebugText("I'm here!!!! ");
             var currentScreen = _uiSystemScreenRotation.NextScreen();
             var currentState = _interactionStates[currentScreen.name];
             _interactionMachine.SetState(currentState);
-            debugger.AddDebugText("Next state: " + currentState);
+            debugger.AddDebugText("Next state: " + currentState + " ");
         }
     }
 

@@ -8,11 +8,11 @@ public class Debugger : MonoBehaviour
     [SerializeField] private Text _debugText;
     //[SerializeField] private string tempText;
 
-    // Start is called before the first frame update
+    /* Start is called before the first frame update
     void Start()
     {
         _debugText.text = "";
-    }
+    }*/
 
     public void ChangeDebugText(string newText)
     {
