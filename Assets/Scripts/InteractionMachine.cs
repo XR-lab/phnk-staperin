@@ -19,6 +19,14 @@ public class InteractionMachine : MonoBehaviour
         }
     }
 
+	private void ReloadStates(){
+		var allStates = GetComponents<State<InteractionStates>>();
+		foreach(var stateComponent in allStates){
+			_interactionMachine.RemoveState(stateComponent.Id, stateComponent);
+		}
+		InitializeStates();
+	}
+
     public void SetState(InteractionStates stateId)
     {
         Debug.Log("changing to" + stateId);

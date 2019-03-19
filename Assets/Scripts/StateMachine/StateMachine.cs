@@ -62,4 +62,14 @@ public class StateMachine<TStateId>
         state.enabled = false;
         state.Init();
     }
+
+
+	/// <summary>
+	/// Haal een state uit de state machine
+	/// </summary>
+	public void RemoveState(TStateId stateId, State<TStateId> state){
+		if(!_states.ContainsKey(stateId)){
+			_states.Remove(stateId);
+		}
+	}
 }
