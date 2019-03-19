@@ -25,6 +25,7 @@ public class ChangeInteractionState : MonoBehaviour
 		_uiSystemScreenRotation = GetComponent<CM_UI_System_ScreenRotation>();
         
         trackpadAction.AddOnChangeListener(OnTrackPadDownOrUp, SteamVR_Input_Sources.LeftHand);
+        debugger.ChangeDebugText("" + trackpadAction);
   
     }
 
