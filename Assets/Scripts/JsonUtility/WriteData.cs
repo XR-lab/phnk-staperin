@@ -8,13 +8,12 @@ public class WriteData : MonoBehaviour {
 
 	private GameObject timer;
 
-	private void Start() {
+	private async void Start() {
 		_saveFolder = Application.dataPath + @"\zet_tijd\";
 		_save = _saveFolder + "tijd.json";
 		timer = gameObject;
 		Init();
-		WaitForFileData();
-
+		await WaitForFileData();
 	}
 
 	async Task<bool> WaitForFileData() {
