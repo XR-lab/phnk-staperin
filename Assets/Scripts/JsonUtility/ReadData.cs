@@ -21,7 +21,7 @@ public class ReadData : MonoBehaviour {
 				data = JsonConvert.DeserializeObject<Data>(json);
 			}
 		} catch (Exception e) {
-			Debug.Log("Save could not be read");
+			Debug.Log("File could not be read");
 			Debug.Log(e.Message);
 
 		}
