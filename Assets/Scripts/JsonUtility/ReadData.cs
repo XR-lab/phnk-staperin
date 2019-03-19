@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.IO;
 using UnityEngine;
 
@@ -14,9 +15,15 @@ public class ReadData : MonoBehaviour {
 	}
 
 	public void LoadJson(string location, Data data) {
-		using (StreamReader r = new StreamReader(_save)) {
-			string json = r.ReadToEnd();
-			data = JsonConvert.DeserializeObject<Data>(json);
+		try {
+			using (StreamReader r = new StreamReader(_save)) {
+				string json = r.ReadToEnd();
+				data = JsonConvert.DeserializeObject<Data>(json);
+			}
+		} catch (Exception e) {
+			Debug.Log("Save could not be read");
+			Debug.Log(e.Message);
+
 		}
 	}
 
