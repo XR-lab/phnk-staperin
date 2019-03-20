@@ -1,5 +1,5 @@
 ﻿[System.Serializable]
-public class Data {
+public class Settings {
 	public float GameTime;
 	public float SwitchTime;
 }

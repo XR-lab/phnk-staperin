@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 
 public class Converter : MonoBehaviour {
-	private Data _dt;
+	private Settings _settings;
 	private string _jsonData;
 	private void Start() {
-		_dt = new Data();
-		_jsonData = JsonUtility.ToJson(_dt);
-		Debug.Log(GetData() + "start");
+		_settings = new Settings();
+		_jsonData = JsonUtility.ToJson(_settings);
 	}
 
-	public string GetData() {
+	public string GetSettingsJson() {
 		return _jsonData;
 	}
 }
