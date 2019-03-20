@@ -5,7 +5,6 @@ using Valve.VR;
 [RequireComponent(typeof(Slider))]
 public class ChangeSliderOnRotation : MonoBehaviour
 {
-    public Debugger debugger;
 	public RotationChecker rotationChecker;
 
 	public enum EQuaternion { X, Y, Z };
@@ -17,7 +16,6 @@ public class ChangeSliderOnRotation : MonoBehaviour
 
 	private void Awake()
 	{
-        debugger = FindObjectOfType<Debugger>();
 		_slider = GetComponent<Slider>();
     }
 
@@ -40,7 +38,6 @@ public class ChangeSliderOnRotation : MonoBehaviour
         if (rotationAxis == EQuaternion.Z)
         {
             _slider.value = ((360 - rotation.z) / 360 + 0.5f) % 1 * 2 - 1;
-            debugger.ChangeDebugText("" + (((360 - rotation.z) / 360 + 0.5f) % 1 * 2 - 1));
         }
 
     }
