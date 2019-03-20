@@ -3,31 +3,25 @@ using System.IO;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class SettingsStorage : MonoBehaviour {
-	private GameObject _timer;
-	private readonly string _saveLocation = "zet_tijd\tijd.json";
+public class SettingsStorage {
 	private string _saveFolder;
-	private string _save;
+	private string _saveFile;
 	private Settings _data;
 
-	private async void Start() {
-		_timer = gameObject;
-		_saveFolder = Application.dataPath + @"\zet_tijd\";
-		_save = _saveFolder + "tijd.json";
+	public SettingsStorage(string filePath, string fileName) {
+		_saveFolder = filePath;
+		_saveFile = fileName;
 		InitializeSave();
-		//_saveLocation = Application.dataPath + @"\zet_tijd\tijd.json";
-		LoadJson(_saveLocation, _data);
-		await WaitForFileData();
-
+		LoadJson(_saveFile, _data);
 	}
 
 	public void LoadJson(string location, Settings data) {
-		string filePath = Path.Combine(Application.dataPath + _saveLocation);
+		string filePath = Path.Combine(Application.dataPath + _saveFile);
 
 		try {
-			using (StreamReader saveReader = new StreamReader(_saveLocation)) {
+			using (StreamReader saveReader = new StreamReader(_saveFile)) {
 				string json = saveReader.ReadToEnd();
-				data = JsonUtility.FromJson<Settings>(json); //JsonConvert.DeserializeObject<Settings>(json);
+				data = JsonUtility.FromJson<Settings>(json);
 			}
 		} catch (Exception e) {
 			Debug.Log("File could not be read");
@@ -38,11 +32,13 @@ public class SettingsStorage : MonoBehaviour {
 
 	async Task<bool> WaitForFileData() {
 		bool succeeded = false;
+		Converter converter = new Converter();
+
 		while (!succeeded) {
 			bool outcome;
 
-			if (new FileInfo(_save).Length == 0) {
-				File.WriteAllText(_save, _timer.GetComponent<Converter>().GetSettingsJson());
+			if (new FileInfo(_saveFile).Length == 0) {
+				File.WriteAllText(_saveFile, converter.GetSettingsJson());
 				outcome = false;
 			} else {
 				outcome = true;
@@ -54,14 +50,16 @@ public class SettingsStorage : MonoBehaviour {
 		return succeeded;
 	}
 
-	private void InitializeSave() {
+	private async void InitializeSave() {
 		if (!Directory.Exists(_saveFolder)) {
 			Directory.CreateDirectory(_saveFolder);
 		}
 
-		if (!File.Exists(_save)) {
-			File.Create(_save).Dispose();
+		if (!File.Exists(_saveFile)) {
+			File.Create(_saveFile).Dispose();
 		}
+
+		await WaitForFileData();
 	}
 
 	public float GetGameTime() {

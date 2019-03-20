@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 
-public class Converter : MonoBehaviour {
+public class Converter {
 	private Settings _settings;
 	private string _jsonData;
-	private void Start() {
+
+	public Converter() {
 		_settings = new Settings();
 		_jsonData = JsonUtility.ToJson(_settings);
 	}
