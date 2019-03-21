@@ -1,12 +1,10 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Threading.Tasks;
-using UnityEngine;
 
 /// <summary>
-/// Class for creating, saving and loading Json files. Files get automaticly created if they dont exsist. 
+/// Class for creating, saving and loading Json files. Files and folder get automaticly created if they dont exsist. 
 /// To use this class declare as the following:
-/// SettingsStorage<"instert type"> st = new SettingsStorage<"insert same type">(desired path to file, new ("insert same type")());
+/// SettingsStorage<"instert type"> st = new SettingsStorage<"insert same type">(desired path to file, new "insert same type"());
 ///	You can request data by: st.Data.someRandomData
 /// </summary>
 
@@ -23,7 +21,6 @@ public class SettingsStorage<T> {
 	public SettingsStorage(string filePathAndName, T fileType) {
 		_saveFile = filePathAndName;	
 		_saveFolder = Path.GetDirectoryName(_saveFile);
-		
 		_data = fileType;
 		InitializeSave();
 		Load(_saveFile, _data);
