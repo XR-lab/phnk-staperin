@@ -3,6 +3,13 @@ using System.IO;
 using System.Threading.Tasks;
 using UnityEngine;
 
+/// <summary>
+/// Class for creating, saving and loading Json files. Files get automaticly created if they dont exsist. 
+/// To use this class declare as the following:
+/// SettingsStorage<"instert type"> st = new SettingsStorage<"insert same type">(desired path to file, new ("insert same type")());
+//	You can request data by: st.Data.someRandomData
+/// </summary>
+
 public class SettingsStorage<T> {
 	private string _saveFolder;
 	private string _saveFile;
@@ -13,27 +20,18 @@ public class SettingsStorage<T> {
 		set { Data = value; }
 	}
 
-	public SettingsStorage(string filePath, string fileName, T fileType) {
-		_saveFolder = filePath;
-		_saveFile = fileName;
+	public SettingsStorage(string filePathAndName, T fileType) {
+		_saveFile = filePathAndName;	
+		_saveFolder = Path.GetDirectoryName(_saveFile);
+		
 		_data = fileType;
 		InitializeSave();
 		Load(_saveFile, _data);
 	}
 
 	public void Load(string location, T data) {
-		string filePath = Path.Combine(Application.dataPath + _saveFile);
-
-		try {
-			using (StreamReader saveReader = new StreamReader(_saveFile)) {
-				string json = saveReader.ReadToEnd();
-				data = JsonUtility.FromJson<T>(json); ;
-			}
-		} catch (Exception e) {
-			Debug.Log("File could not be read");
-			Debug.Log(e.Message);
-
-		}
+		Converter<T> converter = new Converter<T>(_data);
+		data = converter.GetDataFromJson();
 	}
 
 	private async void Save() {
@@ -41,7 +39,7 @@ public class SettingsStorage<T> {
 		await WaitForFileData();
 
 		if (new FileInfo(_saveFile).Length == 0) {
-			File.WriteAllText(_saveFile, converter.GetSettingsJson());
+			File.WriteAllText(_saveFile, converter.GetDataToJson());
 		}
 
 	}

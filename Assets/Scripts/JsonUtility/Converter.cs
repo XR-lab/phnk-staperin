@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.IO;
+using UnityEngine;
 
 public class Converter<T> {
 	private T _type;
@@ -6,10 +7,15 @@ public class Converter<T> {
 
 	public Converter(T fileType) {
 		_type = fileType;
-		_jsonData = JsonUtility.ToJson(_type);
 	}
 
-	public string GetSettingsJson() {
+	public string GetDataToJson() {
+		_jsonData = JsonUtility.ToJson(_type);
 		return _jsonData;
+	}
+
+	public T GetDataFromJson() {
+		T data = JsonUtility.FromJson<T>(_jsonData); ;
+		return data;
 	}
 }
