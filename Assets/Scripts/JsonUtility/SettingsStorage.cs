@@ -3,25 +3,31 @@ using System.IO;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class SettingsStorage {
+public class SettingsStorage<T> {
 	private string _saveFolder;
 	private string _saveFile;
-	private Settings _data;
+	private T _data;
 
-	public SettingsStorage(string filePath, string fileName) {
+	public T Data {
+		get { return _data; }
+		set { Data = value; }
+	}
+
+	public SettingsStorage(string filePath, string fileName, T t) {
 		_saveFolder = filePath;
 		_saveFile = fileName;
+		_data = t;
 		InitializeSave();
 		LoadJson(_saveFile, _data);
 	}
 
-	public void LoadJson(string location, Settings data) {
+	public void LoadJson(string location, T data) {
 		string filePath = Path.Combine(Application.dataPath + _saveFile);
 
 		try {
 			using (StreamReader saveReader = new StreamReader(_saveFile)) {
 				string json = saveReader.ReadToEnd();
-				data = JsonUtility.FromJson<Settings>(json);
+				data = JsonUtility.FromJson<T>(json); ;
 			}
 		} catch (Exception e) {
 			Debug.Log("File could not be read");
@@ -32,16 +38,14 @@ public class SettingsStorage {
 
 	async Task<bool> WaitForFileData() {
 		bool succeeded = false;
-		Converter converter = new Converter();
 
 		while (!succeeded) {
 			bool outcome;
 
-			if (new FileInfo(_saveFile).Length == 0) {
-				File.WriteAllText(_saveFile, converter.GetSettingsJson());
-				outcome = false;
-			} else {
+			if (File.Exists(_saveFile)) {
 				outcome = true;
+			} else {
+				outcome = false;
 			}
 
 			succeeded = outcome;
@@ -50,7 +54,17 @@ public class SettingsStorage {
 		return succeeded;
 	}
 
-	private async void InitializeSave() {
+	private async void Save() {
+		Converter<T> converter = new Converter<T>(_data);
+		await WaitForFileData();
+
+		if (new FileInfo(_saveFile).Length == 0) {
+			File.WriteAllText(_saveFile, converter.GetSettingsJson());
+		}
+
+	}
+
+	private void InitializeSave() {
 		if (!Directory.Exists(_saveFolder)) {
 			Directory.CreateDirectory(_saveFolder);
 		}
@@ -59,14 +73,6 @@ public class SettingsStorage {
 			File.Create(_saveFile).Dispose();
 		}
 
-		await WaitForFileData();
-	}
-
-	public float GetGameTime() {
-		return _data.GameTime;
-	}
-
-	public float GetSwitchTime() {
-		return _data.SwitchTime;
+		Save();
 	}
 }

@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 
-public class Converter {
-	private Settings _settings;
+public class Converter<T> {
+	private T _type;
 	private string _jsonData;
 
-	public Converter() {
-		_settings = new Settings();
-		_jsonData = JsonUtility.ToJson(_settings);
+	public Converter(T fileType) {
+		_type = fileType;
+		_jsonData = JsonUtility.ToJson(_type);
 	}
 
 	public string GetSettingsJson() {
