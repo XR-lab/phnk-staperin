@@ -13,15 +13,15 @@ public class SettingsStorage<T> {
 		set { Data = value; }
 	}
 
-	public SettingsStorage(string filePath, string fileName, T t) {
+	public SettingsStorage(string filePath, string fileName, T fileType) {
 		_saveFolder = filePath;
 		_saveFile = fileName;
-		_data = t;
+		_data = fileType;
 		InitializeSave();
-		LoadJson(_saveFile, _data);
+		Load(_saveFile, _data);
 	}
 
-	public void LoadJson(string location, T data) {
+	public void Load(string location, T data) {
 		string filePath = Path.Combine(Application.dataPath + _saveFile);
 
 		try {
@@ -34,6 +34,16 @@ public class SettingsStorage<T> {
 			Debug.Log(e.Message);
 
 		}
+	}
+
+	private async void Save() {
+		Converter<T> converter = new Converter<T>(_data);
+		await WaitForFileData();
+
+		if (new FileInfo(_saveFile).Length == 0) {
+			File.WriteAllText(_saveFile, converter.GetSettingsJson());
+		}
+
 	}
 
 	async Task<bool> WaitForFileData() {
@@ -52,16 +62,6 @@ public class SettingsStorage<T> {
 			await Task.Delay(1000);
 		}
 		return succeeded;
-	}
-
-	private async void Save() {
-		Converter<T> converter = new Converter<T>(_data);
-		await WaitForFileData();
-
-		if (new FileInfo(_saveFile).Length == 0) {
-			File.WriteAllText(_saveFile, converter.GetSettingsJson());
-		}
-
 	}
 
 	private void InitializeSave() {
