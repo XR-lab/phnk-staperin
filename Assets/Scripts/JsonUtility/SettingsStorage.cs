@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 public class SettingsStorage<T> {
 	private string _saveFolder;
-	private string _saveFile;
+	private string _saveFilePath;
 	private T _data;
 
 	public T Data {
@@ -19,11 +19,11 @@ public class SettingsStorage<T> {
 	}
 
 	public SettingsStorage(string filePathAndName, T fileType) {
-		_saveFile = filePathAndName;	
-		_saveFolder = Path.GetDirectoryName(_saveFile);
+		_saveFilePath = filePathAndName;	
+		_saveFolder = Path.GetDirectoryName(_saveFilePath);
 		_data = fileType;
 		InitializeSave();
-		Load(_saveFile, _data);
+		Load(_saveFilePath, _data);
 	}
 
 	public void Load(string location, T data) {
@@ -35,8 +35,8 @@ public class SettingsStorage<T> {
 		Converter<T> converter = new Converter<T>(_data);
 		await WaitForFileData();
 
-		if (new FileInfo(_saveFile).Length == 0) {
-			File.WriteAllText(_saveFile, converter.GetDataToJson());
+		if (new FileInfo(_saveFilePath).Length == 0) {
+			File.WriteAllText(_saveFilePath, converter.GetDataToJson());
 		}
 
 	}
@@ -47,7 +47,7 @@ public class SettingsStorage<T> {
 		while (!succeeded) {
 			bool outcome;
 
-			if (File.Exists(_saveFile)) {
+			if (File.Exists(_saveFilePath)) {
 				outcome = true;
 			} else {
 				outcome = false;
@@ -64,8 +64,8 @@ public class SettingsStorage<T> {
 			Directory.CreateDirectory(_saveFolder);
 		}
 
-		if (!File.Exists(_saveFile)) {
-			File.Create(_saveFile).Dispose();
+		if (!File.Exists(_saveFilePath)) {
+			File.Create(_saveFilePath).Dispose();
 		}
 
 		Save();
