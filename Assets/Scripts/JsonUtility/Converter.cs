@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 
 public class Converter<T> {
-	private T _type;
+	private T _dataType;
 	private string _jsonData;
 
-	public Converter(T fileType) {
-		_type = fileType;
+	public Converter(T dataType) {
+		_dataType = dataType;
 	}
 
 	public string GetDataToJson() {
-		_jsonData = JsonUtility.ToJson(_type);
+		_jsonData = JsonUtility.ToJson(_dataType);
 		return _jsonData;
 	}
 
