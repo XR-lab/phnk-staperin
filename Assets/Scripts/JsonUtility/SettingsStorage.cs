@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using UnityEngine;
+using System.IO;
 using System.Threading.Tasks;
 
 /// <summary>
@@ -23,22 +24,17 @@ public class SettingsStorage<T> {
 		_saveFolder = Path.GetDirectoryName(_saveFilePath);
 		_data = fileType;
 		InitializeSave();
-		Load(_saveFilePath, _data);
+		Load(_data);
 	}
 
-	public void Load(string location, T data) {
+	public void Load(T data) {
 		Converter<T> converter = new Converter<T>(_data);
 		data = converter.GetDataFromJson();
 	}
 
-	private async void Save() {
+	private void Save() {
 		Converter<T> converter = new Converter<T>(_data);
-		await WaitForFileData();
-
-		if (new FileInfo(_saveFilePath).Length == 0) {
-			File.WriteAllText(_saveFilePath, converter.GetDataToJson());
-		}
-
+		File.WriteAllText(_saveFilePath, converter.GetDataToJson());
 	}
 
 	async Task<bool> WaitForFileData() {
