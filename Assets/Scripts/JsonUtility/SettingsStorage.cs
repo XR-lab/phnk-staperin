@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-using System.IO;
-using System.Threading.Tasks;
+﻿using System.IO;
 
 /// <summary>
 /// Class for creating, saving and loading Json files. Files and folder get automaticly created if they dont exsist. 
@@ -35,24 +33,6 @@ public class SettingsStorage<T> {
 	private void Save() {
 		Converter<T> converter = new Converter<T>(_data);
 		File.WriteAllText(_saveFilePath, converter.GetDataToJson());
-	}
-
-	async Task<bool> WaitForFileData() {
-		bool succeeded = false;
-
-		while (!succeeded) {
-			bool outcome;
-
-			if (File.Exists(_saveFilePath)) {
-				outcome = true;
-			} else {
-				outcome = false;
-			}
-
-			succeeded = outcome;
-			await Task.Delay(1000);
-		}
-		return succeeded;
 	}
 
 	private void InitializeSave() {
