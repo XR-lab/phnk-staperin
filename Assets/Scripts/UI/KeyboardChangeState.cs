@@ -6,7 +6,7 @@ using CM.UI;
 
 public class KeyboardChangeState : MonoBehaviour
 {
-	[SerializeField] public InteractionMachine _interactionMachine;
+	public InteractionMachine _interactionMachine;
 	private CM_UI_System_ScreenRotation _uiSystemScreenRotation;
 	private Dictionary<string, InteractionStates> _interactionStates = new Dictionary<string, InteractionStates>(){
 		{ "DayNightUI", InteractionStates.DayNight},
@@ -36,7 +36,6 @@ public class KeyboardChangeState : MonoBehaviour
 		var currentScreen = _uiSystemScreenRotation.NextScreen();
 		var currentState = _interactionStates[currentScreen.name];
 		_interactionMachine.SetState(currentState);
-		//print("Switched to: " + currentState);
 	}
 
 	//Switches to the previous state in order in the state machine
@@ -44,6 +43,5 @@ public class KeyboardChangeState : MonoBehaviour
 		var previousScreen = _uiSystemScreenRotation.PreviousScreen();
 		var previousState = _interactionStates[previousScreen.name];
 		_interactionMachine.SetState(previousState);
-		//print("Switched to: " + previousState);
 	}
 }
