@@ -4,7 +4,7 @@
 /// Class for creating, saving and loading Json files. Files and folder get automaticly created if they dont exsist. 
 /// To use this class declare as the following:
 /// SettingsStorage<"instert type"> st = new SettingsStorage<"insert same type">(desired path to file, new "insert same type"());
-///	You can request data by: st.Data.someRandomData
+/// You can request data by: st.Data.someRandomData
 /// </summary>
 
 public class SettingsStorage<T> {
