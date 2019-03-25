@@ -8,6 +8,7 @@ public class TimerManager : MonoBehaviour
     [SerializeField] private Fade _fade;
     //[SerializeField] private ReadData ReadData;
     //[SerializeField] private KeyboardChangeState KeyboardChangeState;
+    [SerializeField] private HoldToReset _HoldToReset;
     [SerializeField] private Text _bedanktText;
     [SerializeField] private Text _resetText;
     [SerializeField] private Text _timeLeftText;
@@ -46,10 +47,11 @@ public class TimerManager : MonoBehaviour
         gameTimer.StartTimer(60);
     }
     void GameTimeDone()
-    {//hij moet nu kunnen reseten door 1 sec op de trigger te klicken
+    {
         print("time up");
         _fade.FadeIn(_resetText);
         _fade.FadeIn(_bedanktText);
         _fade.FadeInImage(_canvasImage);
+        _HoldToReset._setReset = true;
     }
 }
