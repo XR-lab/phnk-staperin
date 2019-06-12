@@ -4146,6 +4146,7 @@ GameObject:
   - component: {fileID: 1324077572}
   - component: {fileID: 1324077571}
   - component: {fileID: 1324077570}
+  - component: {fileID: 1324077573}
   m_Layer: 0
   m_Name: Painting Canvas Texture
   m_TagString: Untagged
@@ -4236,6 +4237,19 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1324077573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324077568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78114f2f8fe6254d838537eba852df6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _defaultQuality: Ultra
 --- !u!1001 &1348317050
 PrefabInstance:
   m_ObjectHideFlags: 0
